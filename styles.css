@@ -1,0 +1,57 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; /* Example font */
+    min-height: 100vh; /* Ensure full height */
+}
+
+.header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    /* Add flexbox properties if needed for internal header layout */
+}
+
+.sidebar {
+    background-color: #ddd;
+    padding: 20px;
+    width: 200px; /* Adjust sidebar width as needed */
+}
+
+.main-content {
+    flex-grow: 1; /* Allow main content to take up remaining space */
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Wrap cards for responsiveness */
+    gap: 20px; /* Add spacing between cards */
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    width: calc(50% - 30px); /* Example: Two cards per row with spacing */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+    }
+
+    .sidebar {
+        width: 100%; /* Full width sidebar on small screens */
+        padding: 10px;
+    }
+
+    .main-content {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .card {
+        width: 100%; /* Full width cards on smaller screens */
+    }
+}
