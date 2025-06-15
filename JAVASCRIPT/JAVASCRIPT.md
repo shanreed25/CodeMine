@@ -1,4 +1,5 @@
-# JavaScript concepts into logical categories, helpful for learning and understanding the language## Core Language Fundamentals:
+# JavaScript concepts into logical categories, helpful for learning and understanding the language
+## Core Language Fundamentals:
 - Variables & Data Types:
     - Understanding different data types: Number, String, Boolean, Null, Undefined, Symbol, BigInt, and Object.
     - Distinguishing between primitive and reference types.
