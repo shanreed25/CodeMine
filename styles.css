@@ -16,7 +16,7 @@ body {
 .sidebar {
     background-color: #ddd;
     padding: 20px;
-    width: 200px; /* Adjust sidebar width as needed */
+    width: 100%; /* Adjust sidebar width as needed */
 }
 
 .main-content {
