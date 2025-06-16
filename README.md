@@ -7,7 +7,7 @@ Choosing the right language depends on your specific goals and interests. For be
 Purpose: Defines the structure and content of a web page.
 Think of it as: The blueprint or skeleton of your website.
 What it does: Organizes text, images, and other elements, instructing the browser on how to display them.
-Example: Using tags like <header>, <footer>, and <article> to structure content.
+Example: Using tags like `<header>`, `<footer>`, and `<article>` to structure content.
 Importance: It's the absolute foundation for any website and essential for front-end development.
 
 - [ ] Basic Structure and Elements
