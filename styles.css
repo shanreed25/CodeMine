@@ -1,13 +1,20 @@
+body {
+    margin: 0;
+    min-height: 100vh; /* Ensure full height */
+    font-family: "Lora", serif;
+}
+
 a{
     color: black;
     text-decoration: none;
 }
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif; /* Example font */
-    min-height: 100vh; /* Ensure full height */
+h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
 }
+
 
 .header {
     background-color: #f0f0f0;
@@ -50,6 +57,30 @@ body {
     border-radius: 5px;
     width: calc(50% - 30px); /* Example: Two cards per row with spacing */
     box-sizing: border-box; /* Include padding and border in width */
+}
+
+/* Code as Plain text */
+.code{
+    font-weight: bolder;
+}
+
+.code-yellow-background{
+    background-color: yellow;
+}
+.code-blue{
+    color: blue;
+    font-weight: bolder;
+}
+
+/* Code as Plain text */
+.code-orange{
+    color: orangered;
+}
+
+
+/* Textareas */
+.small{
+    width: 25rem;
 }
 
 /* Responsive adjustments */

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Mine - HTML Entities</title>
+    <link rel="stylesheet" href="../styles.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+       <header class="header">
+        <h1>Code Mine - HTML Entities</h1>
+        <!-- Add other header elements like search bar, user profile, etc. -->
+    </header>
+
+    <aside class="sidebar">
+        <!-- Add your navigation links here -->
+        <ul>
+            <li><a href="../index.html">Dashboard</a></li>
+            <li><a href="#">Users</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
+    </aside>
+
+    <main class="main-content">
+    <div class="card entities entities-1">
+        <h2>Entities</h2>
+        <p>Reserved characters, such as <, >, ", and &, in HTML are have special meaning in a HTML document.
+        If these characters are used within the content of the page, browsers may misinterpret them as part of the tags.</p>
+        <p>
+            Use HTML Entities to escape certain characters 
+            so you can add HTML code as plain text that appears 
+            on your webpage without being rendered as actual 
+            HTML elements. 
+        </p>
+        <ul>
+            <p>HTML Entities</p>
+            <li>always start with an ampersand (&) and end with a semicolon (;)</li>
+            <li>can be represented by entity names like <span class="code code-blue">&amp;lt;</span> or entity numbers like <span class="code code-blue">&amp;#60;</span></li>
+            <li>To display a less than sign (<) as text, replace it with <span class="code code-blue">&amp;lt;</span>  </li>
+            <li>To display a greater than sign (>) as text, replace it with <span class="code code-blue">&amp;gt;</span></li>
+        </ul>
+
+        <h4>Example</h4>
+            <p>To display this code as plain text: &nbsp; &nbsp;
+                
+                <span class="code code-yellow-background">
+                    <span class="code code-blue">&lt;</span><span class="code code-orange">p</span><span class="code code-blue">&gt;</span>This is a paragraph.<span class="code code-blue">&lt;</span><span class="code code-orange">/p</span><span class="code code-blue">&gt;</span>
+                </span>
+               </p>
+
+                <p> You would write it like this in your HTML: &nbsp; &nbsp;
+                    <span class="code code-yellow-background">
+                        <span class="code code-blue">&amp;lt;</span><span class="code code-orange">p</span><span class="code code-blue">&amp;gt;</span>This is a paragraph.<span class="code code-blue">&amp;lt;</span><span class="code code-orange">/p</span><span class="code code-blue">&amp;gt;</span>
+                    </span>
+                </p>
+                <p><a href="https://www.geeksforgeeks.org/html/html-entities/">More Info</a></p>
+    </div>
+    
+    <div class="card entities entities-2">
+        <h2>Using HTML Entities for the Entities</h2>
+        <p>
+            You can display HTML entity names and numbers as plain text, 
+            but you need to use specific encoding to represent the entities 
+            themselves, rather than having them interpreted by the browser.
+        </p>
+        <ul>
+            <li>For the ampersand (&) use: <span class="code code-blue">&amp;amp;</span></li>
+            <li>For other entities: Replace the ampersand that begins the entity with <span class="code code-blue">&amp;amp;</span></li>
+        </ul>
+
+        <div class="example-box">
+            <h4>Example</h4>
+            <div class="example">
+                <p>To display: &nbsp; 
+                    <span class="code code-yellow-background">
+                        <span class="code code-blue">&amp;</span><span class="code code-orange">lt;</span>
+                    </span> 
+                </p>
+            <p>You would write: 
+                <span class="code code-yellow-background">
+                    <span class="code code-blue">&amp;amp;<span class="code code-orange">lt;</span></span> 
+                </span>
+            </p>
+            </div>
+            <div class="example">
+            <p>To display: &nbsp; 
+                <span class="code code-yellow-background"><span class="code code-blue">&amp;</span><span class="code code-orange">#60;</span></span>
+            </p>
+            <p>You would write: 
+                <span class="code code-yellow-background">
+                        <span class="code code-blue">&amp;amp;<span class="code code-orange">#60;</span></span>
+                </span>
+            </p>
+            </div>
+
+             <div class="example">
+            <p>To display: &nbsp; 
+                <span class="code code-yellow-background"><span class="code code-blue">&amp;amp;</span><span class="code code-orange"></span></span>
+            </p>
+            <p>You would write: 
+                <span class="code code-yellow-background">
+                        <span class="code code-blue">&amp;amp;<span class="code code-orange">amp;</span></span>
+                </span>
+            </p>
+            </div>
+        </div>
+            
+
+    </div>
+    </main>
+    
+</body>
+</html>
