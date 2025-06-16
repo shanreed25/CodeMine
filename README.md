@@ -4,11 +4,15 @@ In essence, HTML provides the structure, CSS handles the style, and JavaScript a
 **Website to help learn Foundational Frontend Languages to get started in web development**
 
 ## HTML (Hypertext Markup Language)
-**Purpose:** Defines the structure and content of a web page.
-**Think of it as:** The blueprint or skeleton of your website.
-**What it does:** Organizes text, images, and other elements, instructing the browser on how to display them.
-**Example:** Using tags like `<header>`, `<footer>`, and `<article>` to structure content.
-**Importance:** It's the absolute foundation for any website and essential for front-end development.
+- **Purpose:** Defines the structure and content of a web page.
+
+- **Think of it as:** The blueprint or skeleton of your website.
+
+- **What it does:** Organizes text, images, and other elements, instructing the browser on how to display them.
+
+- **Example:** Using tags like `<header>`, `<footer>`, and `<article>` to structure content.
+
+- **Importance:** It's the absolute foundation for any website and essential for front-end development.
 
 - [ ] Basic Structure and Elements
 - [ ] Forms and User Input
