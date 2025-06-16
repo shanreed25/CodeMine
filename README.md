@@ -1,7 +1,9 @@
 # CodeMine
+**Website to help learn Foundational Frontend Languages to get started in web development**
+
 Choosing the right language depends on your specific goals and interests. For beginners, starting with HTML, CSS, and JavaScript is generally recommended. Python is also a beginner-friendly option, especially if you're interested in data science or machine learning
 In essence, HTML provides the structure, CSS handles the style, and JavaScript adds the interactivity.
-**Website to help learn Foundational Frontend Languages to get started in web development**
+
 
 ## HTML (Hypertext Markup Language)
 - **Purpose:** Defines the structure and content of a web page.
