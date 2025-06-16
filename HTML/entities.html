@@ -15,63 +15,68 @@
         <!-- Add other header elements like search bar, user profile, etc. -->
     </header>
 
-    <aside class="sidebar">
-        <!-- Add your navigation links here -->
-        <ul>
-            <li><a href="../index.html">Dashboard</a></li>
-            <li><a href="#">Users</a></li>
-            <li><a href="#">Settings</a></li>
-        </ul>
-    </aside>
+    <nav class="menu-container">
+        <a href="../index.html">Dashboard</a>
+        <a href="#">Users</a>
+        <a href="#">Settings</a>
+    </nav>
 
     <main class="main-content">
+
     <div class="card entities entities-1">
-        <h2>Entities</h2>
-        <p>Reserved characters, such as <, >, ", and &, in HTML are have special meaning in a HTML document.
-        If these characters are used within the content of the page, browsers may misinterpret them as part of the tags.</p>
-        <p>
-            Use HTML Entities to escape certain characters 
-            so you can add HTML code as plain text that appears 
-            on your webpage without being rendered as actual 
-            HTML elements. 
-        </p>
-        <ul>
-            <p>HTML Entities</p>
-            <li>always start with an ampersand (&) and end with a semicolon (;)</li>
-            <li>can be represented by entity names like <span class="code code-blue">&amp;lt;</span> or entity numbers like <span class="code code-blue">&amp;#60;</span></li>
-            <li>To display a less than sign (<) as text, replace it with <span class="code code-blue">&amp;lt;</span>  </li>
-            <li>To display a greater than sign (>) as text, replace it with <span class="code code-blue">&amp;gt;</span></li>
-        </ul>
-
-        <h4>Example</h4>
+        <div class="card-section-1">
+            <h2>Entities</h2>
+            <p>Reserved characters, such as <, >, ", and &, in HTML are have special meaning in a HTML document.
+            If these characters are used within the content of the page, browsers may misinterpret them as part of the tags.</p>
+            <p>
+                Use HTML Entities to escape certain characters 
+                so you can add HTML code as plain text that appears 
+                on your webpage without being rendered as actual 
+                HTML elements. 
+            </p>
+            <h4>HTML Entities</h4>
+            <ul>
+                <li>always start with an ampersand (&) and end with a semicolon (;)</li>
+                <li>can be represented by entity names like <span class="code code-blue">&amp;lt;</span> or entity numbers like <span class="code code-blue">&amp;#60;</span></li>
+                <li>To display a less than sign (<) as text, replace it with <span class="code code-blue">&amp;lt;</span>  </li>
+                <li>To display a greater than sign (>) as text, replace it with <span class="code code-blue">&amp;gt;</span></li>
+            </ul>
+        </div>
+        <div class="card-section-2">
+            <h4>Example</h4>
             <p>To display this code as plain text: &nbsp; &nbsp;
-                
                 <span class="code code-yellow-background">
-                    <span class="code code-blue">&lt;</span><span class="code code-orange">p</span><span class="code code-blue">&gt;</span>This is a paragraph.<span class="code code-blue">&lt;</span><span class="code code-orange">/p</span><span class="code code-blue">&gt;</span>
+                    <span class="code code-blue">&lt;</span><span class="code code-orange">p</span><span class="code code-blue">&gt;</span>
+                    This is a paragraph.
+                    <span class="code code-blue">&lt;</span><span class="code code-orange">/p</span><span class="code code-blue">&gt;</span>
                 </span>
-               </p>
+            </p>
 
-                <p> You would write it like this in your HTML: &nbsp; &nbsp;
-                    <span class="code code-yellow-background">
-                        <span class="code code-blue">&amp;lt;</span><span class="code code-orange">p</span><span class="code code-blue">&amp;gt;</span>This is a paragraph.<span class="code code-blue">&amp;lt;</span><span class="code code-orange">/p</span><span class="code code-blue">&amp;gt;</span>
-                    </span>
-                </p>
-                <p><a href="https://www.geeksforgeeks.org/html/html-entities/">More Info</a></p>
+            <p> You would write it like this in your HTML: &nbsp; &nbsp;
+                <span class="code code-yellow-background">
+                    <span class="code code-blue">&amp;lt;</span><span class="code code-orange">p</span><span class="code code-blue">&amp;gt;</span>
+                    This is a paragraph.
+                    <span class="code code-blue">&amp;lt;</span><span class="code code-orange">/p</span><span class="code code-blue">&amp;gt;</span>
+                </span>
+            </p>
+            <p><a href="https://www.geeksforgeeks.org/html/html-entities/">More Info</a></p>
+        </div>
     </div>
     
     <div class="card entities entities-2">
-        <h2>Using HTML Entities for the Entities</h2>
-        <p>
-            You can display HTML entity names and numbers as plain text, 
-            but you need to use specific encoding to represent the entities 
-            themselves, rather than having them interpreted by the browser.
-        </p>
-        <ul>
-            <li>For the ampersand (&) use: <span class="code code-blue">&amp;amp;</span></li>
-            <li>For other entities: Replace the ampersand that begins the entity with <span class="code code-blue">&amp;amp;</span></li>
-        </ul>
-
-        <div class="example-box">
+        <div class="card-section-1">
+            <h2>Using HTML Entities for the Entities</h2>
+            <p>
+                You can display HTML entity names and numbers as plain text, 
+                but you need to use specific encoding to represent the entities 
+                themselves, rather than having them interpreted by the browser.
+            </p>
+            <ul>
+                <li>For the ampersand (&) use: <span class="code code-blue">&amp;amp;</span></li>
+                <li>For other entities: Replace the ampersand that begins the entity with <span class="code code-blue">&amp;amp;</span></li>
+            </ul>
+        </div>
+        <div class="card-section-2">
             <h4>Example</h4>
             <div class="example">
                 <p>To display: &nbsp; 
@@ -107,8 +112,6 @@
             </p>
             </div>
         </div>
-            
-
     </div>
     </main>
     

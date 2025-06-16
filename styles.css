@@ -28,18 +28,12 @@ h1{
     background-color: rgb(40,42,53);
     padding: 20px;
     width: 100%; /* Adjust sidebar width as needed */
-}
-
-.menu-container-list{
     display: flex;
     justify-content: space-around;
-}
-.menu-container-list li{
     color: #f0f0f0;
-    list-style-type: none;
 }
 
-.menu-container-list a{
+.menu-container a{
     color: #f0f0f0;
 }
 
@@ -89,7 +83,7 @@ h1{
         flex-direction: column; /* Stack elements vertically on smaller screens */
     }
 
-    .sidebar {
+    .nav {
         width: 100%; /* Full width sidebar on small screens */
         padding: 10px;
     }
