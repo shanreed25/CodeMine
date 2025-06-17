@@ -66,11 +66,28 @@ h1{
     font-weight: bolder;
 }
 
+.code-box{
+    font-weight: bolder;
+    font-size: .9rem;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    width: calc(100% - 10px); /* Two cards per row with spacing */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+
 .code-yellow-background{
+    font-weight: bolder;
     background-color: yellow;
 }
+
 .code-blue{
     color: blue;
+}
+
+.code-green{
+    color: green;
     font-weight: bolder;
 }
 
@@ -78,6 +95,7 @@ h1{
 .code-orange{
     color: orangered;
 }
+
 
 
 /* Textareas */
@@ -94,18 +112,37 @@ h1{
 
 
 /* Examples */
-.muti-examples{
+.multi-examples{
     display: flex;
     flex-wrap: wrap; /* Wrap cards for responsiveness */
     gap: 20px; /* Add spacing between cards */
 }
-.example-card{
+
+.example-whole-card{
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    width: calc(100% - 10px); /* Two cards per row with spacing */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+.example-half-card{
     border: 1px solid #ccc;
     padding: 10px;
     border-radius: 5px;
     width: calc(50% - 10px); /* Two cards per row with spacing */
     box-sizing: border-box; /* Include padding and border in width */
 }
+
+.example-third-card{
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    width: calc(30% - 10px); /* Two cards per row with spacing */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+
 
 
 

@@ -20,8 +20,9 @@
         <a href="#">Settings</a>
     </nav>
     <main class="main-content">
-        <div class="card ">
-            <div class="card-section-1">
+
+        <div id = "events" class="card">
+            <div>
                 <h2>Events</h2>
                 <p>Events are actions or occurrences that happen
                     in the browser. They are triggered by user interactions or by the
@@ -50,124 +51,140 @@
                     </li>
                 </ul>
             </div>
-            <div class="card-section-2">
+            <div>
             </div>
         </div>
 
-        <div class="card ">
+        <div id = "event-handling" class="card">
             <div class="card-section-1">
                 <h2>Event Handling Methods</h2>
                 <p>Event handlers allow developers to define how a web page should respond to events.</p>
-                <p>When an event occurs on a target element, a handler function is executed in response to that event.</p>
+                <p>When an event occurs on a target element, a handler function is executed in response to that event.
+                </p>
 
                 <h4>How to use event handler functions with events</h4>
                 <ol>
-                    <li><span class="bold">Element Selection:</span> Select the HTML element to which you want to attach an event handler.</li>
+                    <li><span class="bold">Element Selection:</span> Select the HTML element to which you want to attach
+                        an event handler.</li>
                     <li><span class="bold">Event Type:</span> Specify the type of event you want to listen for.</li>
-                    <li><span class="bold">Event Handler Function:</span> Define a JavaScript function that will be executed when the specified event occurs on the selected element</li>
-                    <li><span class="bold">Event Binding:</span>  Bind the event handler function to the selected element and event type</li>
+                    <li><span class="bold">Event Handler Function:</span> Define a JavaScript function that will be
+                        executed when the specified event occurs on the selected element</li>
+                    <li><span class="bold">Event Binding:</span> Bind the event handler function to the selected element
+                        and event type</li>
                 </ol>
                 <h4>There are three main ways to bind/add event handlers to HTML elements:</h4>
                 <ul>
                     <li><span class="bold">Inline Event Handlers:</span>Defined directly in HTML attributes</li>
-                    <li><span class="bold">Event Listener Method:</span>Uses builted in Javascript methods to attach and detach event handlers. </li>
-                    <li><span class="bold">DOM Property Event Handlers:</span>Assigns event handlers as properties in JavaScript</li>
-                    
+                    <li><span class="bold">Event Listener Method:</span>Uses builted in Javascript methods to attach and
+                        detach event handlers. </li>
+                    <li><span class="bold">DOM Property Event Handlers:</span>Assigns event handlers as properties in
+                        JavaScript</li>
+
                 </ul>
             </div>
             <div class="card-section-2">
             </div>
         </div>
 
-            <div class="card ">
-            <div class="card-section-1">
+        <div id = "inline-events" class="card">
+            <div>
                 <h2>Inline Event Handlers</h2>
-                <p>Inline event handlers are defined directly in the HTML element's opening tag of the target element</p>
-                <p>The event handler function is added as the value to an event handler attribute that start with "on". </p>
-            
+                <p>Inline event handlers are defined directly in the HTML element's opening tag of the target element
+                </p>
+                <p>The event handler function is added as the value to an event handler attribute that start with "on".
+                </p>
+
                 <h4>How to use inline event handlers</h4>
                 <ol>
                     <li>Identify the HTML element</li>
                     <li>Add a event attribute to the element</li>
-                    <li>As the value of the event attribute, include the JavaScript code you want to execute when the event occurs</li>
-                        <ul>
-                            <li>This code can be a single statement, or you can call a JavaScript function</li>
-                        </ul>
+                    <li>As the value of the event attribute, include the JavaScript code you want to execute when the
+                        event occurs</li>
+                    <ul>
+                        <li>This code can be a single statement, or you can call a JavaScript function</li>
+                    </ul>
                 </ol>
             </div>
-            <div class="card-section-2 muti-examples">
-                <div class="example-card">
-                <h4>Example: Calling a JavaScript function</h4>
-                <span class="code-blue">&lt;button <span class="code-orange">onclick= "myFunction()"</span> &gt; Click Me &lt;/button&gt;</span>
+            <div class="multi-examples">
+                <div class="example-half-card">
+                    <h4>Example: Calling a JavaScript function</h4>
+                    <div class=" code code-box">
+                        <span class="code-blue">&lt;button <span class="code-orange">onclick= "myFunction()"</span>
+                            &gt; Click Me &lt;/button&gt;</span>
+                        <span class=" code code-green">
+                            &lt;script&gt;</br>
+                            &nbsp; function myFunction() {
+                            </br> &nbsp; &nbsp; &nbsp;console.log("Button clicked!");</br>
+                            &nbsp; }</br>
+                            &lt;/script&gt;
+                        </span>
+                    </div>
+                    <ul>
+                        <li><span class="bold">onclick: </span>is the event handler attribute</li>
+                        <li><span class="bold">myFunction(): </span>is the event handler function</li>
+                        <li>When the button is clicked myFunction() will be executed</li>
 
-                <ul>
-                    <li><span class="bold">onclick: </span>is the event handler attribute</li>
-                    <li><span class="bold">myFunction(): </span>is the event handler function</li>
-                    <li>When the button is clicked myFunction() will be executed</li>
-                    
-                </ul>
+                    </ul>
                 </div>
 
-                <div class="example-card">
-                    <h4>Example: Calling a JavaScript function</h4>
-                <span class="code-blue">&lt;button <span class="code-orange">onclick= "myFunction()"</span> &gt; Click Me &lt;/button&gt;</span>
+                <div class="example-half-card">
+                    <h4>Example: Simple inline JavaScript</h4>
+                    <div class=" code code-box">
+                        <span class="code-blue">&lt;button <span class="code-orange">onclick="alert('HI!')"</span> &gt;
+                            Click Me &lt;/button&gt;</span>
+                    </div>
+                    <ul>
+                        <li><span class="bold">onclick: </span>is the event handler attribute</li>
+                        <li><span class="bold">alert('HI!'): </span>is the event handler function</li>
+                        <li>When the button is clicked an alert box with the message "HI!" will show</li>
 
-                <ul>
-                    <li><span class="bold">onclick: </span>is the event handler attribute</li>
-                    <li><span class="bold">myFunction(): </span>is the event handler function</li>
-                    <li>When the button is clicked myFunction() will be executed</li>
-                    
-                </ul>
+                    </ul>
                 </div>
             </div>
         </div>
 
-
-
-
-
-
-
-
-        <div class="card ">
-            <div class="card-section-1">
+        <div id = "event-listener" class="card ">
+            <div>
                 <h2>Event Listener Method</h2>
                 <p>Event handlers allow developers to define how a web page should respond to events.</p>
-                <p>When an event occurs on a target element, a handler function is executed in response to that event.</p>
+                <p>When an event occurs on a target element, a handler function is executed in response to that event.
+                </p>
 
                 <h4>There are three main ways to add event handlers to HTML elements:</h4>
                 <ul>
                     <li><span class="bold">Inline Event Handlers:</span>Defined directly in HTML attributes</li>
-                    <li><span class="bold">Event Listener Method:</span>Uses builted in Javascript methods to attach and detach event handlers. </li>
-                    <li><span class="bold">DOM Property Event Handlers:</span>Assigns event handlers as properties in JavaScript</li>
-                    
+                    <li><span class="bold">Event Listener Method:</span>Uses builted in Javascript methods to attach and
+                        detach event handlers. </li>
+                    <li><span class="bold">DOM Property Event Handlers:</span>Assigns event handlers as properties in
+                        JavaScript</li>
+
                 </ul>
             </div>
-            <div class="card-section-2">
+            <div>
             </div>
         </div>
 
-        <div class="card ">
-            <div class="card-section-1">
+        <div id = "dom-property-event-handler" class="card ">
+            <div>
                 <h2>DOM Property Event Handlers</h2>
                 <p>Event handlers allow developers to define how a web page should respond to events.</p>
-                <p>When an event occurs on a target element, a handler function is executed in response to that event.</p>
+                <p>When an event occurs on a target element, a handler function is executed in response to that event.
+                </p>
 
                 <h4>There are three main ways to add event handlers to HTML elements:</h4>
                 <ul>
                     <li><span class="bold">Inline Event Handlers:</span>Defined directly in HTML attributes</li>
-                    <li><span class="bold">Event Listener Method:</span>Uses builted in Javascript methods to attach and detach event handlers. </li>
-                    <li><span class="bold">DOM Property Event Handlers:</span>Assigns event handlers as properties in JavaScript</li>
-                    
+                    <li><span class="bold">Event Listener Method:</span>Uses builted in Javascript methods to attach and
+                        detach event handlers. </li>
+                    <li><span class="bold">DOM Property Event Handlers:</span>Assigns event handlers as properties in
+                        JavaScript</li>
+
                 </ul>
             </div>
-            <div class="card-section-2">
+            <div>
             </div>
         </div>
     </main>
-
-
-
 </body>
 
 </html>
