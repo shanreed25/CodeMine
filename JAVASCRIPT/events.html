@@ -83,11 +83,21 @@
             <div class="card-section-1">
                 <h2>Inline Event Handlers</h2>
                 <p>Inline event handlers are defined directly in the HTML element's opening tag of the target element</p>
-                <p>The event handler function is added as the value to the event handler attribute</p>
+                <p>The event handler function is added as the value to an event handler attribute that start with "on". </p>
+            
+                <h4>How to use inline event handlers</h4>
+                <ol>
+                    <li>Identify the HTML element</li>
+                    <li>Add a event attribute to the element</li>
+                    <li>As the value of the event attribute, include the JavaScript code you want to execute when the event occurs</li>
+                        <ul>
+                            <li>This code can be a single statement, or you can call a JavaScript function</li>
+                        </ul>
+                </ol>
             </div>
-            <div class="card-section-2">
-                
-                <h4>Example</h4>
+            <div class="card-section-2 muti-examples">
+                <div class="example-card">
+                <h4>Example: Calling a JavaScript function</h4>
                 <span class="code-blue">&lt;button <span class="code-orange">onclick= "myFunction()"</span> &gt; Click Me &lt;/button&gt;</span>
 
                 <ul>
@@ -96,12 +106,32 @@
                     <li>When the button is clicked myFunction() will be executed</li>
                     
                 </ul>
+                </div>
+
+                <div class="example-card">
+                    <h4>Example: Calling a JavaScript function</h4>
+                <span class="code-blue">&lt;button <span class="code-orange">onclick= "myFunction()"</span> &gt; Click Me &lt;/button&gt;</span>
+
+                <ul>
+                    <li><span class="bold">onclick: </span>is the event handler attribute</li>
+                    <li><span class="bold">myFunction(): </span>is the event handler function</li>
+                    <li>When the button is clicked myFunction() will be executed</li>
+                    
+                </ul>
+                </div>
             </div>
         </div>
 
-                <div class="card ">
+
+
+
+
+
+
+
+        <div class="card ">
             <div class="card-section-1">
-                <h2>Event Handling Methods</h2>
+                <h2>Event Listener Method</h2>
                 <p>Event handlers allow developers to define how a web page should respond to events.</p>
                 <p>When an event occurs on a target element, a handler function is executed in response to that event.</p>
 
@@ -117,9 +147,9 @@
             </div>
         </div>
 
-                <div class="card ">
+        <div class="card ">
             <div class="card-section-1">
-                <h2>Event Handling Methods</h2>
+                <h2>DOM Property Event Handlers</h2>
                 <p>Event handlers allow developers to define how a web page should respond to events.</p>
                 <p>When an event occurs on a target element, a handler function is executed in response to that event.</p>
 

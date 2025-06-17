@@ -49,7 +49,7 @@ h1{
     border: 1px solid #ccc;
     padding: 20px;
     border-radius: 5px;
-    width: calc(50% - 30px); /* Example: Two cards per row with spacing */
+    width: calc(50% - 30px); /* Two cards per row with spacing */
     box-sizing: border-box; /* Include padding and border in width */
 }
 
@@ -57,7 +57,7 @@ h1{
     border: 1px solid #ccc;
     padding: 20px;
     border-radius: 5px;
-    width: calc(100% - 40px); /* Example: Two cards per row with spacing */
+    width: calc(100% - 40px); /* One card on the row */
     box-sizing: border-box; /* Include padding and border in width */
 }
 
@@ -93,7 +93,19 @@ h1{
 
 
 
-
+/* Examples */
+.muti-examples{
+    display: flex;
+    flex-wrap: wrap; /* Wrap cards for responsiveness */
+    gap: 20px; /* Add spacing between cards */
+}
+.example-card{
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    width: calc(50% - 10px); /* Two cards per row with spacing */
+    box-sizing: border-box; /* Include padding and border in width */
+}
 
 
 
