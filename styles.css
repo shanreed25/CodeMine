@@ -86,9 +86,17 @@ h1{
     color: blue;
 }
 
+.code-purple{
+    color: blueviolet;
+}
+
 .code-green{
     color: green;
     font-weight: bolder;
+}
+
+.code-orange-yellow{
+    color: rgb(226, 149, 5);
 }
 
 /* Code as Plain text */
