@@ -53,6 +53,14 @@ h1{
     box-sizing: border-box; /* Include padding and border in width */
 }
 
+.whole-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    width: calc(100% - 40px); /* Example: Two cards per row with spacing */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
 /* Code as Plain text */
 .code{
     font-weight: bolder;
