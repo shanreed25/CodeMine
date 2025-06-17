@@ -259,27 +259,52 @@
                     </br>
                     <span class="code-purple">&lt;/script&gt;</span>
                 </div>
-
+                <p>When the button with the ID myButton is clicked, 
+                    the alert message "Button Clicked!" will be displayed</p>
             </div>
-            <p>This is the most flexible method, allowing multiple handlers for the same event.</p>
+                 <h4>Key Features and Benefits</h4>
+                <ul>
+                    <li><span class="bold">Multiple Event Listeners: </span>You can add multiple event listeners to the same element for the same event.</li>
+                    <li><span class="bold">Dynamic Handling: </span>You can dynamically add and remove event listeners using removeEventListener()</li>
+                    <li><span class="bold">Flexibility: </span>Supports a wide range of events, allowing you to respond to various user interactions and browser events</li>
+                    <li><span class="bold">Event Propagation: </span>Allow you to control the order in which event handlers are executed during the capturing and bubbling phases</li>
+                </ul>
+
+                <h4>Important Notes</h4>
+                <ul>
+                    <li>Do not use the "on" prefix when specifying the event name. (e.g., use "click" instead of "onclick")</li>
+                    <li>The function passed as an argument to addEventListener can be an anonymous function or a named function</li>
+                    <li>The "this" keyword inside the event handler function refers to the element on which the event occurred.</li>
+                    <li>The event object is automatically passed as the first argument to the event handler function. It contains information about the event.</li>
+                </ul>
         </div>
         <!-- DOM Property Event Handler -------------------------------------------->
         <div id="dom-property-event-handler" class="card ">
             <div>
-                <h2>Custom Events</h2>
-                <p>Event handlers allow developers to define how a web page should respond to events.</p>
-                <p>When an event occurs on a target element, a handler function is executed in response to that event.
-                </p>
-
-                <h4>There are three main ways to add event handlers to HTML elements:</h4>
+                <h2>DOM Property Event Handlers</h2>
+                <p>A way to attach event listeners to elements in JavaScript by setting the element's event property directly to a function</p>
                 <ul>
-                    <li><span class="bold">Inline Event Handlers:</span>Defined directly in HTML attributes</li>
-                    <li><span class="bold">Event Listener Method:</span>Uses builted in Javascript methods to attach and
-                        detach event handlers. </li>
-                    <li><span class="bold">DOM Property Event Handlers:</span>Assigns event handlers as properties in
-                        JavaScript</li>
-
+                    <li>Assigns event handlers as properties</li>
+                    <li>The property name for event handlers typically starts with "on" followed by the event name, such as "onclick", "onload", or "onfocus"</li>
+                    <li>It separates HTML and JavaScript, improving readability</li>
+                    <li>Only one handler can be assigned to an event property for a given element</li>
                 </ul>
+    
+                <h4>How to use DOM Property Event Handlers</h4>
+                <ol>
+                    <li>Select the HTML element you want to add the event handler to</li>
+                        <ul>
+                            <li>You can do this using methods like "document.getElementById()" or "document.querySelector()"</li>
+                            <li>const myButton = document.getElementById('myButton');</li>
+                        </ul>
+                    <li>Assign/Attach a function to the corresponding DOM property event handler of the selected element</li>
+                        <ul>
+                            <li>This function will be executed when the specified event occurs</li>
+                            <li>myButton.onclick = function() { alert('Button was clicked!');};</li>
+                            <li>You can also do this by assigning a pre-defined function</li>
+                        </ul>
+                    <li>The event object: When the event handler is triggered, it receives an event object as an argument. This object contains useful information about the event, such as the event type, the target element, and coordinates for mouse events. </li>
+                </ol>
             </div>
             <div>
             </div>
