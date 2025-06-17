@@ -141,11 +141,56 @@
                     </ul>
                 </div>
             </div>
+            <h4>Drawbacks of Inline Event Handlers </h4>
+            <ul>
+                <li><span class="bold">Mixing concerns:</span> They mix HTML and JavaScript, making code harder to maintain and understand</li>
+                <li><span class="bold">Limited flexibility:</span> Only one handler can be attached per event per element, and they cannot be dynamically added or removed</li>
+                <li><span class="bold">Potential security risks:</span> Inline scripts can increase vulnerability to cross-site scripting (XSS) attacks</li>
+                <li><span class="bold">Global scope issues:</span> Functions called from inline handlers must be globally accessible, which can lead to namespace conflicts</li>
+                <li><span class="bold">Accessibility issues:</span> Certain device-dependent inline handlers like onmouseover can cause accessibility problems. </li>
+            </ul>
+            <p>Inline event handlers should be used for simple basic uses but are not recommended for complex applications due to these drawbacks</p>
+        
+            <h4>Alternative approaches:</h4>
+             <ul>
+                <li><span class="bold">addEventListener():</span> They mix HTML and JavaScript, making code harder to maintain and understand</li>
+                    <ul>
+                        <li>The standard and recommended way to handle events</li>
+                        <li>Allows attaching multiple event listeners to an element without overwriting existing ones</li>
+                        <li>Offers more control over event propagation (bubbling/capturing)</li>
+                    </ul>
+                <li><span class="bold">Frameworks like React and Vue.js:</span> Only one handler can be attached per event per element, and they cannot be dynamically added or removed</li>
+                    <ul>
+                        <li>Component-based approaches manage event handling in a more structured and maintainable way. </li>
+                    </ul>
+            </ul>
         </div>
 
         <div id = "event-listener" class="card ">
             <div>
                 <h2>Event Listener Method</h2>
+                <p>The addEventListener() method takes the event name and the function to be executed as arguments. This method is recommended for its power and scalability, allowing multiple handlers, providing more control over event propagation, and being easier to remove with removeEventListener(). </p>
+                <p>When an event occurs on a target element, a handler function is executed in response to that event.
+                </p>
+
+                <h4>There are three main ways to add event handlers to HTML elements:</h4>
+                <ul>
+                    <li><span class="bold">Inline Event Handlers:</span>Defined directly in HTML attributes</li>
+                    <li><span class="bold">Event Listener Method:</span>Uses builted in Javascript methods to attach and
+                        detach event handlers. </li>
+                    <li><span class="bold">DOM Property Event Handlers:</span>Assigns event handlers as properties in
+                        JavaScript</li>
+
+                </ul>
+            </div>
+            <div>
+            </div>
+            <p>This is the most flexible method, allowing multiple handlers for the same event.</p>
+        </div>
+
+        <div id = "dom-property-event-handler" class="card ">
+            <div>
+                <h2>DOM Property Event Handlers</h2>
                 <p>Event handlers allow developers to define how a web page should respond to events.</p>
                 <p>When an event occurs on a target element, a handler function is executed in response to that event.
                 </p>
@@ -164,7 +209,7 @@
             </div>
         </div>
 
-        <div id = "dom-property-event-handler" class="card ">
+                <div id = "dom-property-event-handler" class="card ">
             <div>
                 <h2>DOM Property Event Handlers</h2>
                 <p>Event handlers allow developers to define how a web page should respond to events.</p>
