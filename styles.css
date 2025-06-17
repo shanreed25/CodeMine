@@ -85,6 +85,36 @@ h1{
     width: 25rem;
 }
 
+
+/* Special Text */
+.bold{
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     body {
