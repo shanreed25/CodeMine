@@ -49,6 +49,12 @@
 ## Web Development Specific Concepts:
 - DOM Manipulation:
     - Interacting with HTML elements.
-- Event Handling:
-    - Responding to user interactions. 
+- [ ] Events
+    - [x] Event Handling Methods
+    - [x] Event Object
+    - [x] DOM Property Event handlers
+    - [ ] Event Propagation (Bubbling and Capturing)
+    - [x] Inline Event Handlers
+    - [x] Event Listener Method
+    - [ ] Custom Events
 This categorization provides a structured approach to learning JavaScript concepts, building upon the foundational knowledge to grasp more complex topics. Medium also offers a comprehensive guide on essential JavaScript concepts. Remember that continuous learning and practice are key to mastering the language. 
