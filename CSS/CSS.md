@@ -33,3 +33,9 @@ External Stylesheets: Storing CSS code in separate .css files for better organiz
 Selector Lists: Grouping selectors with the same style definitions to minimize code.
 Code Organization: Writing clean and efficient code, avoiding duplication.  
 By understanding these categories, you can build a solid foundation for learning and mastering CSS. Remember to practice and explore documentation like the MDN Web Docs to deepen your knowledge. 
+----------------------------------------------------------------------------
+# Dash
+Depending on your needs, you might consider using an "en dash" (–) or "em dash" (—) as they are generally longer than a regular hyphen. However, this won't directly lower the dash's position on the line, but it might change the visual appearance depending on the desired outcome. 
+```style="vertical-align: sub; font-size: 0.8em;"```
+- vertical-align: sub;: This CSS property lowers the element to the subscript position, effectively dropping it below the baseline of the surrounding text.
+- font-size: 0.8em;: This reduces the size of the dash slightly, which can enhance the visual effect of it being a subscript. You can adjust this value to your preference. 
