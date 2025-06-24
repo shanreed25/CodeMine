@@ -1,25 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Mine - JavaScript</title>
+    <title>Code Mine - JavaScript Event handling</title>
     <link rel="stylesheet" href="../styles.css">
 </head>
+
 <body>
-       <header class="header">
-        <h1>Code Mine</h1>
+    <header class="header">
+        <h1>Code Mine - DOM Manipulation</h1>
         <!-- Add other header elements like search bar, user profile, etc. -->
     </header>
 
-    <aside class="sidebar">
-        <!-- Add your navigation links here -->
-        <ul>
-            <li><a href="../index.html">Dashboard</a></li>
-            <li><a href="#">Users</a></li>
-            <li><a href="#">Settings</a></li>
-        </ul>
-    </aside>
-    <h1></h1>
+    <nav class="menu-container">
+        <a href="../index.html">Dashboard</a>
+        <a href="#">Users</a>
+        <a href="#">Settings</a>
+    </nav>
+    <main class="main-content">
+        <!-- Events ---------------------------------------------------------------->
+        <div id="" class="card">
+            <h2>Manipulating the content of HTML elements</h2>
+            <p>In JavaScript, the innerHTML, innerText, and textContent properties 
+                are used to manipulate the content of HTML elements, but they differ
+                 in how they handle HTML tags, formatting, and hidden elements. 
+            </p>
+            <h3>innerHTML</h3>
+            <ul>
+                <li><span class="bold">What it does: </span>Gets or sets the HTML markup and text content within an element.</li>
+                <li><span class="bold">How it handles HTML: </span>It interprets HTML tags within the string you set, potentially adding or removing elements and altering the element's structure.</li>
+                <li><span class="bold">Includes: </span>All HTML tags, spacing, line breaks, and formatting irregularities present in the HTML markup.</li>
+                <li><span class="bold">Use Cases: </span>When you want to see the HTML markup, set dynamic HTML content, or alter an element's structure.</li>
+                <li><span class="bold">Security consideration: </span> Be cautious! Using with unsanitized user input can expose your application to cross-site scripting (XSS) attacks, as it can parse and execute malicious scripts within HTML tags. </li>
+                <li><span class="bold">: </span></li>
+            </ul>
+            <h3>innerText</h3>
+            <ul>
+                <li><span class="bold">What it does: </span> Retrieves or sets the raw text content of a node, including all text and whitespace within it.</li>
+                <li><span class="bold">How it handles HTML: </span>It ignores HTML tags.</li>
+                <li><span class="bold">Includes: </span>Only visible text, meaning it doesn't include text hidden by CSS (e.g., using ).</li>
+                <li><span class="bold">Use Cases: </span>When you want to see or manipulate the text content as the user sees it.</li>
+                <li><span class="bold">Performance: </span>Can be less efficient than because it's aware of styling and may trigger a reflow to ensure the text is rendered correctly. </li>
+                <li><span class="bold">: </span></li>
+            </ul>
+            <h3>textContent</h3>
+            <ul>
+                <li><span class="bold">What it does: </span>Retrieves or sets the raw text content of a node, including all text and whitespace within it.</li>
+                <li><span class="bold">How it handles HTML: </span>It ignores HTML tags.</li>
+                <li><span class="bold">Includes: </span>All text, regardless of visibility, including text in and elements.</li>
+                <li><span class="bold">Use Cases: </span> When you want the raw text content of an element, including hidden text, and when performance is a concern.</li>
+                <li><span class="bold">Performance: </span> Generally faster than as it doesn't account for styling and doesn't trigger reflows when reading the value. </li>
+                <li><span class="bold">: </span></li>
+            </ul>
+        </div>
+        <p>
+            In JavaScript, , , and are all used to manipulate the content of HTML elements, but they differ in how they handle HTML tags, spacing, and hidden elements. 
+Here's a breakdown of their key differences: 
+: Includes HTML tags and spacing, and retrieves/sets the HTML content of an element. It's useful for manipulating structure or styling but poses a security risk (XSS) if used with unsanitized user content.
+: Returns only the visible, rendered text, excluding HTML tags. It accounts for CSS styling and visibility but can be slower than due to triggering reflows. It's useful for working with text as the user sees it.
+: Returns the raw text content, including text within and tags, ignoring HTML and styling. It's generally faster and safer for user-generated content than . 
+In essence: works with HTML markup and text, with visible text respecting CSS, and with raw text. 
+Choose based on your needs: for dynamic HTML modification, for visible text, and for raw text where performance or security is a concern. 
+        </p>
+     
+ 
+    </main>
 </body>
+
 </html>
