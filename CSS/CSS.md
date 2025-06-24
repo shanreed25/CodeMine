@@ -39,3 +39,53 @@ Depending on your needs, you might consider using an "en dash" (–) or "em dash
 ```style="vertical-align: sub; font-size: 0.8em;"```
 - vertical-align: sub;: This CSS property lowers the element to the subscript position, effectively dropping it below the baseline of the surrounding text.
 - font-size: 0.8em;: This reduces the size of the dash slightly, which can enhance the visual effect of it being a subscript. You can adjust this value to your preference. 
+
+# Bottom Border
+border bottom syntax
+The border-bottom property in CSS is a shorthand property used to define the bottom border of an element. It allows you to set the width, style, and color of the bottom border in a single line of code. 
+The syntax is as follows: 
+css
+border-bottom: <border-width> <border-style> <border-color>;
+Use code with caution.
+
+Here's a breakdown of the individual components and their options:
+1. border-width
+Keywords:
+thin: Specifies a thin bottom border.
+medium: Sets a medium border width (default).
+thick: Sets a thick border width.
+Length values: You can specify the width using explicit length units like px, em, rem, etc.
+Example: border-bottom: 2px solid blue; 
+2. border-style
+Keywords:
+none: Specifies no border (default).
+hidden: Similar to none, but can affect border conflict resolution in tables.
+dotted: Specifies a dotted border.
+dashed: Specifies a dashed border.
+solid: Specifies a solid border.
+double: Specifies a double border.
+groove: Creates a 3D grooved effect.
+ridge: Creates a 3D ridged effect.
+inset: Creates a 3D inset effect.
+outset: Creates a 3D outset effect.
+initial: Sets the property to its default value.
+inherit: Inherits the value from the parent element. 
+3. border-color
+Color values: You can use color names, hexadecimal codes, or RGB values to specify the color.
+Example: border-bottom: medium dashed blue;
+transparent: Makes the border transparent.
+initial: Sets the property to its default value.
+inherit: Inherits the value from the parent element. 
+Example:
+css
+/* Sets a 2px solid blue bottom border */
+selector {
+  border-bottom: 2px solid blue;
+}
+Use code with caution.
+
+Important Notes:
+The order of the values (border-width, border-style, border-color) doesn't matter when using the shorthand border-bottom property.
+You can omit one or two of the values in the shorthand property, and the omitted values will take their default values.
+If you don't specify the border-style, the border won't be displayed, as the default style is none.
+Always declare the border-style or border-bottom-style before specifying the border-bottom-width or border-bottom-color. 
