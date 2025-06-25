@@ -7,17 +7,22 @@
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-       <header class="header">
+    <header class="header">
         <h1>Code Mine - CSS Units</h1>
         <!-- Add other header elements like search bar, user profile, etc. -->
     </header>
+    <div class="menu-container">
+        <nav class="menu-nav">
+            <a href="../index.html">Dashboard</a>
+            <a href="#">Users</a>
+            <a href="#">Settings</a>
+        </nav>
 
+        <div class="toggle-button-container">
+            <button id="dark-mode-toggle">Toggle Dark Mode</button>
+        </div>
+    </div>
     
-    <nav class="menu-container">
-        <a href="../index.html">Dashboard</a>
-        <a href="#">Users</a>
-        <a href="#">Settings</a>
-    </nav>
     <main class="main-content">
         <div id="css-tables" class="card">
             <div>
@@ -27,41 +32,61 @@
                     you can create more flexible, responsive, and accessible web designs.</p>
                 <h4>Common Units</h4>
                     <ol>
-                        <li>Pixels: px</li>
+                        <li><span class="bold">Pixels(px): </span></li>
                             <ul>
                                 <li>Absolute Unit, which represent a fixed size. While the actual length of a pixel can vary based on device resolution and DPI, it is generally considered a fixed measurement in web design.</li>
                                 <li>Ideal for elements where a fixed size is required, such as small icons, borders, or when precise control over the layout is essential.</li>
                                 <li>Using px for fonts and overall layouts can hinder responsiveness, as the element's size won't adjust with changes in viewport size or user preferences. </li>
                             </ul>
                         
-                        <li>Em: em</li>
+                        <li><span class="bold">Em(em)</span></li>
                             <ul>
                                 <li>Relative Unit that is based on the font size of the parent element. This means that the size of an element set with em units will change if the font size of its parent element changes</li>
                                 <li>Useful for scaling elements relative to the parent's font size, like for margins or padding of nested elements.</li>
                                 <li>Can become complex to manage in deeply nested elements due to the cascading effect of font size inheritance. </li>
                             </ul>
 
-                        <li>Root em: rem</li>
+                        <li><span class="bold">Root em(rem): </span></li>
                             <ul>
                                 <li>Relative unit that is relative to the font size of the root element (usually the <html> tag)and leads to consistent scaling across the entire document.</li>
                                 <li> Recommended for global font sizes, consistent spacing, and for creating responsive designs that adapt to user browser preferences</li>
                                 <li>Offers better control and predictability compared to em in nested elements. </li>
                             </ul>
 
-                        <li>Viewport Width: vw, Viewport Height: vh</li>
+                        <li><span class="bold">Viewport Width(vw), Viewport Height(vh): </span></li>
                             <ul>
                                 <li>Relative to the dimensions of the viewport (the visible area of the browser window)</li>
                                 <li>Perfect for elements that need to scale with the browser window, like full-screen sections or responsive typography</li>
                                 <li>Useful for making elements fill the entire screen, but setting font sizes solely with these units can lead to readability issues on some screens. </li>
                             </ul>
 
-                        <li>Percentage: %</li>
+                        <li><span class="bold">Percentage(%): </span></li>
                             <ul>
                                 <li>Relative to size of parent element and is useful for creating fluid layouts where elements should adapt to their containers</li>
                                 <li>Commonly used for widths, margins, and padding, allowing elements to grow or shrink based on their parent's dimensions</li>
                                 <li> Similar to em, percentage units are relative to their parent container, which can sometimes lead to unexpected results if the parent's size is not clearly defined</li>
                             </ul>
                     </ol>
+            </div>
+        </div>
+        
+         <div id="css-tables" class="card">
+            <div>
+                <h2>Should You Use One or Multiple CSS Units</h2>
+                <p>It's generally better to use multiple CSS units depending on the specific
+                   context and the element you're styling, rather than strictly sticking to
+                   one unit for everything. 
+                </p>
+                <p>Different CSS units are designed for different purposes and offer distinct advantages</p>
+                <h4></h4>
+                <ul>
+                    <li><span class="bold">Pixels(px): </span>Ideal for elements that require a fixed, precise size, such as images. </li>
+                    <li><span class="bold">Ems(em): </span>Relative to the font size of the parent element, useful for elements that need to scale with the font size.</li>
+                    <li><span class="bold">Rems(rem): </span>Relative to the root font size, helpful for achieving consistency and avoiding cascading issues. </li>
+                    <li><span class="bold">Percentage(%): </span>Excellent for creating fluid layouts that scale based on the available space within a container or the viewport. </li>
+                    <li><span class="bold">ch: </span>Useful for specifying width in terms of character count, which can be helpful for ensuring readability and maintaining consistent line lengths.  </li>
+                </ul>
+
             </div>
         </div>
 

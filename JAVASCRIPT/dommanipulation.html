@@ -65,6 +65,23 @@ In essence: works with HTML markup and text, with visible text respecting CSS, a
 Choose based on your needs: for dynamic HTML modification, for visible text, and for raw text where performance or security is a concern. 
         </p>
      
+        <p>
+            Generally, for dynamically adding text to a web page, you should prefer using over and due to its inherent security and performance advantages. 
+Here's a breakdown of why:
+textContent:
+Security: is considered the safest option. It treats the content as plain text, regardless of whether it looks like HTML tags. It does not parse or execute HTML, making it less susceptible to Cross-Site Scripting (XSS) attacks, especially when dealing with user-generated or untrusted content. As stated by MDN Web Docs, "Using can prevent XSS attacks".
+Performance: is generally faster than because it doesn't trigger reflows (recalculating the layout of the page), which can be computationally expensive.
+Best Use Case: Use when you primarily need to work with plain text content without considering HTML markup or the visibility of elements. 
+innerText:
+Behavior: focuses on the rendered text content, respecting CSS styling and not including text within hidden elements.
+Performance: can be slower than as it may cause the browser to trigger a reflow to ensure the text is rendered correctly, especially with complex pages or frequent updates.
+Best Use Case: Use when you need to interact with or display text that is visible on the page and takes into account CSS styling, like when displaying user-readable information. 
+innerHTML:
+Power & Risk: allows you to access or modify the entire HTML content of an element, including HTML tags. While this offers great flexibility for dynamic content creation (like inserting complex HTML structures), it's also vulnerable to XSS attacks if not handled carefully.
+Security Risk: If you insert untrusted or unsanitized content using , an attacker could potentially inject malicious scripts that get executed by the browser. As highlighted by MDN Web Docs, "When inserting user-supplied data you should always consider using a sanitizer library, in order to sanitize the content before it is inserted".
+Performance: Setting can impact performance as the browser needs to parse the new HTML and update the DOM, especially with large or frequent updates.
+Best Use Case: Use only when you specifically need to insert or retrieve HTML markup and you have a secure way to sanitize the content, or when you are dealing with trusted content. 
+        </p>
  
     </main>
 </body>

@@ -97,3 +97,7 @@ In essence, HTML provides the structure, CSS handles the style, and JavaScript a
 - [ ] Regular Expressions
 - [ ] Working with Databases and APIs
 - [ ] Advanced Libraries and Frameworks
+--------------------------------------
+
+# Website Features
+- Dark Mode Toggle

@@ -14,20 +14,28 @@
         <h1>Code Mine</h1>
         <!-- Add other header elements like search bar, user profile, etc. -->
     </header>
+    <div class="menu-container">
+        <nav class="menu-nav">
+            <a href="../index.html">Dashboard</a>
+            <a href="#">Users</a>
+            <a href="#">Settings</a>
+        </nav>
 
-    <nav class="menu-container">
-        <a href="../index.html">Dashboard</a>
-        <a href="#">Users</a>
-        <a href="#">Settings</a>
-    </nav>
+        <div class="toggle-button-container">
+            <button id="dark-mode-toggle">Toggle Dark Mode</button>
+             <!-- a data attribute to the button, which can be useful for targeting it with JavaScript.
+            <button data-theme-toggle>Toggle Dark Mode</button> -->
+        </div>
+    </div>
 
-        <div>
+
+    <div>
             <h4>New to coding? Start here!</h4>
             <p>This website simplifies learning for HTML, CSS, JavaScript, and Python 
                 with clear explanations and beginner-friendly concepts. 
                 It empowers users to build websites and understand fundamental programming principles</p>
             <p>Using mutiple resources, continuous learning and practice are key to mastering any coding language.</p>
-        </div>
+    </div>
     <main class="main-content">
         <div class="card">
             <h2>HTML</h2>
@@ -131,7 +139,7 @@
                 <li><a href="./PYTHON/advancelibrariesframeworks.html">Advanced Libraries and Frameworks</a></li>
             </ul>
         </div>
-        <!-- Add more content sections like charts, tables, etc. -->
+
     </main>
 
     <script src="./script.js"></script>
