@@ -19,14 +19,91 @@
             <a href="#">Users</a>
             <a href="#">Settings</a>
         </nav>
-
         <div class="toggle-button-container">
             <button id="dark-mode-toggle">Toggle Dark Mode</button>
         </div>
     </div>
     <main class="main-content">
-        <!-- Events ---------------------------------------------------------------->
-        <div id="" class="card">
+        <!-- DOM ---------------------------------------------------------------->
+         <div class="card">
+            <h2>Document Object Model(DOM)</h2>
+            <p>
+                The Document Object Model (DOM) is a programming interface that 
+                represents an HTML or XML document as a tree-like structure of 
+                nodes and objects. Interacting with the Document Object Model 
+                (DOM) is fundamental to creating dynamic and interactive web 
+                pages using JavaScript. It allows you to access, manipulate, 
+                and respond to the structure, style, and content of a web document.
+            </p>
+            <p>
+                The DOM is a programming interface for web documents, treating them 
+                as a tree of objects. Each element, attribute, text, and comment in 
+                your HTML document is represented as a node in this tree. This tree 
+                structure allows JavaScript to access and manipulate the document's 
+                structure, style, and content programmatically.
+            </p>
+            <h3>Key DOM Objects</h3>
+            <ul>
+                <li><span class="bold">Document Object: </span>Represents the entire HTML document (the root of the tree).</li>
+                <li><span class="bold">Element Objects: </span>Represent HTML elements and allow manipulating their properties, styles, and content.</li>
+                <li><span class="bold">Node Objects: </span>A more general term for various types of nodes in the DOM, including elements, text, and comments.</li>
+            </ul>
+         </div>
+         
+         
+         
+         <div class="card">
+            <h2>Accessing DOM Elements</h2>
+            <p>You need to select specific elements within the DOM to interact with them.</p>
+            <h4>Common methods for selecting elements</h4>
+            <ul>
+                <li><span class="bold">document.getElementById(): </span>Selects an element by its unique id attribute.</li>
+                <li><span class="bold">document.querySelector(): </span> Selects the first element that matches a specified CSS selector.</li>
+                <li><span class="bold">document.querySelectorAll(): </span>Selects all elements that match a specified CSS selector, returning a NodeList.</li>
+            </ul>
+         </div>
+
+        <div class="card">
+            <h2>Manipulating DOM Elements</h2>
+            <p>Once you've selected elements, you can modify their properties, styles, and content.</p>
+            <h4>Common manipulation techniques</h4>
+            <ul>
+                <li><span class="bold">Changing text content: </span>Use textContent or innerText.</li>
+                <li><span class="bold">Modifying HTML structure: </span>Use innerHTML (use with caution due to security risks).</li>
+                <li><span class="bold">Changing styles: </span>Access the style property and modify CSS properties.</li>
+                <li><span class="bold">Adding and removing classes: </span>Use classList methods like add(), remove(), and toggle().</li>
+                <li><span class="bold">Creating and adding new elements: </span> Use document.createElement() and appendChild() or insertBefore().</li>
+                <li><span class="bold">Removing existing elements:</span>Use element.remove() or parentNode.removeChild().</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Event Handling</h2>
+            <p>Event handling allows your web page to respond to user actions or system events.</p>
+            <p>
+                You can use the addEventListener() method to attach a function that will be executed when a specific event occurs on an element. 
+                This method takes the event name and the event handler function as arguments. The event handler function tells the browser what to do when the event happens.
+            </p>
+            <h4>Common types of events</h4>
+            <ul>
+                <li>Mouse events (e.g., click, mouseover, mouseout)</li>
+                <li>Keyboard events (e.g., keydown, keyup, keypress)</li>
+                <li>Form events (e.g., submit, change, focus)</li>
+                <li>Window events (e.g., load, unload, resize)</li>
+            </ul>
+            <p>Whenever an event happens a event object is created, which contains information/properties about the event that was fired.
+                This event object is passed to the event handler function giving the function access to the properties of the event that 
+                will allow you to control what happens in response to the event
+            </p>
+            <h5><a href="./events.html" class="card-link" >Learn More About Event</a></h5>
+         </div>
+
+        
+        
+        
+        
+        
+         <div  class="card">
             <h2>Manipulating the content of HTML elements</h2>
             <p>In JavaScript, the innerHTML, innerText, and textContent properties 
                 are used to manipulate the content of HTML elements, but they differ
@@ -60,34 +137,6 @@
                 <li><span class="bold">: </span></li>
             </ul>
         </div>
-        <p>
-            In JavaScript, , , and are all used to manipulate the content of HTML elements, but they differ in how they handle HTML tags, spacing, and hidden elements. 
-Here's a breakdown of their key differences: 
-: Includes HTML tags and spacing, and retrieves/sets the HTML content of an element. It's useful for manipulating structure or styling but poses a security risk (XSS) if used with unsanitized user content.
-: Returns only the visible, rendered text, excluding HTML tags. It accounts for CSS styling and visibility but can be slower than due to triggering reflows. It's useful for working with text as the user sees it.
-: Returns the raw text content, including text within and tags, ignoring HTML and styling. It's generally faster and safer for user-generated content than . 
-In essence: works with HTML markup and text, with visible text respecting CSS, and with raw text. 
-Choose based on your needs: for dynamic HTML modification, for visible text, and for raw text where performance or security is a concern. 
-        </p>
-     
-        <p>
-            Generally, for dynamically adding text to a web page, you should prefer using over and due to its inherent security and performance advantages. 
-Here's a breakdown of why:
-textContent:
-Security: is considered the safest option. It treats the content as plain text, regardless of whether it looks like HTML tags. It does not parse or execute HTML, making it less susceptible to Cross-Site Scripting (XSS) attacks, especially when dealing with user-generated or untrusted content. As stated by MDN Web Docs, "Using can prevent XSS attacks".
-Performance: is generally faster than because it doesn't trigger reflows (recalculating the layout of the page), which can be computationally expensive.
-Best Use Case: Use when you primarily need to work with plain text content without considering HTML markup or the visibility of elements. 
-innerText:
-Behavior: focuses on the rendered text content, respecting CSS styling and not including text within hidden elements.
-Performance: can be slower than as it may cause the browser to trigger a reflow to ensure the text is rendered correctly, especially with complex pages or frequent updates.
-Best Use Case: Use when you need to interact with or display text that is visible on the page and takes into account CSS styling, like when displaying user-readable information. 
-innerHTML:
-Power & Risk: allows you to access or modify the entire HTML content of an element, including HTML tags. While this offers great flexibility for dynamic content creation (like inserting complex HTML structures), it's also vulnerable to XSS attacks if not handled carefully.
-Security Risk: If you insert untrusted or unsanitized content using , an attacker could potentially inject malicious scripts that get executed by the browser. As highlighted by MDN Web Docs, "When inserting user-supplied data you should always consider using a sanitizer library, in order to sanitize the content before it is inserted".
-Performance: Setting can impact performance as the browser needs to parse the new HTML and update the DOM, especially with large or frequent updates.
-Best Use Case: Use only when you specifically need to insert or retrieve HTML markup and you have a secure way to sanitize the content, or when you are dealing with trusted content. 
-        </p>
- 
     </main>
 
     <script src="../script.js"></script>

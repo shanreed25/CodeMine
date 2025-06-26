@@ -7,12 +7,15 @@ body {
 /*DARK MODE CSS*/
 /*style your button and elements based on the :root variables.*/
 :root {
-  --background-color: #ffffff; /* Light mode background */
+  --background-color: #E2D1F9; /* Light mode background rgb(240,237,255) */
   --primary-text-color: #000000; /* Light mode text */
   --secondary-text-color: #f0f0f0;
   --header-background-color: #f0f0f0;
-  --nav-banner: rgb(40,42,53);
-  --card-border: #ccc;;
+  --nav-banner: #FFDAB9;
+  --card-border: teal;
+  --bold-text: #000000;
+  --links: teal;
+  --links-hover: #FF0099;
 }
 
 /* Dark mode styles */
@@ -23,6 +26,9 @@ body.dark-mode {
   --header-background-color: #0D0D0D;;
   --nav-banner: #00FF85;
   --card-border: #00FF85;
+  --bold-text: #1E90FF;
+  --links: #00FF85;
+  --links-hover: #FF0099;
 }
 
 body {
@@ -45,7 +51,7 @@ h1{
 
 
 .header {
-    background-color: var(--header-background-color);
+    background-color: var(---background-color);
     padding: 10px;
     text-align: center;
     width: 100%;
@@ -100,6 +106,13 @@ h1{
     box-sizing: border-box; /* Include padding and border in width */
 }
 
+.card-link{
+    color: var(--links)
+}
+
+.card-link:hover{
+    color: var(--links-hover)
+}
 /* Code as Plain text */
 .code{
     font-weight: bolder;
@@ -152,6 +165,7 @@ h1{
 
 /* Special Text */
 .bold{
+    color: var(--bold-text);
     font-weight: bolder;
 }
 
