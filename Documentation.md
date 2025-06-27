@@ -4,6 +4,13 @@
 - "Lora", serif: body
 - "Poppins", sans-serif: h1
 
+# Mode Toggle
+- Button that triggers the dark mode toggle
+- CSS variables are defined for light and dark themes
+- The .dark-mode class overrides the default styles
+- JavaScript code retrieves references to the button and the body element
+- An event listener is attached to the button to trigger the dark mode toggle on clickby adding or removing the dark-mode class from the body element
+- LocalStorage is used to store the user's preference so it persists across sessions
 ## Light Mode
 
 | Element                      | COLOR     | CSS VAR                           |

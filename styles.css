@@ -11,6 +11,8 @@
   --secondary-text-color: #FFFFFF;
   --card-border: #19302B;
   --bold-text: #000000;
+  --dark-mode-button: #90bc56;
+  --mode-icon-margin: .4rem 0 0 2.2rem;
 }
 
 /* Dark mode styles */
@@ -24,6 +26,7 @@ body.dark-mode {
   --secondary-text-color:  #FFFFFF;        
   --card-border: #575757;
   --bold-text: #FFFFFF;
+   --mode-icon-margin: .4rem 0 0 .5rem;
 }
 
 body {
@@ -32,6 +35,7 @@ body {
   margin: 0;
   min-height: 100vh; 
   font-family: "Lora", serif;
+  transition: background-color 0.5s, color 0.5s; /* Smooth transitions */
 }
 
 /*CONTENT*/
@@ -61,13 +65,16 @@ h1{
     width: 100%;
 }
 
-/*Navigation Bar*/
+/*Menu Bar*/
 .menu-container{
     background-color: var( --secondary-background-color);
     width: 100%;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
+/* Navigation Bar */
 .menu-nav {
     width: 80%;
     padding: 1.5em;
@@ -78,12 +85,70 @@ h1{
     color: var(--secondary-text-color);
 }
 
-.toggle-button-container{
-    width: 20%;
-    padding: 20px;
-     
+/* Mode Switch */
+.mode-switch{
+
+}
+/* The switch - the box around the slider */
+.mode-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
 }
 
+/* Hide default HTML checkbox */
+.mode-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--header-background-color);
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
+.mode-icon{
+    margin: var(--mode-icon-margin);
+    position: absolute;
+    color: var(--header-background-color);
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--secondary-background-color);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
 
 
 /*Main Content*/
@@ -160,10 +225,6 @@ h1{
 }
 
 /* Code as Plain Text: Example cards */
-.code{
-    font-weight: bolder;
-}
-
 .code-box{
     font-weight: bolder;
     font-size: .9rem;
@@ -180,11 +241,19 @@ h1{
 }
 
 .code-blue{
-    color: #C2DA7C
+    color: blue;
+}
+
+.code-greenish{
+    color: #C2DA7C;
 }
 
 .code-purple{
     color: blueviolet;
+}
+
+.code-light-blue{
+    color: rgb(58, 158, 240)
 }
 
 .code-green{
@@ -194,6 +263,14 @@ h1{
 
 .code-orange-yellow{
     color: rgb(226, 149, 5);
+}
+
+.code-light-purple{
+    color: rgb(180, 68, 231);
+}
+
+.code-pink{
+    color: rgb(232, 5, 240);
 }
 
 /* Code as Plain text */
@@ -213,10 +290,6 @@ h1{
 .bold{
     font-weight: bolder;
 }
-
-
-
-
 
 
 /*FOOTER*/
@@ -261,3 +334,20 @@ table, th, td {
         width: 100%; /* Full width cards on smaller screens */
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
