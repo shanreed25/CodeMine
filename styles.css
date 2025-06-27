@@ -161,21 +161,42 @@ input:checked + .slider:before {
 }
 
 .card {
+    width: calc(50% - 30px); /* Two cards per row with spacing */
+}
+
+.whole-card {
+    width: calc(100% - 40px); /* One card on the row */
+}
+
+.card, .whole-card{
     border: 1px solid var(--card-border);
     padding: 20px;
     border-radius: 5px;
-    width: calc(50% - 30px); /* Two cards per row with spacing */
     box-sizing: border-box; /* Include padding and border in width */
     background-color: var(--card-background);
 }
 
-.whole-card {
-    border: 1px solid var(--card-border);
-    padding: 20px;
-    border-radius: 5px;
-    width: calc(100% - 40px); /* One card on the row */
-    box-sizing: border-box; /* Include padding and border in width */
+.card-question{
+    font-size: 1.5rem;
 }
+
+.card-answer{
+    color: rgb(175, 175, 69);
+    font-weight: bolder;
+}
+
+.card-answer:hover{
+    color: rgb(77, 241, 55);
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+
+
+
+
+
+
 
 .card-link{
     

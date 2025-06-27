@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Mine - JavaScript Event handling</title>
     <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/525fc14ecf.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -13,15 +17,27 @@
         <h1>Code Mine - DOM Manipulation</h1>
         <!-- Add other header elements like search bar, user profile, etc. -->
     </header>
-    <div class="menu-container">
+        <div class="menu-container">
         <nav class="menu-nav">
             <a href="../index.html">Dashboard</a>
             <a href="#">Users</a>
-            <a href="#">Settings</a>
+            <a href="#">Projects</a>
         </nav>
-        <div class="toggle-button-container">
-            <button id="dark-mode-toggle">Toggle Dark Mode</button>
-        </div>
+        
+        <!-- <button id="dark-mode-toggle" class="dark-mode-button">
+            <i class="fa-solid fa-sun"></i>
+        </button> -->
+
+        <label class="mode-switch">
+            <input id="checkbox" type="checkbox">
+            <span id="slider" class="slider round">
+                <div id="mode-icon" class="mode-icon">
+                        <i class="fa-solid fa-sun"></i>
+                </div>
+            
+            </span>
+        </label>
+    
     </div>
     <main class="main-content">
         <!-- DOM ---------------------------------------------------------------->
@@ -136,6 +152,21 @@
                 <li><span class="bold">Performance: </span> Generally faster than as it doesn't account for styling and doesn't trigger reflows when reading the value. </li>
                 <li><span class="bold">: </span></li>
             </ul>
+        </div>
+
+        <div class="card">
+            <h2>Best Practices</h2>
+            <ul>
+                <li><span class="bold">Cache DOM elements: Store references to frequently accessed elements in variables to avoid repetitive DOM traversal</span></li>
+                <li><span class="bold">Use event delegation: </span>Attach event listeners to parent elements to handle events for multiple child elements efficiently, reducing the number of listeners.</li>
+                <li><span class="bold">Batch DOM updates: </span> Minimize DOM manipulation by grouping updates together and applying them all at once to improve performance.</li>
+                <li><span class="bold">Separate JavaScript from HTML: </span>Keep JavaScript code in external files to improve organization and reusability.</li>
+                <li><span class="bold">Place "script" tags strategically: </span> Place them at the end of the "body" or use the "defer" attribute to ensure the DOM is fully loaded before executing scripts.</li>
+                <li><span class="bold">Remove event listeners when no longer needed: </span>Helps prevent memory leaks, especially when dealing with dynamic content. </li>
+                <li><span class="bold"></span></li>
+            </ul>
+
+            <h5>By understanding these core concepts, you can effectively interact with the DOM in JavaScript to create dynamic, responsive, and engaging web applications.</h5>
         </div>
     </main>
 

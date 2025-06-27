@@ -1,6 +1,4 @@
 //1. Toggle a class on the <body> element (or a container element) when the button is clicked.
-
-
 // 2.Persisting User Preference: remembers the user's preferred mode across page reloads
 
 const body = document.body;
