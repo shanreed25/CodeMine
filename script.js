@@ -3,6 +3,7 @@
 
 // 2.Persisting User Preference: remembers the user's preferred mode across page reloads
 
+const body = document.body;
 
 const checkInput = document.getElementById('checkbox');
 const slider = document.getElementById('mode-icon');
