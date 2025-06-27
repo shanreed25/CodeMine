@@ -1,40 +1,39 @@
-body {
-    margin: 0;
-    min-height: 100vh; /* Ensure full height */
-    font-family: "Lora", serif;
-}
 
-/*DARK MODE CSS*/
 /*style your button and elements based on the :root variables.*/
+/*Light mode stlyes*/
 :root {
-  --background-color: #E2D1F9; /* Light mode background rgb(240,237,255) */
+  --main-background-color: #C2DA7C; /* Light mode background rgb(240,237,255) */
   --primary-text-color: #000000; /* Light mode text */
-  --secondary-text-color: #f0f0f0;
-  --header-background-color: #f0f0f0;
-  --nav-banner: #FFDAB9;
-  --card-border: teal;
+  --secondary-text-color: #FFFFFF;
+  --header-background-color: #90bc56;
+  --secondary-background-color: #19302B;
+  --card-border: #19302B;
   --bold-text: #000000;
-  --links: teal;
-  --links-hover: #FF0099;
+  --card-background: #FFFFFF;
+  --example-card-background-color: #19302B;
+  
 }
 
 /* Dark mode styles */
 body.dark-mode {
-  --background-color: #0D0D0D; /* Dark mode background */
+  --main-background-color: #121212; /* Dark mode background */
   --primary-text-color:  #FFFFFF; /* Dark mode text */
-  --secondary-text-color:  #0D0D0D;        
-  --header-background-color: #0D0D0D;;
-  --nav-banner: #00FF85;
-  --card-border: #00FF85;
-  --bold-text: #1E90FF;
-  --links: #00FF85;
-  --links-hover: #FF0099;
+  --secondary-text-color:  #FFFFFF;        
+  --header-background-color: #121212;
+  --secondary-background-color: #282828;
+  --card-border: #575757;
+  --card-background: #282828;
+  --bold-text: #FFFFFF;
+  --example-card-background-color: #121212;
 }
 
 body {
-  background-color: var(--background-color);
+  background-color: var(--main-background-color);
   color: var(--primary-text-color);
-  transition: background-color 0.5s, color 0.5s; /* Smooth transitions */
+  margin: 0;
+  min-height: 100vh; /* Ensure full height */
+  font-family: "Lora", serif;
+  /* transition: background-color 0.5s, color 0.5s; Smooth transitions */
 }
 
 /*CONTENT*/
@@ -42,6 +41,13 @@ a{
     color: var(--primary-text-color);
     text-decoration: none;
 }
+
+
+a:hover{
+    color: #90bc56;
+    font-weight: bolder;
+}
+
 
 h1{
     font-family: "Poppins", sans-serif;
@@ -51,7 +57,7 @@ h1{
 
 
 .header {
-    background-color: var(---background-color);
+    background-color: var(--header-background-color);
     padding: 10px;
     text-align: center;
     width: 100%;
@@ -61,7 +67,7 @@ h1{
 /*Menu*/
 
 .menu-container{
-    background-color: var(--nav-banner);
+    background-color: var( --secondary-background-color);
     width: 100%; /* Adjust sidebar width as needed */
     display: flex;
 }
@@ -79,7 +85,16 @@ h1{
 .toggle-button-container{
     width: 20%;
     padding: 20px;
+     
 }
+/* 
+button{
+    background-color: #5E6F6A;
+} */
+
+
+
+
 
 /*Main Content*/
 .main-content {
@@ -96,6 +111,7 @@ h1{
     border-radius: 5px;
     width: calc(50% - 30px); /* Two cards per row with spacing */
     box-sizing: border-box; /* Include padding and border in width */
+    background-color: var(--card-background);
 }
 
 .whole-card {
@@ -107,11 +123,11 @@ h1{
 }
 
 .card-link{
-    color: var(--links)
+    /* color: var(--links) */
 }
 
 .card-link:hover{
-    color: var(--links-hover)
+    /* color: var(--links-hover) */
 }
 /* Code as Plain text */
 .code{
@@ -134,7 +150,7 @@ h1{
 }
 
 .code-blue{
-    color: blue;
+    color: #C2DA7C
 }
 
 .code-purple{
@@ -151,8 +167,8 @@ h1{
 }
 
 /* Code as Plain text */
-.code-orange{
-    color: orangered;
+.yellow-green{
+    color: yellowgreen;
 }
 
 
@@ -165,7 +181,6 @@ h1{
 
 /* Special Text */
 .bold{
-    color: var(--bold-text);
     font-weight: bolder;
 }
 
@@ -184,6 +199,8 @@ h1{
     border-radius: 5px;
     width: calc(100% - 10px); /* Two cards per row with spacing */
     box-sizing: border-box; /* Include padding and border in width */
+    background-color: var(--example-card-background-color);
+    color: var(--secondary-text-color);
 }
 
 .example-half-card{
@@ -192,6 +209,9 @@ h1{
     border-radius: 5px;
     width: calc(50% - 10px); /* Two cards per row with spacing */
     box-sizing: border-box; /* Include padding and border in width */
+    background-color: var(--example-card-background-color);
+    color: var(--secondary-text-color);
+
 }
 
 .example-third-card{
@@ -200,11 +220,18 @@ h1{
     border-radius: 5px;
     width: calc(30% - 10px); /* Two cards per row with spacing */
     box-sizing: border-box; /* Include padding and border in width */
+    background-color: var(--example-card-background-color);
+    color: var(--secondary-text-color);
 }
 
 
 
-
+/*FOOTER*/
+footer{
+    min-height: 25rem;
+    background-color: var(--secondary-background-color);
+    color: var(--secondary-text-color);
+}
 
 
 /* Table */

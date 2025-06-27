@@ -100,4 +100,41 @@ In essence, HTML provides the structure, CSS handles the style, and JavaScript a
 --------------------------------------
 
 # Website Features
-- Dark Mode Toggle
+- Dark Mode 
+    - Header Background: #121212
+    - Main Background: #121212
+    - Nav Banner Background: #282828
+    - Card background: #282828
+    - Main Text Color: #FFFFFF
+- Light Mode 
+    - Header: #90bc56
+    - Main background: #C2DA7C
+    - Nav Banner: #19302B
+    - Card background: #FFFFFF
+    - Main Text Color: #000000 : CSS var --primary-text-color
+
+## Light Mode
+
+| Item                         | COLOR     | CSS VAR                           |
+|:-----------------------------|:---------:|:----------------------------------|
+| HEADER                       | #90bc56 | header-background-color           |
+| MAIN CONTENT                 | #C2DA7C | main-background-color             | 
+| NAV BAR, FOOTER              | #19302B | secondary-background-color        |
+| MAIN TEXT                    | #000000 | primary-text-color                |
+| CARD                         | #FFFFFF | card-background                   |
+| NAV BAR, FOOTER TEXT         | #FFFFFF | secondary-text-color              |
+| CARD BORDER                  | #19302B | card-border                       |
+| BOLD TEXT                    | #FFFFFF | bold-text                         |
+| EXAMPLE CARD                 | #19302B | example-card-background-color     |
+
+
+## Dark Mode
+
+| Item             | COLOR     | CSS VAR                      |
+|:-----------------|:---------:|:-----------------------------|
+| HEADER           | #90bc56 | header-background-color      |
+| BACKGROUND       | #C2DA7C | background-color             | 
+| NAV BAR          | #19302B | nav-bar-background-color     |
+| MAIN TEXT COLOR  | #000000 | primary-text-color           |
+| CARD BACKGROUND  | #FFFFFF | card-background              |
+
