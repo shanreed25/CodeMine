@@ -115,26 +115,32 @@ In essence, HTML provides the structure, CSS handles the style, and JavaScript a
 
 ## Light Mode
 
-| Item                         | COLOR     | CSS VAR                           |
+| Element                         | COLOR     | CSS VAR                        |
 |:-----------------------------|:---------:|:----------------------------------|
-| HEADER                       | #90bc56 | header-background-color           |
-| MAIN CONTENT                 | #C2DA7C | main-background-color             | 
+| MAIN CONTENT                 | #C2DA7C | main-background-color             |
 | NAV BAR, FOOTER              | #19302B | secondary-background-color        |
-| MAIN TEXT                    | #000000 | primary-text-color                |
+| HEADER                       | #90bc56 | header-background-color           |
 | CARD                         | #FFFFFF | card-background                   |
+| EXAMPLE CARD                 | #19302B | example-card-background-color     |
+| MAIN TEXT                    | #000000 | primary-text-color                |
 | NAV BAR, FOOTER TEXT         | #FFFFFF | secondary-text-color              |
 | CARD BORDER                  | #19302B | card-border                       |
 | BOLD TEXT                    | #FFFFFF | bold-text                         |
-| EXAMPLE CARD                 | #19302B | example-card-background-color     |
+
 
 
 ## Dark Mode
 
-| Item             | COLOR     | CSS VAR                      |
-|:-----------------|:---------:|:-----------------------------|
-| HEADER           | #90bc56 | header-background-color      |
-| BACKGROUND       | #C2DA7C | background-color             | 
-| NAV BAR          | #19302B | nav-bar-background-color     |
-| MAIN TEXT COLOR  | #000000 | primary-text-color           |
-| CARD BACKGROUND  | #FFFFFF | card-background              |
+| Element                        | COLOR     | CSS VAR                         |
+|:-----------------------------|:---------:|:----------------------------------|
+| MAIN CONTENT                 | #121212 | main-background-color             |
+| NAV BAR, FOOTER              | #282828 | secondary-background-color        |
+| HEADER                       | #121212 | header-background-color           |
+| CARD                         | #282828 | card-background                   |
+| EXAMPLE CARD                 | #121212 | example-card-background-color     |
+| MAIN TEXT                    | #FFFFFF | primary-text-color                |
+| NAV BAR, FOOTER TEXT         | #FFFFFF | secondary-text-color              |
+| CARD BORDER                  | #575757 | card-border                       |
+| BOLD TEXT                    | #FFFFFF | bold-text                         |
+
 

@@ -2,38 +2,36 @@
 /*style your button and elements based on the :root variables.*/
 /*Light mode stlyes*/
 :root {
-  --main-background-color: #C2DA7C; /* Light mode background rgb(240,237,255) */
-  --primary-text-color: #000000; /* Light mode text */
-  --secondary-text-color: #FFFFFF;
-  --header-background-color: #90bc56;
+  --main-background-color: #C2DA7C;
   --secondary-background-color: #19302B;
-  --card-border: #19302B;
-  --bold-text: #000000;
+  --header-background-color: #90bc56;
   --card-background: #FFFFFF;
   --example-card-background-color: #19302B;
-  
+  --primary-text-color: #000000; 
+  --secondary-text-color: #FFFFFF;
+  --card-border: #19302B;
+  --bold-text: #000000;
 }
 
 /* Dark mode styles */
 body.dark-mode {
-  --main-background-color: #121212; /* Dark mode background */
-  --primary-text-color:  #FFFFFF; /* Dark mode text */
-  --secondary-text-color:  #FFFFFF;        
-  --header-background-color: #121212;
+  --main-background-color: #121212; 
   --secondary-background-color: #282828;
-  --card-border: #575757;
+  --header-background-color: #121212;
   --card-background: #282828;
-  --bold-text: #FFFFFF;
   --example-card-background-color: #121212;
+  --primary-text-color:  #FFFFFF; 
+  --secondary-text-color:  #FFFFFF;        
+  --card-border: #575757;
+  --bold-text: #FFFFFF;
 }
 
 body {
   background-color: var(--main-background-color);
   color: var(--primary-text-color);
   margin: 0;
-  min-height: 100vh; /* Ensure full height */
+  min-height: 100vh; 
   font-family: "Lora", serif;
-  /* transition: background-color 0.5s, color 0.5s; Smooth transitions */
 }
 
 /*CONTENT*/
@@ -61,14 +59,12 @@ h1{
     padding: 10px;
     text-align: center;
     width: 100%;
-    /* Add flexbox properties if needed for internal header layout */
 }
 
-/*Menu*/
-
+/*Navigation Bar*/
 .menu-container{
     background-color: var( --secondary-background-color);
-    width: 100%; /* Adjust sidebar width as needed */
+    width: 100%;
     display: flex;
 }
 
@@ -87,12 +83,6 @@ h1{
     padding: 20px;
      
 }
-/* 
-button{
-    background-color: #5E6F6A;
-} */
-
-
 
 
 
@@ -123,13 +113,53 @@ button{
 }
 
 .card-link{
-    /* color: var(--links) */
+    
 }
 
 .card-link:hover{
-    /* color: var(--links-hover) */
+   
 }
-/* Code as Plain text */
+
+
+/* Examples */
+.multi-examples{
+    display: flex;
+    flex-wrap: wrap; /* Wrap cards for responsiveness */
+    gap: 20px; /* Add spacing between cards */
+}
+
+.example-whole-card{
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    width: calc(100% - 10px); /* Two cards per row with spacing */
+    box-sizing: border-box; /* Include padding and border in width */
+    background-color: var(--example-card-background-color);
+    color: var(--secondary-text-color);
+}
+
+.example-half-card{
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    width: calc(50% - 10px); /* Two cards per row with spacing */
+    box-sizing: border-box; /* Include padding and border in width */
+    background-color: var(--example-card-background-color);
+    color: var(--secondary-text-color);
+
+}
+
+.example-third-card{
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    width: calc(30% - 10px); /* Two cards per row with spacing */
+    box-sizing: border-box; /* Include padding and border in width */
+    background-color: var(--example-card-background-color);
+    color: var(--secondary-text-color);
+}
+
+/* Code as Plain Text: Example cards */
 .code{
     font-weight: bolder;
 }
@@ -186,43 +216,6 @@ button{
 
 
 
-/* Examples */
-.multi-examples{
-    display: flex;
-    flex-wrap: wrap; /* Wrap cards for responsiveness */
-    gap: 20px; /* Add spacing between cards */
-}
-
-.example-whole-card{
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 5px;
-    width: calc(100% - 10px); /* Two cards per row with spacing */
-    box-sizing: border-box; /* Include padding and border in width */
-    background-color: var(--example-card-background-color);
-    color: var(--secondary-text-color);
-}
-
-.example-half-card{
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 5px;
-    width: calc(50% - 10px); /* Two cards per row with spacing */
-    box-sizing: border-box; /* Include padding and border in width */
-    background-color: var(--example-card-background-color);
-    color: var(--secondary-text-color);
-
-}
-
-.example-third-card{
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 5px;
-    width: calc(30% - 10px); /* Two cards per row with spacing */
-    box-sizing: border-box; /* Include padding and border in width */
-    background-color: var(--example-card-background-color);
-    color: var(--secondary-text-color);
-}
 
 
 
@@ -235,9 +228,6 @@ footer{
 
 
 /* Table */
-
-
-
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
@@ -249,16 +239,6 @@ table, th, td {
   th {
     background-color: #f2f2f2; /* Add a light gray background to header cells */
   }
-
-
-
-
-
-
-
-
-
-
 
 
 /* Responsive adjustments */
