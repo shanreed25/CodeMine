@@ -58,3 +58,28 @@
     - [x] Event Listener Method
     - [ ] Custom Events
 This categorization provides a structured approach to learning JavaScript concepts, building upon the foundational knowledge to grasp more complex topics. Medium also offers a comprehensive guide on essential JavaScript concepts. Remember that continuous learning and practice are key to mastering the language. 
+
+
+
+
+<span class="code-purple">&lt;button
+                            <span class="code-blue">onclick=</span>
+                            <span class="code-orange-yellow"> "myFunction(<span class="code-blue">event</span>)"</span>
+                            &gt;
+                        </span>
+                        Click Me
+                        <span class="code-purple">&lt;/button&gt;</span><br>
+                            <br>
+
+                          <span class="code-purple">&lt;script&gt;</br></span>
+
+                    <span class="code-blue">&nbsp; &nbsp; function </span>
+                    <span class="code-orange-yellow">myFunction</span><span class="yellow-green">(<span class="code-blue">e</span>){</span>
+                    </br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; <span class="code-light-blue">console</span>.<span class="code-orange-yellow">log(</span>
+                    <span class="code-blue">e</span>
+                    <span class="code-orange-yellow">);</span>
+                    </br>
+                    &nbsp; &nbsp; <span class="yellow-green">}</span>
+                    </br>
+                    <span class="code-purple">&lt;/script&gt;</span>

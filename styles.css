@@ -39,11 +39,6 @@ body {
 }
 
 /*CONTENT*/
-a{
-    color: var(--primary-text-color);
-    text-decoration: none;
-}
-
 
 a:hover{
     color: #90bc56;
@@ -83,6 +78,7 @@ h1{
 }
 .menu-nav a{
     color: var(--secondary-text-color);
+    text-decoration: none;
 }
 
 /* Mode Switch */
@@ -213,36 +209,40 @@ input:checked + .slider:before {
     flex-wrap: wrap; /* Wrap cards for responsiveness */
     gap: 20px; /* Add spacing between cards */
 }
-
-.example-whole-card{
+.code-third-box-container{
     border: 1px solid #ccc;
-    padding: 10px;
     border-radius: 5px;
-    width: calc(100% - 10px); /* Two cards per row with spacing */
-    box-sizing: border-box; /* Include padding and border in width */
-    background-color: var(--example-card-background-color);
-    color: var(--secondary-text-color);
-}
-
-.example-half-card{
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 5px;
-    width: calc(50% - 10px); /* Two cards per row with spacing */
-    box-sizing: border-box; /* Include padding and border in width */
-    background-color: var(--example-card-background-color);
-    color: var(--secondary-text-color);
-
-}
-
-.example-third-card{
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 5px;
+    font-weight: bolder;
+    height: 40vh;
     width: calc(30% - 10px); /* Two cards per row with spacing */
     box-sizing: border-box; /* Include padding and border in width */
-    background-color: var(--example-card-background-color);
-    color: var(--secondary-text-color);
+    margin: 6rem;
+}
+
+.code-box-title{
+    background-color: #90bc56;
+    height: 10%;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;   
+}
+
+.code-box-title h3{
+    margin-top: 0;
+    padding: .4rem;
+}
+
+.code-box-contents{
+    background-color: #19302B;
+    height: 90%;
+    width: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #FFFFFF
+}
+
+.code-box-code{
+    margin: 0;
 }
 
 /* Code as Plain Text: Example cards */
@@ -299,7 +299,13 @@ input:checked + .slider:before {
     color: yellowgreen;
 }
 
+.yellow{
+    color: yellow;
+}
 
+.code-review{
+    color: rgb(31, 223, 31)
+}
 
 /* Textareas */
 .small{

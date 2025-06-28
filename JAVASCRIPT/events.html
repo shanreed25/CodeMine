@@ -73,11 +73,86 @@
             </div>
             <div>
                 <p class="card-question">When the system tells us about the events, how do we get access to this "message".</p>
-                <p class="card-question">  <a class="card-answer" href="#event-handling">Javascript Event Handling Methods</a>.</p>
+                <p class="card-question">  <a class="card-answer" href="#event-handling">Event Object</a>.</p>
             </div>
         </div>
 
-               <!-- Event Handling -------------------------------------------------------->
+        <!-- Event Object -------------------------------------------------------->
+        <div id="event-object" class="whole-card">
+            <div >
+                <h2>Event Object</h2>
+                <p>The event object in JavaScript is a built-in object that is automatically created and passed to event handlers when an event occurs.</p>
+                <p>When an event occurs on a target element, a handler function is executed in response to that event.
+                </p>
+                <div class="code-third-box-container">
+                    <div class="code-box-title">
+                        <h3>HTML</h3>
+                    </div>
+                    <div class="code-box-contents">
+                    <p class="code-box-code">
+                             <span class="code-purple">&lt;button
+                            <span class="code-blue">onclick=</span>
+                            <span class="code-light-blue">console</span>.<span class="code-orange-yellow">log(</span>
+                    <span class="code-blue">event</span>
+                    <span class="code-orange-yellow">);</span>
+                            &gt;
+                        </span>
+                        Click Me
+                        <span class="code-purple">&lt;/button&gt;</span><br>
+                    </p>
+                    </div>
+
+
+
+                   
+                            
+                </div>
+                <h4 class="code-review">In this example the "onclick" attribute serves as an event handler</h4>
+                <ul>
+                    <li>When the button is clicked an event object is automatically created and passed to the log function</li>
+                    <li>For this particular example the event object is a pointer event</li>
+                </ul>
+                    
+
+                                <p>It contains information about the event, such as the type of event, the target element, and any additional data associated with the
+                    event, that can be used within event handlers to respond appropriately.</p>
+
+
+                <h4>How it Works</h4>
+                <ul>
+                    <li>When an event occurs, the browser creates an event object</li>
+                    <li>The event object is then passed as an argument to the event handler function.</li>
+                    <li>The event handler function can access the event object's properties and methods to handle the event.</li>
+                </ul>
+            </div>
+            <div class="example-whole-card">
+                <h4>Example</h4>
+                <div class="code-box">
+                    
+                <!------------------------------------------------ COME BACK AND FINISH COLORCODING THIS CODE -------------------------------------------------------------------------->
+                    document.getElementById('myInput').addEventListener('input', function(event) {<br>
+                       &nbsp; &nbsp; &nbsp; console.log('Event type:', event.type);<br>
+                        &nbsp; &nbsp; &nbsp; console.log('Target element:', event.target);<br>
+                        &nbsp; &nbsp; &nbsp; console.log(event)<br>
+                        &nbsp; &nbsp; &nbsp; event.preventDefault(); // Prevent the default behavior of the event<br>
+                    });
+                </div>
+            </div>
+            <div>
+            <p>Event objects are essential for handling user interactions and other dynamic behaviors in JavaScript. 
+                They provide the necessary context and information to create responsive and interactive web applications.
+                The event object is a fundamental part of event handling in JavaScript, providing a way to access 
+                information about events and control their behavior.
+            </p>
+            <h4>Important Event Object Methods</h4>
+            <ul>
+                <li>preventDefault():  stop default browser behavior </li>
+                <li>stopPropagation(): to halt event propagation</li>
+            </ul>
+            </div>
+        </div>
+
+        <!-- Event Handling -------------------------------------------------------->
         <div id="event-handling" class="card">
             <div>
                 <h2>Event Handling Methods</h2>
@@ -112,47 +187,6 @@
             </div>
         </div>
 
-        <!-- Event Object -------------------------------------------------------->
-        <div id="event-object" class="card">
-            <div >
-                <h2>Event Object</h2>
-                <p>The event object in JavaScript is a built-in object that is automatically created and passed to event handlers when an event occurs.</p>
-                <p>It contains information about the event, such as the type of event, the target element, and any additional data associated with the
-                    event, that can be used within event handlers to respond appropriately.</p>
-                    
-                <h4>How it Works</h4>
-                <ul>
-                    <li>When an event occurs, the browser creates an event object</li>
-                    <li>The event object is then passed as an argument to the event handler function.</li>
-                    <li>The event handler function can access the event object's properties and methods to handle the event.</li>
-                </ul>
-            </div>
-            <div class="example-whole-card">
-                <h4>Example</h4>
-                <div class="code-box">
-                    
-                <!------------------------------------------------ COME BACK AND FINISH COLORCODING THIS CODE -------------------------------------------------------------------------->
-                    document.getElementById('myInput').addEventListener('input', function(event) {<br>
-                       &nbsp; &nbsp; &nbsp; console.log('Event type:', event.type);<br>
-                        &nbsp; &nbsp; &nbsp; console.log('Target element:', event.target);<br>
-                        &nbsp; &nbsp; &nbsp; console.log(event)<br>
-                        &nbsp; &nbsp; &nbsp; event.preventDefault(); // Prevent the default behavior of the event<br>
-                    });
-                </div>
-            </div>
-            <div>
-            <p>Event objects are essential for handling user interactions and other dynamic behaviors in JavaScript. 
-                They provide the necessary context and information to create responsive and interactive web applications.
-                The event object is a fundamental part of event handling in JavaScript, providing a way to access 
-                information about events and control their behavior.
-            </p>
-            <h4>Important Event Object Methods</h4>
-            <ul>
-                <li>preventDefault():  stop default browser behavior </li>
-                <li>stopPropagation(): to halt event propagation</li>
-            </ul>
-            </div>
-        </div>
 
 
            <!-- DOM Property Event Handler -------------------------------------------->
