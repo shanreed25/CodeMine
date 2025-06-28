@@ -188,12 +188,6 @@ input:checked + .slider:before {
 }
 
 
-
-
-
-
-
-
 .card-link{
     
 }
@@ -209,15 +203,52 @@ input:checked + .slider:before {
     flex-wrap: wrap; /* Wrap cards for responsiveness */
     gap: 20px; /* Add spacing between cards */
 }
-.code-third-box-container{
+
+.code-box-container{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+.code-whole-box-container{
     border: 1px solid #ccc;
     border-radius: 5px;
     font-weight: bolder;
     height: 40vh;
-    width: calc(30% - 10px); /* Two cards per row with spacing */
+    width: calc(100% - 10px); /* Two cards per row with spacing */
     box-sizing: border-box; /* Include padding and border in width */
-    margin: 6rem;
+    margin: 2rem;
+
 }
+
+.code-half-box-container{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-weight: bolder;
+    height: 40vh;
+    width: calc(50% - 10px); /* Two cards per row with spacing */
+    box-sizing: border-box; /* Include padding and border in width */
+    margin: 2rem;
+}
+
+.small-code-box{
+    width: calc(41% - 10px); /* Two cards per row with spacing */
+    box-sizing: border-box; /* Include padding and border in width */
+    margin: 2rem;
+}
+
+.small-code-box .code-box-title{
+    background-color: #90bc56;
+    height: 50%;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;   
+}
+
+.small-code-box .code-box-title h3{
+    margin: 0;
+    padding: .4rem;
+}
+
 
 .code-box-title{
     background-color: #90bc56;
@@ -227,6 +258,7 @@ input:checked + .slider:before {
     border-top-right-radius: 5px;   
 }
 
+
 .code-box-title h3{
     margin-top: 0;
     padding: .4rem;
@@ -235,15 +267,21 @@ input:checked + .slider:before {
 .code-box-contents{
     background-color: #19302B;
     height: 90%;
-    width: 100%;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    color: #FFFFFF
+    width: 90%;
+
+    color: #FFFFFF;
+    padding: 5%;
 }
 
 .code-box-code{
     margin: 0;
 }
+
+.example-info{
+    font-size: .8rem;
+}
+
+
 
 /* Code as Plain Text: Example cards */
 .code-box{

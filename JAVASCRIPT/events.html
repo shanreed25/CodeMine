@@ -73,172 +73,167 @@
             </div>
             <div>
                 <p class="card-question">When the system tells us about the events, how do we get access to this "message".</p>
-                <p class="card-question">  <a class="card-answer" href="#event-handling">Event Object</a>.</p>
+                <p class="card-question">  <a class="card-answer" href="#event-object">Event Object</a>.</p>
             </div>
         </div>
 
         <!-- Event Object -------------------------------------------------------->
         <div id="event-object" class="whole-card">
             <div >
+                <div>
                 <h2>Event Object</h2>
                 <p>The event object in JavaScript is a built-in object that is automatically created and passed to event handlers when an event occurs.</p>
-                <p>When an event occurs on a target element, a handler function is executed in response to that event.
-                </p>
-                <div class="code-third-box-container">
+                <p>When an event occurs on a target element, a handler function is executed in response to that event.</p>
+                <p>When the event handler is invoked, the event object is passed as an argument to that function. This allows the event handler to access and utilize information about the event. </p>
+                 <h4>How it Works</h4>
+                <ul>
+                    <li>When an event occurs, the browser creates an event object</li>
+                    <li>The event object is then passed as an argument to the event handler function.</li>
+                    <li>Event handler functions are typically registered using "addEventListener()" or assigned to event handler properties like "onclick"</li>
+                    <li>The event handler function can access the event object's properties and methods to handle the event.</li>
+                </ul>
+
+                </div>
+                <div class="code-box-container small-code-box">
                     <div class="code-box-title">
                         <h3>HTML</h3>
                     </div>
                     <div class="code-box-contents">
-                    <p class="code-box-code">
-                             <span class="code-purple">&lt;button
-                            <span class="code-blue">onclick=</span>
-                            <span class="code-light-blue">console</span>.<span class="code-orange-yellow">log(</span>
-                    <span class="code-blue">event</span>
-                    <span class="code-orange-yellow">);</span>
-                            &gt;
-                        </span>
-                        Click Me
-                        <span class="code-purple">&lt;/button&gt;</span><br>
-                    </p>
+                        <p class="code-box-code">
+                                <span class="code-purple">&lt;button
+                                <span class="code-blue">onclick=</span>
+                                <span class="code-light-blue">console</span>.<span class="code-orange-yellow">log(</span>
+                        <span class="code-blue">event</span>
+                        <span class="code-orange-yellow">);</span>
+                                &gt;
+                            </span>
+                            Click Me
+                            <span class="code-purple">&lt;/button&gt;</span><br>
+                        </p>
+
+                        <p class="code-box-code">
+                                <span class="code-purple">&lt;button
+                                <span class="code-blue">onclick=</span>
+                                <span class="code-light-blue">console</span>.<span class="code-orange-yellow">log(</span>
+                        <span class="code-blue">event.type</span>
+                        <span class="code-orange-yellow">);</span>
+                                &gt;
+                            </span>
+                            Click Me
+                            <span class="code-purple">&lt;/button&gt;</span><br>
+                        </p>
+
+                        <p class="code-box-code">
+                                <span class="code-purple">&lt;button
+                                <span class="code-blue">onclick=</span>
+                                <span class="code-light-blue">console</span>.<span class="code-orange-yellow">log(</span>
+                        <span class="code-blue">event.target</span>
+                        <span class="code-orange-yellow">);</span>
+                                &gt;
+                            </span>
+                            Click Me
+                            <span class="code-purple">&lt;/button&gt;</span><br>
+                        </p>
                     </div>
-
-
-
-                   
+                    <div class="example-info">
+                            <ul>
+                                <li>The "onclick" attribute is assigned the console.log() function</li>
+                                <li>When the button is clicked an event object is created and passed to the log function</li>
+                                <li>The event object contains information about the event, such as the type of event, the target element, and any additional data associated with the
+                                event, that can be used within event handlers to respond appropriately.</li>
+                            </ul>              
+                    </div>
                             
-                </div>
-                <h4 class="code-review">In this example the "onclick" attribute serves as an event handler</h4>
-                <ul>
-                    <li>When the button is clicked an event object is automatically created and passed to the log function</li>
-                    <li>For this particular example the event object is a pointer event</li>
-                </ul>
-                    
-
-                                <p>It contains information about the event, such as the type of event, the target element, and any additional data associated with the
-                    event, that can be used within event handlers to respond appropriately.</p>
-
-
-                <h4>How it Works</h4>
-                <ul>
-                    <li>When an event occurs, the browser creates an event object</li>
-                    <li>The event object is then passed as an argument to the event handler function.</li>
-                    <li>The event handler function can access the event object's properties and methods to handle the event.</li>
-                </ul>
+                </div>            
             </div>
-            <div class="example-whole-card">
-                <h4>Example</h4>
-                <div class="code-box">
-                    
-                <!------------------------------------------------ COME BACK AND FINISH COLORCODING THIS CODE -------------------------------------------------------------------------->
-                    document.getElementById('myInput').addEventListener('input', function(event) {<br>
-                       &nbsp; &nbsp; &nbsp; console.log('Event type:', event.type);<br>
-                        &nbsp; &nbsp; &nbsp; console.log('Target element:', event.target);<br>
-                        &nbsp; &nbsp; &nbsp; console.log(event)<br>
-                        &nbsp; &nbsp; &nbsp; event.preventDefault(); // Prevent the default behavior of the event<br>
-                    });
-                </div>
-            </div>
+
+
             <div>
             <p>Event objects are essential for handling user interactions and other dynamic behaviors in JavaScript. 
                 They provide the necessary context and information to create responsive and interactive web applications.
-                The event object is a fundamental part of event handling in JavaScript, providing a way to access 
-                information about events and control their behavior.
+
             </p>
-            <h4>Important Event Object Methods</h4>
+            <h4>Important Event Object Properties and Methods</h4>
             <ul>
                 <li>preventDefault():  stop default browser behavior </li>
                 <li>stopPropagation(): to halt event propagation</li>
             </ul>
+
+            <p class="card-question">  <a class="card-answer" href="#event-object-property-methods">Important Event Object Properties and Methods</a></p>
+            <p class="card-question">  <a class="card-answer" href="#event-handling">Event Handling</a></p>
             </div>
         </div>
 
+        <!-- Event Object Properties and methods -------------------------------------------------------->
+        <div id="event-object-property-methods" class="whole-card">
+            <div >
+                <div>
+                    <h2>Event Object Properties and Methods</h2>
+                    <p>The event object contains various properties and methods that provide details about the event and allow developers to control its behavior. </p>
+         
+                    <h4>Key properties</h4>
+                        <ul>
+                            <li><span class="bold">target: </span> the element where the event originated</li>
+                            <li><span class="bold">type: </span>the specific type of event</li>
+                            <li><span class="bold">timeStamp: </span>Gives the time  the event was created in milliseconds</li>
+                            <li><span class="bold">currentTarget: </span>the element whose event listener was triggered</li>
+                            <li><span class="bold">bubbles: </span>A boolean indicating whether the event will bubble up through the DOM</li>
+                            <li><span class="bold">defaultPrevented: </span>shows if preventDefault() has been called</li>
+                            <li><span class="bold">isTrusted: </span> A boolean that indicates whether the event was triggered by the browser (true) or by JavaScript (false)</li>
+                            <li><span class="bold">composed: </span>indicates if the event can bubble across the shadow DOM</li>
+                            <li><span class="bold">eventPhase: </span>shows the current phase of the event flow</li>
+
+                        </ul>
+
+                    <h4>Key methods</h4>
+                        <ul>
+                            <li><span class="bold"><a href="#prevent-default">preventDefault()</a>: </span>stops default action</li>
+                            <li><span class="bold">stopPropagation(): </span>stops bubbling</li>
+                            <li><span class="bold">stopImmediatePropagation(): </span>prevents other listeners on the same element</li>
+                            <li><span class="bold">composedPath(): </span>returns the event's path</li>
+
+                        </ul>
+                </div>
+          
+            </div>
+
+        </div>
+
         <!-- Event Handling -------------------------------------------------------->
-        <div id="event-handling" class="card">
+        <div id="event-handling" class="whole-card">
             <div>
                 <h2>Event Handling Methods</h2>
                 <p>Event handlers allow developers to define how a web page should respond to events.</p>
-                <p>When an event occurs on a target element, a handler function is executed in response to that event.
-                </p>
+                <p>When an event occurs on a target element, a handler function is executed in response to that event.</p>
+                <p>Event handler functions can access the event object.</p>
 
-                <h4>How to use event handler functions with events</h4>
-                <ol>
-                    <li><span class="bold">Element Selection:</span> Select the HTML element to which you want to attach
-                        an event handler.</li>
-                    <li><span class="bold">Event Type:</span> Specify the type of event you want to listen for.</li>
-                    <li><span class="bold">Event Handler Function:</span> Define a JavaScript function that will be
-                        executed when the specified event occurs on the selected element</li>
-                    <li><span class="bold">Event Binding:</span> Bind the event handler function to the selected element
-                        and event type</li>
-                </ol>
                 <h4>There are three main ways to bind/add event handlers to HTML elements:</h4>
                 <ul>
-                    <li><span class="bold">Inline Event Handlers:</span>Defined directly in HTML attributes</li>
-                    <li><span class="bold">Event Listener Method:</span>Uses builted in Javascript methods to attach and
+                    <li><span class="bold"><a href="#inline-events"> Inline Event Handlers</a> </span>Defined directly in HTML attributes</li>
+                    <li><span class="bold"><a href="#add-event-listener"> Event Listener Method</a> </span>Uses builted in Javascript methods to attach and
                         detach event handlers. </li>
-                    <li><span class="bold">DOM Property Event Handlers:</span>Assigns event handlers as properties in
+                    <li><span class="bold"><a href="#dom-property-event-handler"> DOM Property Event Handlers</a> </span>Assigns event handlers as properties in
                         JavaScript</li>
 
                 </ul>
+
+                
             </div>
             <div>
-                <p>Event handler functions can also access an event object, which provides information about the event that occurred, such as the target element, the mouse coordinates, or the key that was pressed. This information can be used to customize the behavior of the event handler function.</p>
+                
                 
                 <!-- <h4>Event Propagation https://medium.com/@mdsatriaalamshah/event-propagation-in-javascript-dd5d87e4ce55</h4> -->
             </div>
         </div>
 
-
-
-           <!-- DOM Property Event Handler -------------------------------------------->
-        <div id="dom-property-event-handler" class="card ">
-            <div>
-                <h2>DOM Property Event Handlers</h2>
-                <p>DOM property event handlers are a simple way to respond to events by assigning a function to the element's event property (e.g., onclick, onmouseover). </p>
-                <p>Sets the element's event property directly to a function</p>
-                <ul>
-                    <li>Assigns event handlers as properties</li>
-                    <li>The property name for event handlers typically starts with "on" followed by the event name, such as "onclick", "onload", or "onfocus"</li>
-                    <li>It separates HTML and JavaScript, improving readability</li>
-                    <li>Only one handler can be assigned to an event property for a given element</li>
-                </ul>
-    
-                <h4>How to use DOM Property Event Handlers</h4>
-                <ol>
-                    <li>Select the HTML element you want to add the event handler to</li>
-                        <ul>
-                            <li>You can do this using methods like "document.getElementById()" or "document.querySelector()"</li>
-                            <li>const myButton = document.getElementById('myButton');</li>
-                        </ul>
-                    <li>Assign/Attach a function to the corresponding DOM property event handler of the selected element</li>
-                        <ul>
-                            <li>This function will be executed when the specified event occurs</li>
-                            <li>myButton.onclick = function() { alert('Button was clicked!');};</li>
-                            <li>You can also do this by assigning a pre-defined function</li>
-                            <!-- const myButton = document.querySelector("button");
-
-                                function greet(event) {
-                                    console.log("greet:", event);
-                                }
-
-                                myButton.onclick = greet; -->
-                        </ul>
-                    <li>The event object: When the event handler is triggered, it receives an event object as an argument. This object contains useful information about the event, such as the event type, the target element, and coordinates for mouse events. </li>
-                </ol>
-                <h4>Key features and considerations</h4>
-                <ul>
-                    <li>This method is straightforward for attaching a single event handler to an element</li>
-                    <li>Only one event handler can be assigned per event type to a single element using this method. If you assign a new function to the property, the previous handler will be replaced</li>
-                    <li>While still functional, addEventListener() is generally the preferred method for modern web development due to its flexibility and ability to attach multiple event listeners. </li>
-                </ul>
-            </div>
-            <div>
-            </div>
-        </div>
- 
         <!-- Inline Events --------------------------------------------------------->
-        <div id="inline-events" class="card">
+        <div id="inline-events" class="whole-card">
             <div>
                 <h2>Inline Event Handlers</h2>
+                <p>JavaScript inline event handlers involve directly embedding JavaScript code or function calls within HTML attributes to respond to specific events.</p>
+                <p>This method directly links the presentation layer (HTML) with the behavior layer (JavaScript).</p>
+
+
                 <p>Inline event handlers are defined directly in the HTML element's opening tag of the target element
                 </p>
                 <p>The event handler function is added as the value to an event handler attribute that start with "on".
@@ -256,58 +251,75 @@
                 </ol>
             </div>
             <!-- Examples -------------------------------------------------------------->
-            <div class="multi-examples">
             <!-- Example One ----------------------------------------------------------->
-                <div class="example-half-card">
-                    <h4>Example: Calling a JavaScript function</h4>
-                    <div class="code-box">
-                        <!-- Button ---------------------------->
-                        <span class="code-purple">&lt;button
+             <div class="code-box-container small-code-box">
+                <div class="code-box-title">
+                    <h3>Simple Inline JavaScript</h3>
+                </div>
+                <div class="code-box-contents">
+                    <p class="code-box-code">
+                                <span class="code-purple">&lt;button
+                                <span class="code-blue">onclick=</span>
+                                <span class="code-light-blue">console</span>.<span class="code-orange-yellow">log(</span>
+                        <span class="code-blue">event</span>
+                        <span class="code-orange-yellow">);</span>
+                                &gt;
+                            </span>
+                            Click Me
+                            <span class="code-purple">&lt;/button&gt;</span><br>
+                    </p><br>
+
+                    <p class="code-box-code">
+                                <span class="code-purple">&lt;button
+                                <span class="code-blue">onclick=</span>
+                                <span class="code-light-blue">console</span>.<span class="code-orange-yellow">log(</span>
+                        <span class="code-blue">event.type</span>
+                        <span class="code-orange-yellow">);</span>
+                                &gt;
+                            </span>
+                            Click Me
+                            <span class="code-purple">&lt;/button&gt;</span><br>
+                    </p><br>
+
+                    <p class="code-box-code">
+                                <span class="code-purple">&lt;button</span>
+                                <span class="code-blue">onclick=</span>
+                                <span class="code-orange-yellow">alert(</span>
+                                'HI!'
+                                <span class="code-orange-yellow">);</span>
+                                <span class="code-purple">&gt;</span>
+                                Click Me
+                                <span class="code-purple">&lt;/button&gt;</span><br>
+                    </p><br>
+
+                    <p class="code-box-code">
+                            <span class="code-purple">&lt;button
                             <span class="code-blue">onclick=</span>
                             <span class="code-orange-yellow"> "myFunction()"</span>
                             &gt;
-                        </span>
-                        Click Me
-                        <span class="code-purple">&lt;/button&gt;</span>
-                        <span class="code-purple">&lt;script&gt;</br></span>
-                        <!-- Script ---------------------------->
-                        &nbsp;<span class="code-blue"> function</span>
-                        <span class="code-orange-yellow">myFunction() &nbsp;{</span>
-                        </br> &nbsp; &nbsp; &nbsp;<span class="code-blue">console.log(</span>"Button clicked!"
-                        <span class="code-blue">);</span></br>
-                        &nbsp;<span class="code-orange-yellow">}</span> </br>
-                        <span class="code-purple">&lt;/script&gt;</span>
-
-                    </div>
-                    <ul>
-                        <li><span class="bold">onclick: </span>is the event handler attribute</li>
-                        <li><span class="bold">myFunction(): </span>is the event handler function</li>
-                        <li>When the button is clicked myFunction() will be executed</li>
-
-                    </ul>
+                            </span>
+                            Click Me
+                            <span class="code-purple">&lt;/button&gt;</span><br>
+                            <!-- Script ---------------------------->
+                            <span class="code-purple">&lt;script&gt;</br></span> 
+                            &nbsp;<span class="code-blue"> function</span>
+                            <span class="code-orange-yellow">myFunction() &nbsp;{</span>
+                            </br> &nbsp; &nbsp; &nbsp;<span class="code-blue">console.log(</span>"Button clicked!"
+                            <span class="code-blue">);</span></br>
+                            &nbsp;<span class="code-orange-yellow">}</span> </br>
+                            <span class="code-purple">&lt;/script&gt;</span>
+                    </p><br>
                 </div>
-            <!-- Example Two ----------------------------------------------------------->
-                <div class="example-half-card">
-                    <h4>Example: Simple inline JavaScript</h4>
-                    <div class=" code code-box">
-                        <span class="code-purple">&lt;button</span>
-                        <span class="code-blue">onclick=</span>
-                        <span class="code-orange-yellow">"alert(</span>'HI!'
-                        <span class="code-orange-yellow">)"</span>
-                        <span class="code-purple">&gt;</span>
-
-                        Click Me
-
-                        <span class="code-purple">&lt;/button&gt;</span>
-                    </div>
+                <div class="example-info">
                     <ul>
                         <li><span class="bold">onclick: </span>is the event handler attribute</li>
                         <li><span class="bold">alert('HI!'): </span>is the event handler function</li>
                         <li>When the button is clicked an alert box with the message "HI!" will show</li>
-
                     </ul>
                 </div>
+
             </div>
+          
             <!-- Drawbacks ----------------------------------------------------------->
             <div>
                 <h4>Drawbacks of Inline Event Handlers </h4>
@@ -328,14 +340,9 @@
                 <!-- Alternative Approaches ---------------------------------------------->
                 <h4>Alternative approaches:</h4>
                 <ul>
-                    <li><span class="bold">addEventListener():</span> They mix HTML and JavaScript, making code harder
+                    <li><span class="bold"><a href="#add-event-listener">addEventListener()</a>:</span> They mix HTML and JavaScript, making code harder
                         to maintain and understand</li>
-                    <ul>
-                        <li>The standard and recommended way to handle events</li>
-                        <li>Allows attaching multiple event listeners to an element without overwriting existing ones
-                        </li>
-                        <li>Offers more control over event propagation (bubbling/capturing)</li>
-                    </ul>
+                    
                     <li><span class="bold">Frameworks like React and Vue.js:</span> Only one handler can be attached per
                         event per element, and they cannot be dynamically added or removed</li>
                     <ul>
@@ -345,15 +352,23 @@
                 </ul>
             </div>
         </div>
-        <!-- Event Listener -------------------------------------------------------->
-        <div id="event-listener" class="card ">
+
+        <!-- Add Event Listener -------------------------------------------------------->
+        <div id="add-event-listener" class="whole-card ">
             <div>
                 <h2>Event Listener Method</h2>
                 <p>The addEventListener() method in JavaScript is used to attach an event handler to a specified
                     element. This enables you to execute a function when a particular event occurs on that element</p>
-                <p>Takes the event name and the function to be executed as arguments. This method is recommended for its
-                    power and scalability, allowing multiple handlers, providing more control over event propagation,
-                    and being easier to remove with removeEventListener(). </p>
+
+                    <ul>
+                        <li>The standard and recommended way to handle events</li>
+                        <li>Allows attaching multiple event listeners to an element without overwriting existing ones
+                        </li>
+                        <li>Offers more control over event propagation (bubbling/capturing)</li>
+                    </ul>
+
+                <p>Takes the event name and the function to be executed as arguments.  </p>
+           
                 <p><span class="bold">Syntax: </span><span class="code-yellow-background"><span
                             class="code-purple">element</span><span class="yellow-green">.addEventListener(</span><span
                             class="code-green">event, function, useCapture</span> <span class="yellow-green">
@@ -367,15 +382,27 @@
                     <li><span class="bold">function: </span>The function to be executed when the event occurs.</li>
                     <li><span class="bold">useCapture: </span> An optional boolean value specifying whether to use event
                         capturing or bubbling (default is false for bubbling).</li>
-
                 </ul>
+
+                   <h4>How to use event handler functions with events</h4>
+                <ol>
+                    <li><span class="bold">Element Selection:</span> Select the HTML element to which you want to attach
+                        an event handler.</li>
+                    <li><span class="bold">Event Type:</span> Specify the type of event you want to listen for.</li>
+                    <li><span class="bold">Event Handler Function:</span> Define a JavaScript function that will be
+                        executed when the specified event occurs on the selected element</li>
+                    <li><span class="bold">Event Binding:</span> Bind the event handler function to the selected element
+                        and event type</li>
+                </ol>
             </div>
-            <div class="example-whole-card">
-                <h4>Example</h4>
-                <!-- Example One ----------------------------------------------------------->
-                <div class=" code-box">
-                    <!-- Button ---------------------------->
-                    <span class="code-purple">&lt;button</span>
+
+            <div class="code-box-container small-code-box">
+                <div class="code-box-title">
+                    <h3>addeventlisener</h3>
+                </div>
+                <div class="code-box-contents">
+                    <p>
+                        <span class="code-purple">&lt;button</span>
                     <span class="code-blue">id =</span>
                     <span class="code-orange-yellow">"myButton"</span>
                     <span class="code-purple">&gt;</span>
@@ -401,16 +428,20 @@
                     <span class="yellow-green">function() {</span>
                     </br>
                     &nbsp; &nbsp; &nbsp; &nbsp; <span class="code-orange-yellow">alert(</span>
-                    'Button Clicked!'
+                    'HI!'
                     <span class="code-orange-yellow">);</span>
                     </br>
                     &nbsp; &nbsp; <span class="yellow-green">}</span>
                     <span class="code-blue">);</span>
                     </br>
                     <span class="code-purple">&lt;/script&gt;</span>
+                    </p>
+              
                 </div>
-                <p>When the button with the ID myButton is clicked, 
-                    the alert message "Button Clicked!" will be displayed</p>
+                <div class="example-info">
+                    <p>When the button is clicked an alert box with the message "HI!" will show</p>
+                </div>
+
             </div>
                  <h4>Key Features and Benefits</h4>
                 <ul>
@@ -427,6 +458,82 @@
                     <li>The "this" keyword inside the event handler function refers to the element on which the event occurred.</li>
                     <li>The event object is automatically passed as the first argument to the event handler function. It contains information about the event.</li>
                 </ul>
+        </div>
+
+        <!-- DOM Property Event Handler -------------------------------------------->
+        <div id="dom-property-event-handler" class="whole-card ">
+            <div>
+                <h2>DOM Property Event Handlers</h2>
+                <p>DOM property event handlers are a simple way to respond to events by assigning a function to the element's event property (e.g., onclick, onmouseover). </p>
+                <p>Sets the element's event property directly to a function</p>
+                <ul>
+                    <li>Assigns event handlers as properties</li>
+                    <li>The property name for event handlers typically starts with "on" followed by the event name, such as "onclick", "onload", or "onfocus"</li>
+                    <li>It separates HTML and JavaScript, improving readability</li>
+                    <li>Only one handler can be assigned to an event property for a given element</li>
+                </ul>
+
+                <div class="code-box-container small-code-box">
+                <div class="code-box-title">
+                    <h3>DOM Property Event Handler</h3>
+                </div>
+                <div class="code-box-contents">
+                    <p>
+                        <span class="code-purple">&lt;button</span>
+                    <span class="code-blue">id =</span>
+                    <span class="code-orange-yellow">"myButton"</span>
+                    <span class="code-purple">&gt;</span>
+                    Click Me
+                    <span class="code-purple">&lt;/button&gt;</span>
+
+                    </br>
+                    <!-- Script---------------------------------->
+                    <span class="code-purple">&lt;script&gt;</br></span>
+
+                    <span class="code-blue">&nbsp; &nbsp; const </span>
+                    <span class="yellow-green">myButton</span>
+                    =
+                    <span class="code-blue">document.getElementById(
+                        <span class="code-orange-yellow">'myButton'</span>
+                        );</span>
+                    </br>
+                    </br>
+                    &nbsp; &nbsp; <span class="yellow-green">myButton</span>
+                    <span class="code-blue">.onclick</span>
+                    <span class="code-orange-yellow">=</span>
+                    <span class="yellow-green">function() {</span>
+                    <span class="code-orange-yellow">alert(</span>
+                    'HI!'
+                    <span class="code-orange-yellow">);</span>
+                    <span class="yellow-green">}</span>
+                    
+                    </br>
+                    <span class="code-purple">&lt;/script&gt;</span>
+                    </p>
+              
+                </div>
+                <div class="example-info">
+                    <p>When the button is clicked an alert box with the message "HI!" will show</p>
+                </div>
+
+            </div>
+
+
+    
+                <h4>How to use DOM Property Event Handlers</h4>
+                <ol>
+                    <li>Select the HTML element you want to add the event handler to</li>
+                    <li>Assign/Attach a function to the corresponding DOM property event handler of the selected element</li>  
+                </ol>
+                <h4>Key features and considerations</h4>
+                <ul>
+                    <li>This method is straightforward for attaching a single event handler to an element</li>
+                    <li>Only one event handler can be assigned per event type to a single element using this method. If you assign a new function to the property, the previous handler will be replaced</li>
+                    <li>While still functional, <a href="#add-event-listener">addEventListener()</a> is generally the preferred method for modern web development due to its flexibility and ability to attach multiple event listeners. </li>
+                </ul>
+            </div>
+            <div>
+            </div>
         </div>
      
         <!-- Custom Events --------------------------------------------------------->
@@ -446,6 +553,39 @@
                         JavaScript</li>
 
                 </ul>
+            </div>
+            <div>
+            </div>
+        </div>
+
+
+        <!-- Prevent Default --------------------------------------------------------->
+        <div id="prevent-default" class="whole-card ">
+            <div>
+                <h2>preventDefault()</h2>
+                <p>The event.preventDefault() method is a crucial part of handling events with JavaScript</p>
+                <p>It allows you to stop the browser from performing the default action that would normally occur when a particular event happens. </p>
+
+                <h4>What it does</h4>
+                <ul>
+                    <li><span class="bold">Cancels the default action: </span>When an event occurs on an element, the browser usually has a built-in behavior associated with that event. For example, clicking a link ( &lt;a&gt;) normally navigates the user to the specified URL. Submitting a form typically refreshes the page.</li>
+                    <li><span class="bold">Allows you to override the default behavior: </span>By calling event.preventDefault() within your event handler function, you instruct the browser not to execute that default action. This gives you control to handle the event in a custom way using your JavaScript code.</li>
+                </ul>
+
+                <h4>When to use</h4>
+                <ul>
+                    <li><span class="bold">Preventing form submission: </span> When you want to handle form data with JavaScript (e.g., using AJAX) instead of allowing the default browser form submission.</li>
+                    <li><span class="bold">Preventing link navigation: </span>When you want a link to trigger a JavaScript function or action instead of directing the user to a new page.</li>
+                    <li><span class="bold">Controlling context menus: </span> You can prevent the browser's default context menu (right-click menu) from appearing and display a custom one instead.</li>
+                    <li><span class="bold">Customizing key actions: </span>For example, preventing the default action of certain key presses in input fields to implement custom input validation or behavior. </li>
+                </ul>
+
+                <h4>Important Notes</h4>
+                    <ul>
+                        <li>Does not stop event propagation, so the event will still propagate through the DOM tree (unless you also call stopPropagation())</li>
+                        <li>Not all events are cancelable, so you check the cancelable property of the event object to see if preventDefault() will have an effect.</li>
+                        <li>Consider alternative solutions: MDN suggests looking for better ways to block default actions, such as using disabled or readonly attributes on form controls or HTML constraint validation, rather than relying solely on preventDefault()</li>
+                    </ul>
             </div>
             <div>
             </div>
