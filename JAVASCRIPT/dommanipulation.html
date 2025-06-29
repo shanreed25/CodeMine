@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Mine - JavaScript Event handling</title>
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSSFiles/cards.css">
+    <link rel="stylesheet" href="../CSSFiles/mode.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/525fc14ecf.js" crossorigin="anonymous"></script>
@@ -18,30 +20,26 @@
         <!-- Add other header elements like search bar, user profile, etc. -->
     </header>
         <div class="menu-container">
-        <nav class="menu-nav">
-            <a href="../index.html">Dashboard</a>
-            <a href="#">Users</a>
-            <a href="#">Projects</a>
-        </nav>
-        
-        <!-- <button id="dark-mode-toggle" class="dark-mode-button">
-            <i class="fa-solid fa-sun"></i>
-        </button> -->
-
-        <label class="mode-switch">
-            <input id="checkbox" type="checkbox">
-            <span id="slider" class="slider round">
-                <div id="mode-icon" class="mode-icon">
-                        <i class="fa-solid fa-sun"></i>
-                </div>
+            <nav class="menu-nav">
+                <a href="../index.html">Dashboard</a>
+                <a href="#">Users</a>
+                <a href="#">Projects</a>
+            </nav>
             
-            </span>
-        </label>
-    
-    </div>
+            <label class="mode-switch">
+                <input id="checkbox" type="checkbox">
+                <span id="slider" class="slider round">
+                    <div id="mode-icon" class="mode-icon">
+                            <i class="fa-solid fa-sun"></i>
+                    </div>
+                
+                </span>
+            </label>
+        </div>
+
     <main class="main-content">
         <!-- DOM ---------------------------------------------------------------->
-         <div class="card">
+         <div class="card whole-card">
             <h2>Document Object Model(DOM)</h2>
             <p>
                 The Document Object Model (DOM) is a programming interface that 
@@ -66,9 +64,7 @@
             </ul>
          </div>
          
-         
-         
-         <div class="card">
+         <div class="card whole-card">
             <h2>Accessing DOM Elements</h2>
             <p>You need to select specific elements within the DOM to interact with them.</p>
             <h4>Common methods for selecting elements</h4>
@@ -79,7 +75,7 @@
             </ul>
          </div>
 
-        <div class="card">
+        <div class="card whole-card">
             <h2>Manipulating DOM Elements</h2>
             <p>Once you've selected elements, you can modify their properties, styles, and content.</p>
             <h4>Common manipulation techniques</h4>
@@ -93,7 +89,7 @@
             </ul>
         </div>
 
-        <div class="card">
+        <div class="card whole-card">
             <h2>Event Handling</h2>
             <p>Event handling allows your web page to respond to user actions or system events.</p>
             <p>
@@ -114,12 +110,7 @@
             <h5><a href="./events.html" class="card-link" >Learn More About Event</a></h5>
          </div>
 
-        
-        
-        
-        
-        
-         <div  class="card">
+         <div  class="card whole-card">
             <h2>Manipulating the content of HTML elements</h2>
             <p>In JavaScript, the innerHTML, innerText, and textContent properties 
                 are used to manipulate the content of HTML elements, but they differ
@@ -154,7 +145,7 @@
             </ul>
         </div>
 
-        <div class="card">
+        <div class="card whole-card">
             <h2>Best Practices</h2>
             <ul>
                 <li><span class="bold">Cache DOM elements: Store references to frequently accessed elements in variables to avoid repetitive DOM traversal</span></li>
