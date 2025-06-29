@@ -9,11 +9,22 @@
 
 /***************************************************************Cards*******************************************************************************/
 .card {
-    background-color: #FFFFFF;
+    background-color: var(--card-background);
     box-sizing: border-box; /* Include padding and border in width */
     padding: 20px;
     border-radius: 5px;
     border: 1px solid var(--card-border);
+}
+
+.card a{
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
+
+.card a:hover{
+    font-weight: bolder;
+    font-size: 1.1rem;
+    color: #282828;
 }
 
 .whole-card {

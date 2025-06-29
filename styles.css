@@ -87,6 +87,10 @@ h1{
     text-decoration: none;
 }
 
+.menu-nav a:hover{
+    font-weight: bolder;
+}
+
 /*Mode Toggle code inside ./CSS/mode.css
 
 
