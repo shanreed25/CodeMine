@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Mine - JavaScript Event handling</title>
     <link rel="stylesheet" href="../styles.css">
+     <link rel="stylesheet" href="../CSSFiles/cards.css">
+      <link rel="stylesheet" href="../CSSFiles/codebox.css">
      <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/525fc14ecf.js" crossorigin="anonymous"></script>
@@ -17,31 +19,32 @@
         <h1>Code Mine - Events</h1>
         <!-- Add other header elements like search bar, user profile, etc. -->
     </header>
-        <div class="menu-container">
-        <nav class="menu-nav">
-            <a href="../index.html">Dashboard</a>
-            <a href="#">Users</a>
-            <a href="#">Projects</a>
-        </nav>
-        
-        <!-- <button id="dark-mode-toggle" class="dark-mode-button">
-            <i class="fa-solid fa-sun"></i>
-        </button> -->
 
-        <label class="mode-switch">
-            <input id="checkbox" type="checkbox">
-            <span id="slider" class="slider round">
-                <div id="mode-icon" class="mode-icon">
-                        <i class="fa-solid fa-sun"></i>
-                </div>
+    <div class="menu-container">
+            <nav class="menu-nav">
+                <a href="../index.html">Dashboard</a>
+                <a href="#">Users</a>
+                <a href="#">Projects</a>
+            </nav>
             
-            </span>
-        </label>
-    
+            <!-- <button id="dark-mode-toggle" class="dark-mode-button">
+                <i class="fa-solid fa-sun"></i>
+            </button> -->
+
+            <label class="mode-switch">
+                <input id="checkbox" type="checkbox">
+                <span id="slider" class="slider round">
+                    <div id="mode-icon" class="mode-icon">
+                            <i class="fa-solid fa-sun"></i>
+                    </div>
+                
+                </span>
+            </label>
     </div>
+
     <main class="main-content">
         <!-- Events ---------------------------------------------------------------->
-        <div id="events" class="whole-card">
+        <div id="events" class="card whole-card">
             <div>
                 <h2>Events</h2>
                 <p>Events are actions or occurrences that happen
@@ -78,9 +81,8 @@
         </div>
 
         <!-- Event Object -------------------------------------------------------->
-        <div id="event-object" class="whole-card">
-            <div >
-                <div>
+        <div id="event-object" class="card whole-card">
+            <div class="main-card-contents">
                 <h2>Event Object</h2>
                 <p>The event object in JavaScript is a built-in object that is automatically created and passed to event handlers when an event occurs.</p>
                 <p>When an event occurs on a target element, a handler function is executed in response to that event.</p>
@@ -93,116 +95,114 @@
                     <li>The event handler function can access the event object's properties and methods to handle the event.</li>
                 </ul>
 
-                </div>
-                <div class="code-box-container small-code-box">
-                    <div class="code-box-title">
-                        <h3>HTML</h3>
-                    </div>
-                    <div class="code-box-contents">
-                        <p class="code-box-code">
-                                <span class="code-purple">&lt;button
-                                <span class="code-blue">onclick=</span>
-                                <span class="code-light-blue">console</span>.<span class="code-orange-yellow">log(</span>
-                        <span class="code-blue">event</span>
-                        <span class="code-orange-yellow">);</span>
-                                &gt;
-                            </span>
-                            Click Me
-                            <span class="code-purple">&lt;/button&gt;</span><br>
-                        </p>
-
-                        <p class="code-box-code">
-                                <span class="code-purple">&lt;button
-                                <span class="code-blue">onclick=</span>
-                                <span class="code-light-blue">console</span>.<span class="code-orange-yellow">log(</span>
-                        <span class="code-blue">event.type</span>
-                        <span class="code-orange-yellow">);</span>
-                                &gt;
-                            </span>
-                            Click Me
-                            <span class="code-purple">&lt;/button&gt;</span><br>
-                        </p>
-
-                        <p class="code-box-code">
-                                <span class="code-purple">&lt;button
-                                <span class="code-blue">onclick=</span>
-                                <span class="code-light-blue">console</span>.<span class="code-orange-yellow">log(</span>
-                        <span class="code-blue">event.target</span>
-                        <span class="code-orange-yellow">);</span>
-                                &gt;
-                            </span>
-                            Click Me
-                            <span class="code-purple">&lt;/button&gt;</span><br>
-                        </p>
-                    </div>
-                    <div class="example-info">
-                            <ul>
-                                <li>The "onclick" attribute is assigned the console.log() function</li>
-                                <li>When the button is clicked an event object is created and passed to the log function</li>
-                                <li>The event object contains information about the event, such as the type of event, the target element, and any additional data associated with the
-                                event, that can be used within event handlers to respond appropriately.</li>
-                            </ul>              
-                    </div>
-                            
-                </div>            
             </div>
 
+            <div class="code-box-container code-box-small">
+                <div class="code-box-title">
+                    <h3>Event Object</h3>
+                </div>
+                <div class="code-box-contents">
+                    <div class="code-line">
+                        <p>
+                            <span class="code-purple">&lt;button
+                            <span class="code-pink">onclick=</span>
+                            <span class="code-light-blue">console</span>.<span class="code-orange-yellow">log(</span>
+                            <span class="code-pink">event</span>
+                            <span class="code-orange-yellow">);</span>
+                                &gt;
+                            </span>
+                            Click Me
+                            <span class="code-purple">&lt;/button&gt;</span><br>        
+                        </p>
+                    </div>
+                    <div class="code-line">
+                        <p>
+                            <span class="code-purple">&lt;button
+                            <span class="code-pink">onclick=</span>
+                            <span class="code-light-blue">console</span>.<span class="code-orange-yellow">log(</span>
+                            <span class="code-pink">event.type</span>
+                            <span class="code-orange-yellow">);</span>
+                              &gt;
+                            </span>
+                             Click Me
+                            <span class="code-purple">&lt;/button&gt;</span><br>    
+                        </p>
+                    </div>
+                    <div class="code-line">
+                        <p>
+                            <span class="code-purple">&lt;button
+                            <span class="code-pink">onclick=</span>
+                            <span class="code-light-blue">console</span>.<span class="code-orange-yellow">log(</span>
+                            <span class="code-pink">event.target</span>
+                            <span class="code-orange-yellow">);</span>
+                               &gt;
+                            </span>
+                                Click Me
+                            <span class="code-purple">&lt;/button&gt;</span><br> 
+                        </p>
+                    </div>
+                </div>
+                <div class="code-info">
+                    <ul>
+                        <li>The "onclick" attribute is assigned the console.log() function</li>
+                        <li>When the button is clicked an event object is created and passed to the log function</li>
+                        <li>The event object contains information about the event, such as the type of event, the target element, and any additional data associated with the
+                                event, that can be used within event handlers to respond appropriately.</li>
+                    </ul>   
+                </div>
+            </div>           
 
-            <div>
-            <p>Event objects are essential for handling user interactions and other dynamic behaviors in JavaScript. 
-                They provide the necessary context and information to create responsive and interactive web applications.
+            <div class="extra-info">
+                <p>Event objects are essential for handling user interactions and other dynamic behaviors in JavaScript. 
+                    They provide the necessary context and information to create responsive and interactive web applications.
 
-            </p>
-            <h4>Important Event Object Properties and Methods</h4>
-            <ul>
-                <li>preventDefault():  stop default browser behavior </li>
-                <li>stopPropagation(): to halt event propagation</li>
-            </ul>
+                </p>
+                <h4>Important Event Object Properties and Methods</h4>
+                <ul>
+                    <li>preventDefault():  stop default browser behavior </li>
+                    <li>stopPropagation(): to halt event propagation</li>
+                </ul>
 
-            <p class="card-question">  <a class="card-answer" href="#event-object-property-methods">Important Event Object Properties and Methods</a></p>
-            <p class="card-question">  <a class="card-answer" href="#event-handling">Event Handling</a></p>
+                <p class="card-question">  <a class="card-answer" href="#event-object-property-methods">Important Event Object Properties and Methods</a></p>
+                <p class="card-question">  <a class="card-answer" href="#event-handling">Event Handling</a></p>
             </div>
         </div>
 
         <!-- Event Object Properties and methods -------------------------------------------------------->
-        <div id="event-object-property-methods" class="whole-card">
-            <div >
-                <div>
-                    <h2>Event Object Properties and Methods</h2>
-                    <p>The event object contains various properties and methods that provide details about the event and allow developers to control its behavior. </p>
+        <div id="event-object-property-methods" class="card whole-card">
+            <div class="main-card-contents">
+                <h2>Event Object Properties and Methods</h2>
+                <p>The event object contains various properties and methods that provide details about the event and allow developers to control its behavior. </p>
          
-                    <h4>Key properties</h4>
-                        <ul>
-                            <li><span class="bold">target: </span> the element where the event originated</li>
-                            <li><span class="bold">type: </span>the specific type of event</li>
-                            <li><span class="bold">timeStamp: </span>Gives the time  the event was created in milliseconds</li>
-                            <li><span class="bold">currentTarget: </span>the element whose event listener was triggered</li>
-                            <li><span class="bold">bubbles: </span>A boolean indicating whether the event will bubble up through the DOM</li>
-                            <li><span class="bold">defaultPrevented: </span>shows if preventDefault() has been called</li>
-                            <li><span class="bold">data: </span>Contains the optional data passed to an event method when the current executing handler is bound</li>
-                            <li><span class="bold">isTrusted: </span> A boolean that indicates whether the event was triggered by the browser (true) or by JavaScript (false)</li>
-                            <li><span class="bold">composed: </span>indicates if the event can bubble across the shadow DOM</li>
-                            <li><span class="bold">eventPhase: </span>shows the current phase of the event flow</li>
+                <h4>Key properties</h4>
+                    <ul>
+                        <li><span class="bold">target: </span> the element where the event originated</li>
+                        <li><span class="bold">type: </span>the specific type of event</li>
+                        <li><span class="bold">timeStamp: </span>Gives the time  the event was created in milliseconds</li>
+                        <li><span class="bold">currentTarget: </span>the element whose event listener was triggered</li>
+                        <li><span class="bold">bubbles: </span>A boolean indicating whether the event will bubble up through the DOM</li>
+                        <li><span class="bold">defaultPrevented: </span>shows if preventDefault() has been called</li>
+                        <li><span class="bold">data: </span>Contains the optional data passed to an event method when the current executing handler is bound</li>
+                        <li><span class="bold">isTrusted: </span> A boolean that indicates whether the event was triggered by the browser (true) or by JavaScript (false)</li>
+                        <li><span class="bold">composed: </span>indicates if the event can bubble across the shadow DOM</li>
+                        <li><span class="bold">eventPhase: </span>shows the current phase of the event flow</li>
 
-                        </ul>
+                    </ul>
 
-                    <h4>Key methods</h4>
-                        <ul>
-                            <li><span class="bold"><a href="#prevent-default">preventDefault()</a>: </span>stops default action</li>
-                            <li><span class="bold">stopPropagation(): </span>stops bubbling</li>
-                            <li><span class="bold">stopImmediatePropagation(): </span>prevents other listeners on the same element</li>
-                            <li><span class="bold">composedPath(): </span>returns the event's path</li>
+                <h4>Key methods</h4>
+                    <ul>
+                        <li><span class="bold"><a href="#prevent-default">preventDefault()</a>: </span>stops default action</li>
+                        <li><span class="bold">stopPropagation(): </span>stops bubbling</li>
+                        <li><span class="bold">stopImmediatePropagation(): </span>prevents other listeners on the same element</li>
+                        <li><span class="bold">composedPath(): </span>returns the event's path</li>
 
-                        </ul>
+                    </ul>
                 </div>
-          
-            </div>
-
         </div>
 
         <!-- Event Handling -------------------------------------------------------->
-        <div id="event-handling" class="whole-card">
-            <div>
+        <div id="event-handling" class="card whole-card">
+            <div class="main-card-contents">
                 <h2>Event Handling Methods</h2>
                 <p>Event handlers allow developers to define how a web page should respond to events.</p>
                 <p>When an event occurs on a target element, a handler function is executed in response to that event.</p>
@@ -215,21 +215,17 @@
                         detach event handlers. </li>
                     <li><span class="bold"><a href="#dom-property-event-handler"> DOM Property Event Handlers</a> </span>Assigns event handlers as properties in
                         JavaScript</li>
-
                 </ul>
-
-                
             </div>
             <div>
-                
                 
                 <!-- <h4>Event Propagation https://medium.com/@mdsatriaalamshah/event-propagation-in-javascript-dd5d87e4ce55</h4> -->
             </div>
         </div>
 
         <!-- Inline Events --------------------------------------------------------->
-        <div id="inline-events" class="whole-card">
-            <div>
+        <div id="inline-events" class="card whole-card">
+            <div class="main-card-contents">
                 <h2>Inline Event Handlers</h2>
                 <p>JavaScript inline event handlers involve directly embedding JavaScript code or function calls within HTML attributes to respond to specific events.</p>
                 <p>This method directly links the presentation layer (HTML) with the behavior layer (JavaScript).</p>
@@ -251,51 +247,54 @@
                     </ul>
                 </ol>
             </div>
-            <!-- Examples -------------------------------------------------------------->
-            <!-- Example One ----------------------------------------------------------->
-             <div class="code-box-container small-code-box">
+
+            <div class="code-box-container code-box-med">
                 <div class="code-box-title">
-                    <h3>Simple Inline JavaScript</h3>
+                     <h3>Simple Inline JavaScript</h3>
                 </div>
+
                 <div class="code-box-contents">
-                    <p class="code-box-code">
-                                <span class="code-purple">&lt;button
-                                <span class="code-blue">onclick=</span>
-                                <span class="code-light-blue">console</span>.<span class="code-orange-yellow">log(</span>
-                        <span class="code-blue">event</span>
-                        <span class="code-orange-yellow">);</span>
-                                &gt;
-                            </span>
-                            Click Me
-                            <span class="code-purple">&lt;/button&gt;</span><br>
-                    </p><br>
-
-                    <p class="code-box-code">
-                                <span class="code-purple">&lt;button
-                                <span class="code-blue">onclick=</span>
-                                <span class="code-light-blue">console</span>.<span class="code-orange-yellow">log(</span>
-                        <span class="code-blue">event.type</span>
-                        <span class="code-orange-yellow">);</span>
-                                &gt;
-                            </span>
-                            Click Me
-                            <span class="code-purple">&lt;/button&gt;</span><br>
-                    </p><br>
-
-                    <p class="code-box-code">
-                                <span class="code-purple">&lt;button</span>
-                                <span class="code-blue">onclick=</span>
-                                <span class="code-orange-yellow">alert(</span>
-                                'HI!'
-                                <span class="code-orange-yellow">);</span>
-                                <span class="code-purple">&gt;</span>
-                                Click Me
-                                <span class="code-purple">&lt;/button&gt;</span><br>
-                    </p><br>
-
-                    <p class="code-box-code">
+                    <div class="code-line">
+                        <p>
                             <span class="code-purple">&lt;button
-                            <span class="code-blue">onclick=</span>
+                            <span class="code-pink">onclick=</span>
+                            <span class="code-light-blue">console</span>.<span class="code-orange-yellow">log(</span>
+                            <span class="code-pink">event</span>
+                            <span class="code-orange-yellow">);</span>
+                            &gt;
+                            </span>
+                            Click Me
+                            <span class="code-purple">&lt;/button&gt;</span><br>           
+                        </p>
+                    </div>
+                    <div class="code-line">
+                        <p>
+                            <span class="code-purple">&lt;button
+                            <span class="code-pink">onclick=</span>
+                            <span class="code-light-blue">console</span>.<span class="code-orange-yellow">log(</span>
+                            <span class="code-pink">event.type</span>
+                            <span class="code-orange-yellow">);</span>
+                            &gt;</span>
+                            Click Me
+                            <span class="code-purple">&lt;/button&gt;</span><br>     
+                        </p>
+                    </div>
+                    <div class="code-line">
+                        <p>
+                            <span class="code-purple">&lt;button</span>
+                            <span class="code-pink">onclick=</span>
+                            <span class="code-orange-yellow">alert(</span>
+                            'HI!'
+                            <span class="code-orange-yellow">);</span>
+                            <span class="code-purple">&gt;</span>
+                            Click Me
+                            <span class="code-purple">&lt;/button&gt;</span><br>         
+                        </p>
+                    </div>
+                    <div class="code-line">
+                        <p>
+                            <span class="code-purple">&lt;button
+                            <span class="code-pink">onclick=</span>
                             <span class="code-orange-yellow"> "myFunction()"</span>
                             &gt;
                             </span>
@@ -303,24 +302,27 @@
                             <span class="code-purple">&lt;/button&gt;</span><br>
                             <!-- Script ---------------------------->
                             <span class="code-purple">&lt;script&gt;</br></span> 
-                            &nbsp;<span class="code-blue"> function</span>
+                            &nbsp;<span class="code-pink"> function</span>
                             <span class="code-orange-yellow">myFunction() &nbsp;{</span>
-                            </br> &nbsp; &nbsp; &nbsp;<span class="code-blue">console.log(</span>"Button clicked!"
-                            <span class="code-blue">);</span></br>
-                            &nbsp;<span class="code-orange-yellow">}</span> </br>
-                            <span class="code-purple">&lt;/script&gt;</span>
-                    </p><br>
+                            </br> &nbsp; &nbsp; &nbsp;<span class="code-pink">console.log(</span>"Button clicked!"
+                            <span class="code-pink">);</span></br>
+                            &nbsp;<span class="code-orange-yellow">}</span> </br>    
+                        </p>
+                    </div>
+                    <div class="code-line">
+                        <p><span class="code-purple">&lt;/script&gt;</span></p>
+                    </div>
                 </div>
-                <div class="example-info">
-                    <ul>
-                        <li><span class="bold">onclick: </span>is the event handler attribute</li>
-                        <li><span class="bold">alert('HI!'): </span>is the event handler function</li>
-                        <li>When the button is clicked an alert box with the message "HI!" will show</li>
-                    </ul>
+            
+                <div class="code-info">
+                        <ul>
+                            <li><span class="bold">onclick: </span>is the event handler attribute</li>
+                            <li><span class="bold">alert('HI!'): </span>is the event handler function</li>
+                            <li>When the button is clicked an alert box with the message "HI!" will show</li>
+                        </ul>
                 </div>
-
             </div>
-          
+            
             <!-- Drawbacks ----------------------------------------------------------->
             <div>
                 <h4>Drawbacks of Inline Event Handlers </h4>
@@ -355,8 +357,8 @@
         </div>
 
         <!-- Add Event Listener -------------------------------------------------------->
-        <div id="add-event-listener" class="whole-card ">
-            <div>
+        <div id="add-event-listener" class="card whole-card ">
+            <div class="main-card-contents">
                 <h2>Event Listener Method</h2>
                 <p>The addEventListener() method in JavaScript is used to attach an event handler to a specified
                     element. This enables you to execute a function when a particular event occurs on that element</p>
@@ -384,66 +386,71 @@
                     <li><span class="bold">useCapture: </span> An optional boolean value specifying whether to use event
                         capturing or bubbling (default is false for bubbling).</li>
                 </ul>
-
-                   <h4>How to use event handler functions with events</h4>
-                <ol>
-                    <li><span class="bold">Element Selection:</span> Select the HTML element to which you want to attach
-                        an event handler.</li>
-                    <li><span class="bold">Event Type:</span> Specify the type of event you want to listen for.</li>
-                    <li><span class="bold">Event Handler Function:</span> Define a JavaScript function that will be
-                        executed when the specified event occurs on the selected element</li>
-                    <li><span class="bold">Event Binding:</span> Bind the event handler function to the selected element
-                        and event type</li>
-                </ol>
             </div>
 
-            <div class="code-box-container small-code-box">
-                <div class="code-box-title">
-                    <h3>addeventlisener</h3>
-                </div>
-                <div class="code-box-contents">
-                    <p>
-                        <span class="code-purple">&lt;button</span>
-                    <span class="code-blue">id =</span>
-                    <span class="code-orange-yellow">"myButton"</span>
-                    <span class="code-purple">&gt;</span>
-                    Click Me
-                    <span class="code-purple">&lt;/button&gt;</span>
-
-                    </br>
-                    <!-- Script---------------------------------->
-                    <span class="code-purple">&lt;script&gt;</br></span>
-
-                    <span class="code-blue">&nbsp; &nbsp; const </span>
-                    <span class="yellow-green">button</span>
-                    =
-                    <span class="code-blue">document.getElementById(
-                        <span class="code-orange-yellow">'myButton'</span>
-                        );</span>
-                    </br>
-                    </br>
-                    &nbsp; &nbsp; <span class="yellow-green">button</span>
-                    <span class="code-blue">.addEventListener(</span>
-                    <span class="code-orange-yellow">'click'</span>
-                    ,
-                    <span class="yellow-green">function() {</span>
-                    </br>
-                    &nbsp; &nbsp; &nbsp; &nbsp; <span class="code-orange-yellow">alert(</span>
-                    'HI!'
-                    <span class="code-orange-yellow">);</span>
-                    </br>
-                    &nbsp; &nbsp; <span class="yellow-green">}</span>
-                    <span class="code-blue">);</span>
-                    </br>
-                    <span class="code-purple">&lt;/script&gt;</span>
-                    </p>
-              
-                </div>
+            <div class="example">
                 <div class="example-info">
-                    <p>When the button is clicked an alert box with the message "HI!" will show</p>
+                     <h4>How to use event handler functions with events</h4>
+                    <ol>
+                        <li><span class="bold">Element Selection:</span> Select the HTML element to which you want to attach
+                            an event handler.</li>
+                        <li><span class="bold">Event Type:</span> Specify the type of event you want to listen for.</li>
+                        <li><span class="bold">Event Handler Function:</span> Define a JavaScript function that will be
+                            executed when the specified event occurs on the selected element</li>
+                        <li><span class="bold">Event Binding:</span> Bind the event handler function to the selected element
+                            and event type</li>
+                    </ol>
                 </div>
 
+                <div class="code-box-container code-box-small">
+                    <div class="code-box-title">
+                        <h3>addeventlisener</h3>
+                    </div>
+                    <div class="code-box-contents">
+                        <p>
+                            <span class="code-purple">&lt;button</span>
+                            <span class="code-pink">id =</span>
+                            <span class="code-orange-yellow">"myButton"</span>
+                            <span class="code-purple">&gt;</span>
+                            Click Me
+                            <span class="code-purple">&lt;/button&gt;</span>
+
+                            </br>
+                        <!-- Script---------------------------------->
+                            <span class="code-purple">&lt;script&gt;</br></span>
+
+                            <span class="code-pink">&nbsp; &nbsp; const </span>
+                            <span class="yellow-green">button</span>
+                            =
+                            <span class="code-pink">document.getElementById(
+                                <span class="code-orange-yellow">'myButton'</span>
+                                );</span>
+                            </br>
+                            </br>
+                            &nbsp; &nbsp; <span class="yellow-green">button</span>
+                            <span class="code-pink">.addEventListener(</span>
+                            <span class="code-orange-yellow">'click'</span>
+                            ,
+                            <span class="yellow-green">function() {</span>
+                            </br>
+                            &nbsp; &nbsp; &nbsp; &nbsp; <span class="code-orange-yellow">alert(</span>
+                            'HI!'
+                            <span class="code-orange-yellow">);</span>
+                            </br>
+                            &nbsp; &nbsp; <span class="yellow-green">}</span>
+                            <span class="code-pink">);</span>
+                            </br>
+                            <span class="code-purple">&lt;/script&gt;</span>
+                        </p>
+                    </div>
+                    <div class="code-info">
+                        <p>When the button is clicked an alert box with the message "HI!" will show</p>
+                    </div>
+
+                </div>
             </div>
+
+            <div>
                  <h4>Key Features and Benefits</h4>
                 <ul>
                     <li><span class="bold">Multiple Event Listeners: </span>You can add multiple event listeners to the same element for the same event.</li>
@@ -459,11 +466,12 @@
                     <li>The "this" keyword inside the event handler function refers to the element on which the event occurred.</li>
                     <li>The event object is automatically passed as the first argument to the event handler function. It contains information about the event.</li>
                 </ul>
+            </div>
         </div>
 
         <!-- DOM Property Event Handler -------------------------------------------->
-        <div id="dom-property-event-handler" class="whole-card ">
-            <div>
+        <div id="dom-property-event-handler" class="card whole-card ">
+            <div class="main-card-contents">
                 <h2>DOM Property Event Handlers</h2>
                 <p>DOM property event handlers are a simple way to respond to events by assigning a function to the element's event property (e.g., onclick, onmouseover). </p>
                 <p>Sets the element's event property directly to a function</p>
@@ -473,59 +481,81 @@
                     <li>It separates HTML and JavaScript, improving readability</li>
                     <li>Only one handler can be assigned to an event property for a given element</li>
                 </ul>
+             </div>   
 
-                <div class="code-box-container small-code-box">
-                <div class="code-box-title">
-                    <h3>DOM Property Event Handler</h3>
-                </div>
-                <div class="code-box-contents">
-                    <p>
-                        <span class="code-purple">&lt;button</span>
-                    <span class="code-blue">id =</span>
-                    <span class="code-orange-yellow">"myButton"</span>
-                    <span class="code-purple">&gt;</span>
-                    Click Me
-                    <span class="code-purple">&lt;/button&gt;</span>
-
-                    </br>
-                    <!-- Script---------------------------------->
-                    <span class="code-purple">&lt;script&gt;</br></span>
-
-                    <span class="code-blue">&nbsp; &nbsp; const </span>
-                    <span class="yellow-green">myButton</span>
-                    =
-                    <span class="code-blue">document.getElementById(
-                        <span class="code-orange-yellow">'myButton'</span>
-                        );</span>
-                    </br>
-                    </br>
-                    &nbsp; &nbsp; <span class="yellow-green">myButton</span>
-                    <span class="code-blue">.onclick</span>
-                    <span class="code-orange-yellow">=</span>
-                    <span class="yellow-green">function() {</span>
-                    <span class="code-orange-yellow">alert(</span>
-                    'HI!'
-                    <span class="code-orange-yellow">);</span>
-                    <span class="yellow-green">}</span>
-                    
-                    </br>
-                    <span class="code-purple">&lt;/script&gt;</span>
-                    </p>
-              
-                </div>
+            <div class="example">
                 <div class="example-info">
-                    <p>When the button is clicked an alert box with the message "HI!" will show</p>
+                    <h4>How to use DOM Property Event Handlers</h4>
+                    <ol>
+                        <li>Select the HTML element you want to add the event handler to</li>
+                        <li>Assign/Attach a function to the corresponding DOM property event handler of the selected element</li>  
+                    </ol>
+                </div>
+
+                <div class="code-box-container code-box-small">
+                    <div class="code-box-title">
+                        <h3>DOM Property Event Handler</h3>
+                    </div>
+                    <div class="code-box-contents">
+                            <p>
+                                <div class="code-line">
+                                    <p>
+                                        <span class="code-purple">&lt;button</span>
+                                        <span class="code-pink">id =</span>
+                                        <span class="code-orange-yellow">"myButton"</span>
+                                        <span class="code-purple">&gt;</span>
+                                        Click Me
+                                        <span class="code-purple">&lt;/button&gt;</span><br><br>
+                                    </p>
+                                </div>
+
+                                <div class="code-line">
+                                    <p>
+                                        <span class="code-purple">&lt;script&gt;</br></span>
+                                    </p>
+                                </div>
+
+                                <div class="code-line">
+                                    <p>
+                                        <span class="code-pink">&nbsp; &nbsp; const </span>
+                                        <span class="yellow-green">myButton</span>
+                                        =
+                                        <span class="code-pink">document.getElementById(
+                                            <span class="code-orange-yellow">'myButton'</span>
+                                        );</span>
+                                    </p>
+                                </div>
+                                <div class="code-line">
+                                    <p>
+                                        &nbsp; &nbsp; <span class="yellow-green">myButton</span>
+                                        <span class="code-pink">.onclick</span>
+                                        <span class="code-orange-yellow">=</span>
+                                        <span class="yellow-green">function() {</span>
+                                        <span class="code-orange-yellow">alert(</span>
+                                        'HI!'
+                                        <span class="code-orange-yellow">);</span>
+                                        <span class="yellow-green">}</span>
+                                    </p>
+                                </div>
+                                <div class="code-line">
+                                    <p>
+                                        <span class="code-purple">&lt;/script&gt;</span>
+                                    </p>
+                                </div>
+                                
+
+                            <!-- Script---------------------------------->
+
+                    
+                    </div>
+                    <div class="code-info">
+                        <p>When the button is clicked an alert box with the message "HI!" will show</p>
+                    </div>
                 </div>
 
             </div>
 
-
-    
-                <h4>How to use DOM Property Event Handlers</h4>
-                <ol>
-                    <li>Select the HTML element you want to add the event handler to</li>
-                    <li>Assign/Attach a function to the corresponding DOM property event handler of the selected element</li>  
-                </ol>
+            <div class="extra-info">
                 <h4>Key features and considerations</h4>
                 <ul>
                     <li>This method is straightforward for attaching a single event handler to an element</li>
@@ -533,12 +563,10 @@
                     <li>While still functional, <a href="#add-event-listener">addEventListener()</a> is generally the preferred method for modern web development due to its flexibility and ability to attach multiple event listeners. </li>
                 </ul>
             </div>
-            <div>
-            </div>
         </div>
      
         <!-- Custom Events --------------------------------------------------------->
-        <div id="custom-events" class="card ">
+        <div id="custom-events" class="card whole-card">
             <div>
                 <h2>Custom Events</h2>
                 <p>User-defined events that allow for more flexible and specific interactions beyond the standard events
@@ -561,7 +589,7 @@
 
 
         <!-- Prevent Default --------------------------------------------------------->
-        <div id="prevent-default" class="whole-card ">
+        <div id="prevent-default" class="card whole-card ">
             <div>
                 <h2>preventDefault()</h2>
                 <p>The event.preventDefault() method is a crucial part of handling events with JavaScript</p>

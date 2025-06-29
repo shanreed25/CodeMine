@@ -29,6 +29,8 @@ body.dark-mode {
    --mode-icon-margin: .4rem 0 0 2.2rem;
 }
 
+/*****************************************************************BODY***************************************************************/
+
 body {
   background-color: var(--main-background-color);
   color: var(--primary-text-color);
@@ -38,20 +40,7 @@ body {
   transition: background-color 0.5s, color 0.5s; /* Smooth transitions */
 }
 
-/*CONTENT*/
-
-a:hover{
-    color: #90bc56;
-    font-weight: bolder;
-}
-
-
-h1{
-    font-family: "Poppins", sans-serif;
-    font-weight: 900;
-    font-style: italic;
-}
-
+/*************************************************************HEADER****************************************************************/
 
 .header {
     background-color: var(--header-background-color);
@@ -60,7 +49,24 @@ h1{
     width: 100%;
 }
 
-/*Menu Bar*/
+h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+
+/* a:hover{
+    color: #90bc56;
+    font-weight: bolder;
+} */
+
+
+
+
+
+
+/*************************************************************MENU****************************************************************/
 .menu-container{
     background-color: var( --secondary-background-color);
     width: 100%;
@@ -69,7 +75,7 @@ h1{
     align-items: center;
 }
 
-/* Navigation Bar */
+/* Navigation Items */
 .menu-nav {
     width: 80%;
     padding: 1.5em;
@@ -81,283 +87,10 @@ h1{
     text-decoration: none;
 }
 
-/* Mode Switch */
-.mode-switch{
-
-}
-/* The switch - the box around the slider */
-.mode-switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-
-/* Hide default HTML checkbox */
-.mode-switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-/* The slider */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: var(--header-background-color);
-  -webkit-transition: .1s;
-  transition: .1s;
-}
-
-.mode-icon{
-    margin: var(--mode-icon-margin);
-    position: absolute;
-    color: var(--header-background-color);
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: var(--secondary-background-color);
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
+/*Mode Toggle code inside ./CSS/mode.css
 
 
-/*Main Content*/
-.main-content {
-    flex-grow: 1; /* Allow main content to take up remaining space */
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap; /* Wrap cards for responsiveness */
-    gap: 20px; /* Add spacing between cards */
-}
-
-.card {
-    width: calc(50% - 30px); /* Two cards per row with spacing */
-}
-
-.whole-card {
-    width: calc(100% - 40px); /* One card on the row */
-}
-
-.card, .whole-card{
-    border: 1px solid var(--card-border);
-    padding: 20px;
-    border-radius: 5px;
-    box-sizing: border-box; /* Include padding and border in width */
-    background-color: var(--card-background);
-}
-
-.card-question{
-    font-size: 1.5rem;
-}
-
-.card-answer{
-    color: rgb(175, 175, 69);
-    font-weight: bolder;
-}
-
-.card-answer:hover{
-    color: rgb(77, 241, 55);
-    font-weight: bolder;
-    font-size: 2rem;
-}
-
-
-.card-link{
-    
-}
-
-.card-link:hover{
-   
-}
-
-
-/* Examples */
-.multi-examples{
-    display: flex;
-    flex-wrap: wrap; /* Wrap cards for responsiveness */
-    gap: 20px; /* Add spacing between cards */
-}
-
-.code-box-container{
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-weight: bolder;
-}
-.code-whole-box-container{
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-weight: bolder;
-    height: 40vh;
-    width: calc(100% - 10px); /* Two cards per row with spacing */
-    box-sizing: border-box; /* Include padding and border in width */
-    margin: 2rem;
-
-}
-
-.code-half-box-container{
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-weight: bolder;
-    height: 40vh;
-    width: calc(50% - 10px); /* Two cards per row with spacing */
-    box-sizing: border-box; /* Include padding and border in width */
-    margin: 2rem;
-}
-
-.small-code-box{
-    width: calc(41% - 10px); /* Two cards per row with spacing */
-    box-sizing: border-box; /* Include padding and border in width */
-    margin: 2rem;
-}
-
-.small-code-box .code-box-title{
-    background-color: #90bc56;
-    height: 50%;
-    width: 100%;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;   
-}
-
-.small-code-box .code-box-title h3{
-    margin: 0;
-    padding: .4rem;
-}
-
-
-.code-box-title{
-    background-color: #90bc56;
-    height: 10%;
-    width: 100%;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;   
-}
-
-
-.code-box-title h3{
-    margin-top: 0;
-    padding: .4rem;
-}
-
-.code-box-contents{
-    background-color: #19302B;
-    height: 90%;
-    width: 90%;
-
-    color: #FFFFFF;
-    padding: 5%;
-}
-
-.code-box-code{
-    margin: 0;
-}
-
-.example-info{
-    font-size: .8rem;
-}
-
-
-
-/* Code as Plain Text: Example cards */
-.code-box{
-    font-weight: bolder;
-    font-size: .9rem;
-    border: 1px solid var(--card-border);
-    padding: 10px;
-    border-radius: 5px;
-    width: calc(100% - 10px); /* Two cards per row with spacing */
-    box-sizing: border-box; /* Include padding and border in width */
-}
-
-.code-yellow-background{
-    font-weight: bolder;
-    background-color: yellow;
-}
-
-.code-blue{
-    color: blue;
-}
-
-.code-greenish{
-    color: #C2DA7C;
-}
-
-.code-purple{
-    color: blueviolet;
-}
-
-.code-light-blue{
-    color: rgb(58, 158, 240)
-}
-
-.code-green{
-    color: green;
-    font-weight: bolder;
-}
-
-.code-orange-yellow{
-    color: rgb(226, 149, 5);
-}
-
-.code-light-purple{
-    color: rgb(180, 68, 231);
-}
-
-.code-pink{
-    color: rgb(232, 5, 240);
-}
-
-/* Code as Plain text */
-.yellow-green{
-    color: yellowgreen;
-}
-
-.yellow{
-    color: yellow;
-}
-
-.code-review{
-    color: rgb(31, 223, 31)
-}
-
-/* Textareas */
-.small{
-    width: 25rem;
-}
-
-
-/* Special Text */
-.bold{
-    font-weight: bolder;
-}
-
-
-/*FOOTER*/
+/*****************************************************************FOOTER*********************************************************************************/
 footer{
     min-height: 25rem;
     background-color: var(--secondary-background-color);
@@ -365,18 +98,6 @@ footer{
 }
 
 
-/* Table */
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-  }
-  th, td {
-    padding: 8px; /* Add some padding to cells */
-    text-align: left; /* Align text to the left */
-  }
-  th {
-    background-color: #f2f2f2; /* Add a light gray background to header cells */
-  }
 
 
 /* Responsive adjustments */
