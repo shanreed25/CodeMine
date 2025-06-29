@@ -179,6 +179,7 @@
                             <li><span class="bold">currentTarget: </span>the element whose event listener was triggered</li>
                             <li><span class="bold">bubbles: </span>A boolean indicating whether the event will bubble up through the DOM</li>
                             <li><span class="bold">defaultPrevented: </span>shows if preventDefault() has been called</li>
+                            <li><span class="bold">data: </span>Contains the optional data passed to an event method when the current executing handler is bound</li>
                             <li><span class="bold">isTrusted: </span> A boolean that indicates whether the event was triggered by the browser (true) or by JavaScript (false)</li>
                             <li><span class="bold">composed: </span>indicates if the event can bubble across the shadow DOM</li>
                             <li><span class="bold">eventPhase: </span>shows the current phase of the event flow</li>
@@ -591,6 +592,38 @@
             </div>
         </div>
     </main>
+
+    <div>
+        <p>
+            
+# Event bubbling 
+is a fundamental concept in JavaScript that describes the order in which event handlers are executed when an event occurs on an element with nested elements. It is a type of event propagation where an event first triggers on the innermost target element, and then successively triggers on the ancestors (parents) of the target element in the same nesting hierarchy until it reaches the outermost DOM element or document object. 
+When an event occurs on a DOM element, it first goes through the capture phase, where the event travels down the DOM tree from the window to the target element. Then, the event triggers on the target element itself. Finally, the event goes through the bubbling phase, where the event travels back up the DOM tree from the target element to the window.
+Event bubbling can be useful for a variety of purposes, such as:
+Centralized event handling:
+You can attach event listeners to parent elements and handle events that occur on their children. This can simplify your code and make it easier to manage events.
+Event delegation:
+You can use event bubbling to implement event delegation, which allows you to handle events on a large number of elements without attaching event listeners to each element individually.
+Error handling:
+If an error occurs during the handling of an event at a lower level in the hierarchy, the event will continue to bubble up. This allows you to have centralized error handling at a higher level. 
+However, event bubbling can also cause unexpected problems if you're not careful. For example, if you have two event listeners on different elements that are both triggered by the same event, the event listener on the parent element will be triggered after the event listener on the child element.
+To prevent event bubbling, you can use the stopPropagation() method of the event object. This method will prevent the event from bubbling up to its parent elements
+
+# Event propagation
+ in JavaScript describes the order in which event handlers are executed when an event occurs on an element that has nested elements. There are three phases: capturing, target, and bubbling. 
+Capturing Phase: The event travels down the DOM tree from the window to the target element. Event listeners in capture mode are triggered.
+Target Phase: The event reaches the target element, and any event handlers attached to the target element are triggered.
+Bubbling Phase: The event travels back up the DOM tree from the target element to the window. Event listeners in bubble mode are triggered. 
+By default, event listeners are in bubble mode, meaning that the event will bubble up the DOM tree after it reaches the target element. However, you can set an event listener to capture mode by passing true as the third argument to the addEventListener() method:
+JavaScript
+
+element.addEventListener('click', function(event) {
+  // This code will be executed during the capturing phase
+}, true);
+You can also use event.stopPropagation() to stop the event from propagating further up the DOM tree during the bubbling or capturing phase. Additionally, event.preventDefault() prevents the default action associated with the event, such as submitting a form or following a link.
+
+        </p>
+    </div>
 
     <footer>
         <h1>FOOTER</h1>

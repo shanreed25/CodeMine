@@ -12,7 +12,7 @@
   --card-border: #19302B;
   --bold-text: #000000;
   --dark-mode-button: #90bc56;
-  --mode-icon-margin: .4rem 0 0 2.2rem;
+  --mode-icon-margin: .4rem 0 0 .5rem;
 }
 
 /* Dark mode styles */
@@ -26,7 +26,7 @@ body.dark-mode {
   --secondary-text-color:  #FFFFFF;        
   --card-border: #575757;
   --bold-text: #FFFFFF;
-   --mode-icon-margin: .4rem 0 0 .5rem;
+   --mode-icon-margin: .4rem 0 0 2.2rem;
 }
 
 body {
