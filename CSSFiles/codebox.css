@@ -121,6 +121,10 @@
     color: rgb(180, 68, 231);
 }
 
+.code-comment-grey{
+    color: grey;
+}
+
 .code-pink{
     color: rgb(255, 119, 142);
 }
