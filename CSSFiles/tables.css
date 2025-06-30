@@ -10,3 +10,22 @@ table, th, td {
   th {
     background-color: #f2f2f2; /* Add a light gray background to header cells */
   }
+
+.table-code-purple{
+    color: blueviolet;
+}
+
+.table-code-green{
+    color: green;
+}
+
+.table-code-grey{
+  color: grey;
+}
+
+.table-code-pink{
+  color: rgb(243, 85, 111);
+}
+.table-code-blue{
+  color: blue;
+}
