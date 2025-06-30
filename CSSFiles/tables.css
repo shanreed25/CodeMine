@@ -1,6 +1,9 @@
 /*****************************************************************TABLES*********************************************************************************/
+table{
+  background-color: var(--table-bg);
+}
 table, th, td {
-    border: 1px solid black;
+    border: 1px solid var(--table-outline);
     border-collapse: collapse;
   }
   th, td {
@@ -8,7 +11,7 @@ table, th, td {
     text-align: left; /* Align text to the left */
   }
   th {
-    background-color: #f2f2f2; /* Add a light gray background to header cells */
+    background-color: var(--table-header-bg); /* Add a light gray background to header cells */
   }
 
 .table-code-purple{

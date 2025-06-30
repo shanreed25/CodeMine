@@ -13,6 +13,9 @@
   --bold-text: #000000;
   --dark-mode-button: #90bc56;
   --mode-icon-margin: .4rem 0 0 .5rem;
+  --table-bg: #FFFFFF;
+  --table-header-bg: #f2f2f2;
+  --table-outline: #121212;
 }
 
 /* Dark mode styles */
@@ -26,7 +29,10 @@ body.dark-mode {
   --secondary-text-color:  #FFFFFF;        
   --card-border: #575757;
   --bold-text: #FFFFFF;
-   --mode-icon-margin: .4rem 0 0 2.2rem;
+  --mode-icon-margin: .4rem 0 0 2.2rem;
+  --table-bg: #282828;
+  --table-header-bg: #121212;
+  --table-outline: #575757;
 }
 
 /*****************************************************************BODY***************************************************************/
