@@ -38,7 +38,7 @@
     </div>
 
     <main class="main-content">
-        <div class="card whole-card">
+        <div id="basics" class="card whole-card">
             <h2>Basics</h2>
             <table>
                 <thead>
@@ -87,7 +87,7 @@
             </table>
         </div>
         
-        <div class="card whole-card">
+        <div id="data-types" class="card whole-card">
             <h2>Data Types</h2>
             <table>
                 <thead>
@@ -167,7 +167,7 @@
         </div>
 
 
-        <div class="card whole-card project-card">
+        <div id="tip-calculator-1" class="card whole-card project-card">
             <div class="project-info">
                 <h2>Tip Calculator</h2>
                                     <div>
@@ -199,21 +199,43 @@
                     <div class="code-box-contents">
                         <div class="code-line">
                             <p>
-                                <span class="code-light-blue">print(</span> "Welcome to the python tip calculator!" x<span class="code-light-blue">)</span><br>
-
-                                <span class="code-pink">bill = </span>  <span class="code-light-blue">float(input(</span>"What was the total bill? $"<span class="code-light-blue">))</span><br>
+                                <span class="code-light-blue">print(</span>
+                                "Welcome to the python tip calculator!"
+                                <span class="code-light-blue">)</span><br>
+                                <span class="code-pink">bill = </span>  
+                                <span class="code-light-blue">float(input(</span>
+                                "What was the total bill? $"
+                                <span class="code-light-blue">))</span><br>
                                 <span class="code-pink">tip_percent = </span>
                                 <span class="code-light-blue">int(input(</span>
                                 "What percentage tip would you like to give? 10 12 15 "
                                 <span class="code-light-blue">))</span>
-                                <span class="code-green">/100</span> <br>
+                                <span class="code-green">/</span> 
+                                <span class="code-purple">100</span><br>
                                 <span class="code-pink">tip_amount = </span> 
-                                <span class="code-pink">bill <span class="code-light-blue">*</span> tip_percent</span><br>
+                                <span class="code-pink">bill 
+                                <span class="code-light-blue">*</span>
+                                 tip_percent</span><br>
                                 <span class="code-pink">people = </span>  
                                 <span class="code-light-blue">int(input(</span>
                                 "How many people to split the bill? "
                                 <span class="code-light-blue">))</span><br>
-                                <span class="code-pink">amount = </span>  (bill + tip_amount) / people<br>
+                                <span class="code-pink">amount = </span> 
+                                <span class="code-light-blue">(</span> 
+                                <span class="code-pink">bill + tip_amount</span>
+                                <span class="code-light-blue">)</span> 
+                                <span class="code-green">/</span> 
+                                <span class="code-pink">people</span><br>
+                                <span class="code-pink">amount</span>
+                                =
+                                <span class="code-green">f"</span>
+                                <span class="code-orange-yellow">{</span>
+                                    amount
+                                <span class="code-orange-yellow">:</span>
+                                <span class="code-green">.2f</span>
+                                <span class="code-orange-yellow">}</span>
+                                <span class="code-green">"</span>
+                                <span class="code-comment-grey"># Formats the  number to two decimal places and ensure the display includes trailing zeros</span> <br>
                                 <span class="code-light-blue">print(</span>
                                 <span class="code-pink">amount</span>
                                 <span class="code-light-blue">)</span><br>
@@ -266,26 +288,40 @@
                     <div class="code-box-contents">
                         <div class="code-line">
                             <p>
-                                <span class="code-light-blue">print(</span> "Welcome to the python tip calculator!" x<span class="code-light-blue">)</span><br>
-
-                                <span class="code-pink">bill = </span>  <span class="code-light-blue">float(input(</span>"What was the total bill? $"<span class="code-light-blue">))</span><br>
+                                <span class="code-light-blue">print(</span>
+                                "Welcome to the python tip calculator!"
+                                <span class="code-light-blue">)</span><br>
+                                <span class="code-pink">bill = </span>  
+                                <span class="code-light-blue">float(input(</span>
+                                "What was the total bill? $"
+                                <span class="code-light-blue">))</span><br>
                                 <span class="code-pink">tip_percent = </span>
                                 <span class="code-light-blue">int(input(</span>
                                 "What percentage tip would you like to give? 10 12 15 "
                                 <span class="code-light-blue">))</span>
+                                <span class="code-green">/</span> 
+                                <span class="code-purple">100</span><br>
                                
                                 <span class="code-pink">people = </span>  
                                 <span class="code-light-blue">int(input(</span>
                                 "How many people to split the bill? "
                                 <span class="code-light-blue">))</span><br>
-                                final_bill = bill * ((tip_percent / 100 )+ 1)<br>
-                                amount_per_person = final_bill / 5<br>
-                                amount_per_person = f"{amount_per_person:.2f}"<br>
-                                print(amount_per_person)<br>
-                                # should equal 168 percisely: https://docs.python.org/3/tutorial/floatingpoint.html<br>
-                                #print(150 * 1.12)# returns 168.00000000000003 but don't worry about this,<br>
-                                ## it is related to how python processes floating point numbers<br>
-                                        
+                                <span class="code-pink">final_bill = bill</span>
+                                 * 
+                                 <span class="code-light-blue">((</span>
+                                 <span class="code-pink">tip_percent</span>
+                                 <span class="code-green">/</span> 
+                                <span class="code-purple">100</span><br> 
+                                  )+ 1)<br>
+                           <!-- print( "Welcome to the python tip calculator!")
+                                bill = float(input("What was the total bill? $"))
+                                tip_percent = int(input( "What percentage tip would you like to give? 10 12 15 " ))
+                                people = int(input( "How many people to split the bill? " ))
+                                final_bill = bill * ((tip_percent / 100 )+ 1)
+                                amount_per_person = final_bill / 5
+                                amount_per_person = f"{amount_per_person:.2f}"
+                                print(amount_per_person) -->
+                                                                        
                             </p>
                         </div>
                     </div>
