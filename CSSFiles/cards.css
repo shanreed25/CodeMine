@@ -61,6 +61,22 @@
 }
 
 
+/*Project cards*/
+.project-card{
+    display: flex;
+    justify-content: center;
+
+}
+
+.project-info{
+    width: calc(50% - 10px);
+}
+
+.project-code{
+    width: calc(50% - 10px);
+}
+
+
 /* Examples */
 .multi-examples{
     display: flex;

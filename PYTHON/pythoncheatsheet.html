@@ -87,8 +87,6 @@
             </table>
         </div>
         
-        
-        
         <div class="card whole-card">
             <h2>Data Types</h2>
             <table>
@@ -166,6 +164,139 @@
                     </tr>
                 </tbody>
             </table>
+        </div>
+
+
+        <div class="card whole-card project-card">
+            <div class="project-info">
+                <h2>Tip Calculator</h2>
+                                    <div>
+                        <h4>To build a basic tip calculator in Python</h4>
+                        <ol>
+                            <li>Get user input for the bill amount, tip percentage, and the number of people that will be spliting the bill</li>
+                            <li>You will need to convert the inputs into the appropiate data type</li>
+                                <ul>
+                                    <li>The inputs will return a string but we need to work with it as numbers</li>
+                                    <li>the bill should be a floating point number</li>
+                                    <li>the tip percentage and number of people should be a integer</li>
+                                    <li></li>
+                                </ul>
+                            <li>Divide the tip percentage by 100, to convert it to a decimal then add 1 to it</li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ol>
+                    </div>
+            </div>
+
+            <div class="project-code">
+                <div class="code-box-container code-project-box-small">
+                    <div class="code-box-title">
+                        <h3>Pyton Tip Calculator</h3>
+                    </div>
+                    <div class="code-box-contents">
+                        <div class="code-line">
+                            <p>
+                                <span class="code-light-blue">print(</span> "Welcome to the python tip calculator!" x<span class="code-light-blue">)</span><br>
+
+                                <span class="code-pink">bill = </span>  <span class="code-light-blue">float(input(</span>"What was the total bill? $"<span class="code-light-blue">))</span><br>
+                                <span class="code-pink">tip_percent = </span>
+                                <span class="code-light-blue">int(input(</span>
+                                "What percentage tip would you like to give? 10 12 15 "
+                                <span class="code-light-blue">))</span>
+                                <span class="code-green">/100</span> <br>
+                                <span class="code-pink">tip_amount = </span> 
+                                <span class="code-pink">bill <span class="code-light-blue">*</span> tip_percent</span><br>
+                                <span class="code-pink">people = </span>  
+                                <span class="code-light-blue">int(input(</span>
+                                "How many people to split the bill? "
+                                <span class="code-light-blue">))</span><br>
+                                <span class="code-pink">amount = </span>  (bill + tip_amount) / people<br>
+                                <span class="code-light-blue">print(</span>
+                                <span class="code-pink">amount</span>
+                                <span class="code-light-blue">)</span><br>
+        
+                            </p>
+                        </div>
+                    </div>
+                    <div class="code-info">
+                        <ul>
+                            <li>Explanation</li>
+                            <li><span class="bold">Explanation: </span>Explanation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+         <div class="card whole-card project-card">
+            <div class="project-info">
+                <h2>Tip Calculator</h2>
+                                    <div>
+                        <h4>To build a basic tip calculator in Python</h4>
+                        <ol>
+                            <li>Get user input for the bill amount, tip percentage, and the number of people that will be spliting the bill</li>
+                            <li>You will need to convert the inputs into the appropiate data type</li>
+                                <ul>
+                                    <li>The inputs will return a string but we need to work with it as numbers</li>
+                                    <li>the bill should be a floating point number</li>
+                                    <li>the tip percentage and number of people should be a integer</li>
+                                    <li></li>
+                                </ul>
+                            <li>Divide the tip percentage by 100, to convert it to a decimal then add 1 to it</li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ol>
+                    </div>
+            </div>
+
+            <div class="project-code">
+                <div class="code-box-container code-project-box-small">
+                    <div class="code-box-title">
+                        <h3>Pyton Tip Calculator</h3>
+                    </div>
+                    <div class="code-box-contents">
+                        <div class="code-line">
+                            <p>
+                                <span class="code-light-blue">print(</span> "Welcome to the python tip calculator!" x<span class="code-light-blue">)</span><br>
+
+                                <span class="code-pink">bill = </span>  <span class="code-light-blue">float(input(</span>"What was the total bill? $"<span class="code-light-blue">))</span><br>
+                                <span class="code-pink">tip_percent = </span>
+                                <span class="code-light-blue">int(input(</span>
+                                "What percentage tip would you like to give? 10 12 15 "
+                                <span class="code-light-blue">))</span>
+                               
+                                <span class="code-pink">people = </span>  
+                                <span class="code-light-blue">int(input(</span>
+                                "How many people to split the bill? "
+                                <span class="code-light-blue">))</span><br>
+                                final_bill = bill * ((tip_percent / 100 )+ 1)<br>
+                                amount_per_person = final_bill / 5<br>
+                                amount_per_person = f"{amount_per_person:.2f}"<br>
+                                print(amount_per_person)<br>
+                                # should equal 168 percisely: https://docs.python.org/3/tutorial/floatingpoint.html<br>
+                                #print(150 * 1.12)# returns 168.00000000000003 but don't worry about this,<br>
+                                ## it is related to how python processes floating point numbers<br>
+                                        
+                            </p>
+                        </div>
+                    </div>
+                    <div class="code-info">
+                        <ul>
+                            <li>Explanation</li>
+                            <li><span class="bold">Explanation: </span>Explanation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </main>
