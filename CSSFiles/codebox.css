@@ -168,3 +168,9 @@
 .small{
     width: 25rem;
 }
+
+.code-square{
+    background-color: #19302B;
+    color: #FFFFFF;
+    padding: 1rem;
+}

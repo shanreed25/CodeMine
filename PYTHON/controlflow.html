@@ -3,23 +3,393 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Mine - Python Control Flow</title>
+    <title>Code Mine</title>
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSSFiles/cards.css">
+    <link rel="stylesheet" href="../CSSFiles/codebox.css">
+    <link rel="stylesheet" href="../CSSFiles/mode.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/525fc14ecf.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-       <header class="header">
+    <header class="header">
         <h1>Code Mine</h1>
-        <!-- Add other header elements like search bar, user profile, etc. -->
     </header>
+    <div class="menu-container">
+        <nav class="menu-nav">
+            <a href="../index.html">Dashboard</a>
+            <a href="#">Users</a>
+            <a href="#">Projects</a>
+        </nav>
 
-    <aside class="sidebar">
-        <!-- Add your navigation links here -->
-        <ul>
-            <li><a href="../index.html">Dashboard</a></li>
-            <li><a href="#">Users</a></li>
-            <li><a href="#">Settings</a></li>
-        </ul>
-    </aside>
-    <h1>Control Flow</h1>
+        <label class="mode-switch">
+            <input id="checkbox" type="checkbox">
+            <span id="slider" class="slider round">
+                <div id="mode-icon" class="mode-icon">
+                        <i class="fa-solid fa-sun"></i>
+                </div>
+            </span>
+        </label>
+    </div>
+
+    <main class="main-content">
+        <div id="control-flow" class="card whole-card">
+                <div class="main-card-contents">
+                    <h2>Control Flow</h2>
+                    <p>Control flow in Python dictates the order in which individual statements, instructions, or function calls are executed or evaluated within a program</p>
+                    <p>By default, Python code executes sequentially from top to bottom. However, control flow structures allow for deviation from this linear execution, enabling decision-making, repetition, and error handling. </p>
+
+                    <p>The primary control flow structures in Python include</p>
+                    <ul>
+                        <li>Conditional Statements (if, elif, else): These statements allow the program to execute different blocks of code based on whether a given condition is true or false.</li>
+                        <li>Loops (for, while): Loops enable the repeated execution of a block of code.</li>
+                        <li>Exception Handling (try, except, finally, else): These statements manage errors and unexpected events that may occur during program execution.</li>
+                        <li>Structural Pattern Matching (match, case): Introduced in Python 3.10, this allows for more complex conditional logic based on the structure of data.</li>
+                    </ul>
+                    <p>These control flow mechanisms are fundamental to creating dynamic and responsive Python programs, allowing them to adapt to different conditions and inputs.</p>
+                </div>
+
+                <div class="extra-info">
+                    <h4>More Info</h4>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        <div id="if-else" class="card whole-card">
+                <div class="main-card-contents">
+                    <h2>If Else Statement</h2>
+                </div>
+
+                <div class="example">
+                    <div class="example-info">
+
+                    </div>
+                    
+                    <div class="code-box-container code-box-small">
+                        <div class="code-box-title">
+                             <h3>If Else Statement</h3>
+                        </div>
+                        <div class="code-box-contents">
+                            <div class="code-line">
+                                <p><span class="code-blue">if</span> condition</p>
+                                    <p>&nbsp; &nbsp; <span class="code-green">do this</span></p>
+                                    <p><span class="code-blue">else</span>:</p>
+                                    <p>&nbsp; &nbsp; <span class="code-green">do this</span></p>
+                                    <p></p>
+
+
+                                    <p> print("Welcome to the bar!")</p>
+                                    <p> height = int(input("What is your age? "))</p>
+                                    <p> <span class="code-blue">if</span>  height >= 21: #This is a parent line of code</p>
+                                        <p>&nbsp; &nbsp; print('You can come in') #this is a child line of code</p>
+                                    <p> <span class="code-blue">else</span>:</p>
+                                        <p> &nbsp; &nbsp; print("You cannot come in")</p>
+                            </div>
+                        </div>
+                        <div class="code-info">
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>   
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="extra-info">
+                    <h4>More Info</h4>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+        </div
+
+
+ 
+               
+            <div class="code-square">
+                
+        </div>
+
+         <div id="elif" class="card whole-card">
+                <div class="main-card-contents">
+                    <h2>elif statement</h2>
+                    <p> If statement with elif conditions can check for mutiple conditions</p>
+                     <p>Once a condition is true, the code for that condition will execute the it will exit the statement. So only one condition can be true</p>
+                </div>
+
+                <div class="example">
+                    <div class="example-info">
+
+                    </div>
+                    
+                    <div class="code-box-container code-box-small">
+                        <div class="code-box-title">
+                             <h3>If Else Statement</h3>
+                        </div>
+                        <div class="code-box-contents">
+                            <div class="code-line">
+                                <p><span class="code-blue">if</span> condition:</p>
+                                <p>&nbsp; &nbsp; <span class="code-green">do A</span></p>
+                                <p><span class="code-blue">elif</span> condition:</p>
+                                <p>&nbsp; &nbsp; <span class="code-green">do B</span></p>
+                                <p><span class="code-blue">elif</span> condition:</p>
+                                <p>&nbsp; &nbsp; <span class="code-green">do C</span></p>
+                                <p><span class="code-blue">elif</span> condition:</p>
+                                <p>&nbsp; &nbsp; <span class="code-green">do D</span></p>
+                                <p><span class="code-blue">else</span>:</p>
+                                <p>&nbsp; &nbsp; <span class="code-green">do E</span></p>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="code-info">
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>   
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="extra-info">
+                    <h4>More Info</h4>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+         </div>
+
+
+         <div id="nested-if-else" class="card whole-card">
+                <div class="main-card-contents">
+                    <h2>Nested If else Statement</h2>
+                    <p>if/else statements inside other if/else statements</p>
+                </div>
+
+                <div class="example">
+                    <div class="example-info">
+
+                    </div>
+                    
+                    <div class="code-box-container code-box-small">
+                        <div class="code-box-title">
+                             <h3>Nested If else Statement</h3>
+                             
+                        </div>
+                        <div class="code-box-contents">
+                            <div class="code-line">
+                                <p><span class="code-blue">if</span> condition</p>
+                                <p>&nbsp; &nbsp; <span class="code-blue">if</span> another condition</p>
+                                <p>&nbsp; &nbsp;&nbsp; &nbsp;  <span class="code-green">do this</span></p>
+                                <p>&nbsp; &nbsp; <span class="code-blue">else</span>:</p>
+                                <p>&nbsp; &nbsp; &nbsp; &nbsp; <span class="code-green">do this</span></p>
+                                <p><span class="code-blue">else</span>:</p>
+                                <p>&nbsp; &nbsp; <span class="code-green">do this</span></p>
+                                <p></p>
+                                <br><br>
+
+                                <p>print("Welcome to the rollercoaster!")</p>
+                                <p>height = int(input("What is your height in cm? "))</p>
+
+                                <p>if height >= 120:</p>
+                                    <p>&nbsp; &nbsp; print("You can ride the rollercoaster")</p>
+                                    <p>&nbsp; &nbsp; age = int(input("What is your age?"))</p>
+                                    <p>&nbsp; &nbsp; if age<=18:</p>
+                                        <p>&nbsp; &nbsp; &nbsp; &nbsp;print("Please pay $7")</p>
+                                    <p>&nbsp; &nbsp; else:
+                                    <p>&nbsp; &nbsp; &nbsp; &nbsp; print("Please pay $12")</p>
+                                <p>else:</p>
+                                    <p>&nbsp; &nbsp; print("Sorry you have to grow taller before you can ride.")</p>
+                            </div>
+                        </div>
+                    
+                        <div class="code-info">
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>   
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="extra-info">
+                    <h4>More Info</h4>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+         </div>
+
+        <div id="nested-if-else" class="card whole-card">
+                <div class="main-card-contents">
+                    <h2>Nested If statement</h2>
+                    <p>All conditions can be true so all can be executed</p>
+                </div>
+
+                <div class="example">
+                    <div class="example-info">
+
+                    </div>
+                    
+                    <div class="code-box-container code-box-small">
+                        <div class="code-box-title">
+                             <h3>Nested If statement</h3>
+                             
+                        </div>
+                        <div class="code-box-contents">
+                            <div class="code-line">
+                                    <p>if condition 1 is true:</p>
+                                    <p>&nbsp; &nbsp; do A</p>
+                                    <p>&nbsp; &nbsp; if condition 2 is true:</p>
+                                        <p>&nbsp; &nbsp; &nbsp; &nbsp; do B</p>
+                                        <p>&nbsp; &nbsp;&nbsp; &nbsp;  if condition 3 is true:</p>
+                                            <p>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; do C</p>
+                                            <p>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;if condition 3 is true:</p>
+                                                <p>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;do D</p>
+                            </div>
+                        </div>
+                    
+                        <div class="code-info">
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>   
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="extra-info">
+                    <h4>More Info</h4>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+        </div>
+
+         <div id="nested-if-else" class="card whole-card">
+                <div class="main-card-contents">
+                    <h2>Rolle rCoaster</h2>
+                    <ul>
+                        <li>Rider must be over 120cm to ride the ride</li>
+                        <li>Tickets for kids 12 and under are $5 </li>
+                        <li>Tickets for kids 18 and under are $7</li>
+                        <li>Tickets for adults over 18 are $12</li>
+                    </ul>
+                </div>
+
+                <div class="example">
+                    <div class="example-info">
+
+                    </div>
+                    
+                    <div class="code-box-container code-box-small">
+                        <div class="code-box-title">
+                             <h3>Nested If statement</h3>
+                             
+                        </div>
+                        <div class="code-box-contents">
+                            <div class="code-line">
+                                <p>print("Welcome to the rollercoaster!")</p>
+                                <p>height = int(input("What is your height in cm? "))</p>
+
+                                <p>if height >= 120:</p>
+                                    <p>&nbsp; &nbsp; &nbsp;print("You can ride the rollercoaster")</p>
+                                    <p>&nbsp; &nbsp; &nbsp;age = int(input("What is your age? "))</p>
+                                    <p>&nbsp; &nbsp; &nbsp;if age <= 12:</p>
+                                    <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print("Child tickets are $5.")</p>
+                                    <p>&nbsp; &nbsp;  elif age <= 18:</p>
+                                        <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;print("Youth tickets are $7.")</p>
+                                    <p>&nbsp; &nbsp; else:</p>
+                                        <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print("Adult tickets are $12.")</p>
+
+                                <p>else:</p>
+                                    <p>print("Sorry you have to grow taller before you can ride.")</p>
+                         </div>
+
+                                   
+                            </div>
+                        </div>
+                    
+                        <div class="code-info">
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>   
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="extra-info">
+                    <h4>More Info</h4>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+         </div>
+
+
+
+ 
+
+
+
+  
+
+        <!-- <div id="comparison-operators">
+            <h4>Comparison Operators</h4>
+            <ul>
+                <li>> Greater than</li>
+                <li>< Less than</li>
+                <li>>= Greater than or equal to</li>
+                <li><= Less than or equal to</li>
+                <li>== Equal to</li>
+                <li>!= Not equal to</li>
+            </ul>
+
+            <p>"=" Assignment Operator</p>
+            <p>"==" Check Equality</p>
+                
+                
+                
+                
+                
+                
+        </div> -->
+
+        <div id="modulo-operator">
+            <h4>Modulo Operator %</h4>
+            <p>Binary Operator</p>
+            <p>Returns the remainder of a division</p>
+            <p>When using modulo and dividing a even number by 2, it will always return 0 </p>
+            <div class="code-square">
+                <p>user_input  = int(input("Enter a Number:"))</p>
+                <p>if user_input % 2 == 0:</p>
+                    <p>&nbsp; &nbsp; print(f"{user_input} is an even number")</p>
+                <p>else:</p>
+                    <p>&nbsp; &nbsp; print(f"{user_input} is an odd number")</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h1>FOOTER</h1>
+    </footer>
+    
+    <script src="./script.js"></script>
 </body>
-</html>
+</html
