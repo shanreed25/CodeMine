@@ -91,3 +91,9 @@
 .bold{
     font-weight: bolder;
 }
+
+
+/* Syntax Box */
+.syntax{
+    width: calc(30% - 10px);
+}

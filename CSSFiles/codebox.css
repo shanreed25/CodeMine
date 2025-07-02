@@ -1,6 +1,171 @@
 
-/* Code Boxes */
+/* All Code Boxes */
 .code-box-container{
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+.code-box-title{
+    background-color: #90bc56;
+    height: 10%;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;   
+}
+
+.code-box-contents{
+    background-color: #19302B;
+    padding: 2rem 0;;
+    color: #FFFFFF;
+}
+
+.code-line{
+    margin: 1rem;
+}
+
+.code-info{
+    border: 1px solid #ccc;
+    font-size: .8rem;
+}
+
+.code-box-title h3{
+    margin: 0;
+    padding: .4rem;
+}
+
+
+
+/* SMALL CODE BOX */
+.code-box-small{
+    width: calc(40% - 10px); /* Two cards per row with spacing */
+    box-sizing: border-box; /* Include padding and border in width */
+    margin: 1rem;
+}
+
+
+/* MEDIUM CODE BOX */
+.code-box-med{
+    width: calc(50% - 10px); /* Two cards per row with spacing */
+    box-sizing: border-box; /* Include padding and border in width */
+    margin: 1rem;
+}
+
+
+/* SYNTAX AND EXAMPLE BOXES */
+.syntax-with-example{
+    flex-grow: 1; /* Allow main content to take up remaining space */
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Wrap cards for responsiveness */
+    gap: 20px; /* Add spacing between cards */
+}
+
+.syntax{
+    width: calc(50% - 10px); /* One card on the row */
+}
+
+.example{
+    width: calc(50% - 10px); /* One card on the row */
+}
+
+
+.syntax-code-box-title, .example-code-box-title{
+    background-color: #90bc56;
+    height: 50%;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Code Boxes */
+/* .code-box-container{
 
     border-radius: 5px;
     font-weight: bolder;
@@ -32,16 +197,16 @@
 .code-info{
         border: 1px solid #ccc;
     font-size: .8rem;
-}
+} */
 
 /* SMALL CODE BOX */
-.code-box-small{
-    width: calc(40% - 10px); /* Two cards per row with spacing */
-    box-sizing: border-box; /* Include padding and border in width */
+/*.code-box-small{
+    width: calc(40% - 10px); Two cards per row with spacing 
+    box-sizing: border-box; Include padding and border in width 
     margin: 1rem;
-}
+}*/
 
-.code-box-small .code-box-title{
+/* .code-box-small .code-box-title{
     background-color: #90bc56;
     height: 50%;
     width: 100%;
@@ -52,7 +217,7 @@
 .code-box-small .code-box-title h3{
     margin: 0;
     padding: .4rem;
-}
+} */
 
 
 
@@ -77,13 +242,13 @@
 
 
 /* SMALL CODE BOX */
-.code-box-med{
-    width: calc(50% - 10px); /* Two cards per row with spacing */
-    box-sizing: border-box; /* Include padding and border in width */
+/* .code-box-med{
+    width: calc(50% - 10px); Two cards per row with spacing
+    box-sizing: border-box; Include padding and border in width
     margin: 1rem;
-}
+} */
 
-.code-box-med .code-box-title{
+/* .code-box-med .code-box-title{
     background-color: #90bc56;
     height: 50%;
     width: 100%;
@@ -94,7 +259,7 @@
 .code-box-med .code-box-title h3{
     margin: 0;
     padding: .4rem;
-}
+} */
 
 
 
