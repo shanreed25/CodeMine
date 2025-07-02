@@ -18,6 +18,7 @@
     <header class="header">
         <h1>Code Mine</h1>
     </header>
+    
     <div class="menu-container">
         <nav class="menu-nav">
             <a href="../index.html">Dashboard</a>
@@ -38,11 +39,14 @@
     </div>
 
     <main class="main-content">
-        <div class="card whole-card">
-            <h2>Rounding Numbers</h2>
-            <p> 
-               Round Function
-            </p>
+        <div id="rounding" class="card whole-card">
+            <div class="main-card-contents">
+                <h2>Rounding Numbers</h2>
+                <p> 
+                Round Function
+                </p>
+            </div>
+  
 
             <div class="example">
                 <div class="code-box-container code-box-small">
@@ -107,8 +111,8 @@
             </div>
         </div>
 
-        <div class="card whole-card">
-            <div>
+        <div id="flooring" class="card whole-card">
+            <div class="main-card-contents">
                 <h2>Flooring Numbers</h2>
                 <p> 
                     While the round() function handles the rounding logic, it returns a float, which might not always display trailing zeros.
@@ -122,23 +126,23 @@
                     when necessary
                 </p>
             </div>
-            
-            <div class="concept-card-container">
-                <div class="concept-card">
-                    <h4>String Formatting - f-strings (Formatted String Literals)</h4>
 
-                    <p>
-                        This is a modern and readable way to format strings in Python 3.6+
-                    </p>
+            <div class="syntax-with-example">
+                    <div class="syntax">
+                        <div class="syntax-info">
+                            <h2>String Formatting - f-strings (Formatted String Literals)</h2>
+                            <p>
+                                This is a modern and readable way to format strings in Python 3.6+
+                            </p>
+                        </div>
 
-                    <div class="example">
-                        <div class="code-box-container code-box-small">
-                            <div class="code-box-title">
+                        <div class="code-box-container">
+                            <div class="syntax-code-box-title code-box-title">
                                 <h3>f-string</h3>
                             </div>
                             <div class="code-box-contents">
                                 <div class="code-line">
-                                        <p>number = 8.6</p>
+                                     <p>number = 8.6</p>
                                         <p>formatted_number = f"{number:.2f}"</p>
                                         <p>print(formatted_number)</p><br>
 
@@ -152,7 +156,7 @@
                                 </div>
                             </div>
                             <div class="code-info">
-                                <ul>
+                                 <ul>
                                     <li>Explanation</li>
                                     <li>f"..." denotes an f-string.</li>
                                     <li>{number:.2f} formats the number variable</li>
@@ -162,18 +166,15 @@
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="concept-card">
-                    <h4>format() method</h4>
-
-                    <p>
-                        This method is available for string objects and provides similar formatting capabilities
-                    </p>
 
                     <div class="example">
-                        <div class="code-box-container code-box-small">
-                            <div class="code-box-title">
+                        <div class="example-info">
+                                <h2>format() method</h2>
+                                <p>This method is available for string objects and provides similar formatting capabilities</p>
+                        </div>
+
+                        <div class="code-box-container">
+                            <div class="example-code-box-title code-box-title">
                                 <h3>format() method</h3>
                             </div>
                             <div class="code-box-contents">
@@ -199,13 +200,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
             </div>
         </div>
-
-
- 
-
     </main>
 
     <footer>
