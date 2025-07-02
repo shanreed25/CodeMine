@@ -3,26 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Mine - Python Operators</title>
+    <title>Code Mine</title>
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSSFiles/cards.css">
+    <link rel="stylesheet" href="../CSSFiles/codebox.css">
+    <link rel="stylesheet" href="../CSSFiles/mode.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/525fc14ecf.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-       <header class="header">
-        <h1>Code Mine</h1>
+    <header class="header">
+        <h1>Code Mine - Operators</h1>
         <!-- Add other header elements like search bar, user profile, etc. -->
     </header>
+    <div class="menu-container">
+        <nav class="menu-nav">
+            <a href="../index.html">Dashboard</a>
+            <a href="#">Users</a>
+            <a href="#">Projects</a>
+        </nav>
 
-    <aside class="sidebar">
-        <!-- Add your navigation links here -->
-        <ul>
-            <li><a href="../index.html">Dashboard</a></li>
-            <li><a href="#">Users</a></li>
-            <li><a href="#">Settings</a></li>
-        </ul>
-    </aside>
-    <h1>Operators</h1>
-    <div>
- 
+        <label class="mode-switch">
+            <input id="checkbox" type="checkbox">
+            <span id="slider" class="slider round">
+                <div id="mode-icon" class="mode-icon">
+                        <i class="fa-solid fa-sun"></i>
+                </div>
+            
+            </span>
+        </label>
+    
     </div>
+
+    <main class="main-content">
+                <div id="card-name" class="card whole-card">
+                <div class="main-card-contents">
+                    <h2>Modulo Operator %</h2>
+                    <p>Binary Operator</p>
+                    <p>Returns the remainder of a division</p>
+                    <p>When using modulo and dividing a even number by 2, it will always return 0 </p>
+                </div>
+
+                <div class="example">
+                    <div class="example-info">
+
+                    </div>
+                    
+                    <div class="code-box-container code-box-small">
+                        <div class="code-box-title">
+                            <h3>Code Name</h3>
+                        </div>
+                        <div class="code-box-contents">
+                            <div class="code-line">
+                                    <p>user_input  = int(input("Enter a Number:"))</p>
+                                    <p>if user_input % 2 == 0:</p>
+                                        <p>&nbsp; &nbsp; print(f"{user_input} is an even number")</p>
+                                    <p>else:</p>
+                                        <p>&nbsp; &nbsp; print(f"{user_input} is an odd number")</p>
+                            </div>
+                        </div>
+                        <div class="code-info">
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>   
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="extra-info">
+                    <h4>More Info</h4>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                    </ul>
+
+                    <h4>Comparison Operators</h4>
+            <ul>
+                <li>> Greater than</li>
+                <li>< Less than</li>
+                <li>>= Greater than or equal to</li>
+                <li><= Less than or equal to</li>
+                <li>== Equal to</li>
+                <li>!= Not equal to</li>
+            </ul>
+
+            <p>"=" Assignment Operator</p>
+            <p>"==" Check Equality</p>
+                </div>
+        </div>
+    </main>
+
+    <footer>
+        <h1>FOOTER</h1>
+    </footer>
+    
+    <script src="../script.js"></script>
 </body>
-</html>
+</html
