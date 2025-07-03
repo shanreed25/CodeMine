@@ -50,12 +50,7 @@
                     <li>It provides functions for generating pseudo-random numbers, both integers and floating-point numbers. </li>
                     <li>It also offers functions for selecting random elements from sequences, shuffling sequences, and more. </li>
                 </ul>
-            </div>
-
-            <div class="syntax-with-example">
-                <div class="syntax">
-                    <div class="syntax-info">
-                        <h2>Random Module Common Functions</h2>
+                 <h2>Random Module Common Functions</h2>
                         <ul>
                             <li><span class="bold">random.randint(a, b): </span> Returns a random integer between a and b (inclusive)</li>
                             <li><span class="bold">random.random():</span>Returns a random float number between 0.0(inclusive) and 1.0(exclusive) </li>
@@ -67,15 +62,18 @@
                             <li><span class="bold"></span> </li>
                             <li><span class="bold"></span> </li>
                         </ul>
-                    </div>
+            </div>
 
+            <div class="syntax-with-example">
+                <div class="example">
                     <div class="code-box-container">
                         <div class="syntax-code-box-title code-box-title">
-                            <h3>Title</h3>
+                            <h3>random.randint(a,b) : </h3>
                         </div>
                         <div class="code-box-contents">
                             <div class="code-line">
                                 <p><span class="code-orange-yellow">import</span> random</p>
+                                <p><span class="code-comment-grey">#generates a random integer between a and b (inclusive)</span></p>
                                 <p><span class="code-pink">rand_num</span> = <span class="code-light-green">random.</span><span class="code-light-purple">randint(<span class="code-yellow-green">1, 10</span>)</span> </p>
                                 <p><span class="code-light-blue">print(<span class="code-pink">rand_num</span>)</span></p>
                             </div>
@@ -91,25 +89,26 @@
                 </div>
 
                 <div class="example">
-                    <div class="example-info">
-                        <h2>Example</h2>
-                    </div>
-
                     <div class="code-box-container">
                         <div class="example-code-box-title code-box-title">
-                            <h3>Code Name</h3>
+                            <h3>random.random()</h3>
                         </div>
                         <div class="code-box-contents">
                             <div class="code-line">
-                                <p>
-                                    Code
-                                </p>
+                                <p><span class="code-orange-yellow">import</span> random</p>
+                                <p><span class="code-comment-grey">#genrates a random floating point number from 0 inclusive and up to 1 not inclusive</span></p>
+                                <p><span class="code-pink">rand_float</span> 
+                                    = <span class="code-light-green">random.</span><span class="code-light-purple">random( )</span> </p>
+                                <p><span class="code-comment-grey">#genrates a random floating point number  from 0(inclusive) to 30.0(exclusive)</span></p>
+                                <p><span class="code-pink">rand_float</span> 
+                                    = <span class="code-light-green">random.</span><span class="code-light-purple">random( )</span> * <span class="code-yellow-green">30</span></p>
+                                <p><span class="code-light-blue">print(<span class="code-pink">rand_float</span>)</span></p>
                             </div>
                         </div>
                         <div class="code-info">
                                     <ul>
-                                        <li></li>
-                                        <li></li>
+                                        <li>random.random() is a Semi Open range, when a numerical range or sequence includes the starting value but excludes the ending value</li>
+                                        <li>various built-in functions and operations are semi open range such as range() and slicing</li>
                                         <li></li>
                                     </ul>
                         </div>
