@@ -40,3 +40,14 @@
 | NAV BAR, FOOTER TEXT         | #FFFFFF | secondary-text-color              |
 | CARD BORDER                  | #575757 | card-border                       |
 | BOLD TEXT                    | #FFFFFF | bold-text                         |
+
+
+
+
+
+
+
+# Frequently used code
+## Python
+- function with variable : <span class="code-light-blue">function(<span class="code-pink">variable</span>)</span>
+- variable: <span class="code-pink">variable</span>
