@@ -1,8 +1,5 @@
 
 /* All Code Boxes */
-.code-container{
-    display: flex;
-}
 .code-box-container{
     border-radius: 5px;
     font-weight: bolder;
@@ -38,23 +35,7 @@
 
 
 
-/* Extra SMALL CODE BOX */
-.code-box-extra-small{
-    width: calc(30% - 10px); /* Two cards per row with spacing */
-    box-sizing: border-box; /* Include padding and border in width */
-    margin: 1rem;
-}
-
-.code-box-extra-small .code-box-title{
-    background-color: #90bc56;
-    height: 20%;
-    width: 100%;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;   
-}
-
-/* Small Code Box */
-
+/* SMALL CODE BOX */
 .code-box-small{
     width: calc(100% - 10px); /* Two cards per row with spacing */
     box-sizing: border-box; /* Include padding and border in width */
@@ -314,13 +295,9 @@
     color: rgb(58, 158, 240)
 }
 
-
-.code-light-green{
-    color: rgb(92, 241, 92);
-}
 .code-green{
     color: green;
-
+    font-weight: bolder;
 }
 
 .code-orange-yellow{
@@ -340,7 +317,7 @@
 }
 
 /* Code as Plain text */
-.code-yellow-green{
+.yellow-green{
     color: yellowgreen;
 }
 
