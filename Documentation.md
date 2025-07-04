@@ -47,7 +47,3 @@
 
 
 
-# Frequently used code
-## Python
-- function with variable : <span class="code-light-blue">function(<span class="code-pink">variable</span>)</span>
-- variable: <span class="code-pink">variable</span>

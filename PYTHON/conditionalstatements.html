@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Mine</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSSFiles/cards.css">
+    <link rel="stylesheet" href="../CSSFiles/codebox.css">
+    <link rel="stylesheet" href="../CSSFiles/mode.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/525fc14ecf.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Code Mine Python - Conditional Statements</h1>
+    </header>
+    <div class="menu-container">
+        <nav class="menu-nav">
+            <a href="../index.html">Dashboard</a>
+            <a href="#">Users</a>
+            <a href="#">Projects</a>
+        </nav>
+        <label class="mode-switch">
+            <input id="checkbox" type="checkbox">
+            <span id="slider" class="slider round">
+                <div id="mode-icon" class="mode-icon">
+                    <i class="fa-solid fa-sun"></i>
+                </div>
+
+            </span>
+        </label>
+
+    </div>
+
+    <main class="main-content">
+        <div id="conditional-statements" class="card whole-card">
+            <div class="main-card-contents">
+                <h2>Conditional Statements</h2>
+                <p>
+                    A fundamental control flow construct used for decision-making. It allows a program to execute 
+                    different blocks of code based on whether a given condition is true or false
+                </p>
+                <p>
+                    These statements allow the program to execute different blocks of code based on whether a given
+                    condition is true or false.
+                </p>
+                <ul>
+                    <li><span class="bold">if: </span>introduces a conditional statement</li>
+                    <li><span class="bold">else: </span>else keyword introduces an alternative code block</li>
+                    <li><span class="bold">elif: </span></li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div id="if-statement" class="card whole-card">
+            <div class="main-card-contents">
+                <h2>IF Statement</h2>
+                <p>Allow a program to make decisions and perform different actions based on whether a given condition is
+                    true or false</p>
+                <ul>
+                    <li>The simplest form checks a single condition.</li>
+                    <li>If the condition evaluates to True, the indented block of code following the if statement is executed</li>
+                </ul>
+
+                <h3>Key Elements:</h3>
+                <ul>
+                    <li><span class="cold">Condition: </span> A boolean expression that evaluates to either True or False</li>
+                    <li><span class="cold">Colon(:): </span> Required after the condition in if, elif, and else statements</li>
+                    <li><span class="cold">Indentation: </span> Python uses indentation (typically 4 spaces) to define code blocks. Code within an if, elif, or else block must be consistently indented. </li>
+                </ul>
+
+                <p>Conditions can be combined using logical operators</p>
+            </div>
+
+            <div class="syntax-with-example">
+                <div class="syntax">
+                    <div class="code-box-container">
+                        <div class="syntax-code-box-title code-box-title">
+                            <h3>Syntax: if (simplest form)</h3>
+                        </div>
+                        <div class="code-box-contents">
+                            <div class="code-line">
+                                <p>
+                                    <span class="code-light-purple">if</span> condition:<br>
+                                    &nbsp; &nbsp; &nbsp; do this if condition is true
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="code-info">
+                            <ul>
+                                <li>if: introduces a conditional statement</li>
+                                <li>condition:  is an expression that evaluates to either True or False</li>
+                                <li> If condition is True, the indented code block immediately following the if statement is executed.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="example">
+                    <div class="code-box-container">
+                        <div class="example-code-box-title code-box-title">
+                            <h3>Example: if (simplest form)</h3>
+                        </div>
+                        <div class="code-box-contents">
+                            <div class="code-line">
+                                <p>
+                                    <span class="code-pink">age </span>= <span class="code-orange-yellow">28</span> <br>
+                                    <span class="code-light-purple">if</span> <span class="code-pink">age </span> >= <span
+                                        class="code-orange-yellow">18</span>:<br>
+                                    &nbsp; &nbsp; &nbsp; <span class="code-light-blue">print(</span>
+                                    "You are eligible to vote."
+                                    <span class="code-light-blue">)</span><br>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="code-info">
+                            <ul>
+                                <li>condition: <span class="code-pink">age </span> >= <span class="code-orange-yellow">18</span></li>
+                                <li>since age is greater than 18(true) "You are eligible to vote" will be printed</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="if-else" class="card whole-card">
+            <div class="main-card-contents">
+                <h2>if...else statement</h2>
+                <p>The else keyword allows specifying an alternative block of code to be executed if the if condition
+                    evaluates to False
+                </p>
+            </div>
+
+
+            <div class="syntax-with-example">
+                <div class="syntax">
+
+                    <div class="code-box-container">
+                        <div class="syntax-code-box-title code-box-title">
+                            <h3>if statement</h3>
+                        </div>
+                        <div class="code-box-contents">
+                            <div class="code-line">
+                                <p>
+                                    <span class="code-light-purple">if</span> condition:<br>
+                                    &nbsp; &nbsp; &nbsp; do this if condition is true<br>
+                                    <span class="code-light-purple">else</span>:<br>
+                                        &nbsp; &nbsp; &nbsp; do this if condition is false
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="code-info">
+                            <ul>
+                                <li>If the condition in the if statement evaluates to False, the indented code block immediately following the else statement is executed.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="example">
+
+                    <div class="code-box-container">
+                        <div class="example-code-box-title code-box-title">
+                            <h3>Code Name</h3>
+                        </div>
+                        <div class="code-box-contents">
+                            <div class="code-line">
+                                <p>
+                                    <span class="code-pink">age </span>
+                                    = 
+                                    <span class="code-orange-yellow">15</span><br>
+                                    <span class="code-light-purple">if</span> 
+                                    <span class="code-pink">age </span> 
+                                    >=
+                                    <span class="code-orange-yellow">18</span>
+                                    :<br>
+                                    &nbsp; &nbsp; &nbsp; <span class="code-light-blue">print(</span>
+                                    "You are eligible to vote."
+                                    <span class="code-light-blue">)</span><br>
+                                    <span class="code-light-purple">else</span>
+                                    :<br>
+                                    &nbsp; &nbsp; &nbsp; <span class="code-light-blue">print(</span>
+                                    "You are not eligible to vote."
+                                    <span class="code-light-blue">)</span><br>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="code-info">
+                            <ul>
+                                <li>condition: <span class="code-pink">age </span> >= <span class="code-orange-yellow">18</span></li>
+                                <li>since age is less than 18(false) "You are not eligible to vote" will be printed</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="elif" class="card whole-card">
+            <div class="main-card-contents">
+                <h2>IF Statement</h2>
+                <ul>
+                    <li><span class="bold">: </span></li>
+                    <li><span class="bold">: </span></li>
+                    <li><span class="bold">: </span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="if" class="card whole-card">
+            <div class="main-card-contents">
+                <h2>Card Name</h2>
+                <ul>
+                    <li><span class="bold">: </span></li>
+                    <li><span class="bold">: </span></li>
+                    <li><span class="bold">: </span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="if" class="card whole-card">
+            <div class="main-card-contents">
+                <h2>Card Name</h2>
+                <ul>
+                    <li><span class="bold">: </span></li>
+                    <li><span class="bold">: </span></li>
+                    <li><span class="bold">: </span></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+
+
+    </main>
+
+    <footer>
+        <h1>FOOTER</h1>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html
