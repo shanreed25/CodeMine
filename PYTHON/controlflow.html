@@ -58,9 +58,9 @@
                 <h2>Conditional Statements</h2>
                 <p>These statements allow the program to execute different blocks of code based on whether a given condition is true or false.</p>
                 <ul>
-                    <li><span class="bold">if: </span></li>
-                    <li><span class="bold">elif: </span></li>
-                    <li><span class="bold">else: </span></li>
+                    <li><span class="bold">if: </span>introduces a conditional statement</li>
+                    <li><span class="bold">else: </span>else keyword introduces an alternative code block</li>
+                    <li><span class="bold">elif: </span>checks multiple conditions sequentially. It executes the corresponding block of code if its condition is true and the preceding if or elif conditions were false. </li>
                 </ul>
                 <p><a href="./conditionalstatements.html">Learn More</a></p>
             </div>
@@ -71,8 +71,8 @@
                 <h2>Loops</h2>
                 <p>Loops enable the repeated execution of a block of code.</p>
                 <ul>
-                    <li><span class="bold">for loop: </span></li>
-                    <li><span class="bold">while loop: </span></li>
+                    <li><span class="bold">for loop: </span>Iterates over a sequence (e.g., a list, tuple, string) or other iterable object, executing a block of code for each item in the sequence. </li>
+                    <li><span class="bold">while loop: </span>Repeats a block of code as long as a specified condition is true. </li>
                 </ul>
                 <p><a href="./loops.html">Learn More</a></p>
             </div>
@@ -95,9 +95,9 @@
                 <h2>Jump Statments</h2>
                 <p></p>
                 <ul>
-                    <li><span class="bold">break: </span></li>
-                    <li><span class="bold">continue: </span></li>
-                    <li><span class="bold">pass: </span></li>
+                    <li><span class="bold">break: </span>Exits the innermost loop immediately.</li>
+                    <li><span class="bold">continue: </span>Skips the rest of the current iteration of a loop and proceeds to the next iteration.</li>
+                    <li><span class="bold">pass: </span>Acts as a placeholder. It does nothing, but it's useful when a statement is required syntactically but you don't want any code to be executed. </li>
                 </ul>
                 <p><a href="./jumpstatements.html">Learn More</a></p>
             </div>
@@ -117,60 +117,9 @@
             </div>
         </div>
 
-        <div id="for-loop" class="card whole-card">
-                <div class="main-card-contents">
-                    <h2>For Loop</h2>
-                    <p>A For loop is a control flow statement used to iterate over a sequence (like a list, tuple, string, or range) or other iterable objects.</p>
-                    <p>It executes a block of code once for each item in the sequence.</p>
-                    <h3>Key characteristics of Python for loops</h3>
-                    <ul>
-                        <li><span class="bold">Iteration over iterables: </span>Python's for loops are designed to iterate directly over the elements of an iterable</li>
-                        <li><span class="bold">Syntax: </span>The basic syntax is for item in iterable:, where item is a variable that takes on the value of each element in iterable during each iteration.
-Code block:</li>
-                        <li><span class="bold">Code block: </span>The code to be executed repeatedly is defined by indentation following the for statement.</li>
-                    </ul>
-                </div>
 
-                <div class="syntax-with-example">
-                    <div class="syntax">
-                        <div class="syntax-info">
-                            <h2>Iterating</h2>
-                        </div>
 
-                        <div class="code-box-container">
-                            <div class="syntax-code-box-title code-box-title">
-                                <h3>For Loop</h3>
-                            </div>
-                            <div class="code-box-contents">
-                                <div class="code-line">
-                                    <p># Iterating through a list</p>
-                                    <p>fruits = ["apple", "banana", "cherry"]</p>
-                                    <p>for fruit in fruits:</p>
-                                    <p>&nbsp; &nbsp;print(fruit)</p>
-                                    <br>
-                                    <p># Iterating through a string</p>
-                                    <p>word = "Python"</p>
-                                    <p>for char in wor</p>
-                                        <p>&nbsp;&nbsp;print(char)</p>
-                                    <br>
-                                    <p># Iterating through a range of numbers
-
-                                    </p>
-                                    <p>for i in range(5): # Iterates from 0 up to (but not including) 5</p>
-                                    <p>&nbsp; &nbsp; print(i)</p>
-                                </div>
-                            </div>
-                            <div class="code-info">
-                                <ul>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="example">
+        <div class="example">
                         <div class="example-info">
                                 <h2>Indentation</h2>
                                 <p>Indentation is very important, and whenever you use a :(colon) you need to be careful about the indentation that comes after</p>
@@ -183,10 +132,21 @@ Code block:</li>
                             <div class="code-box-contents">
                                 <div class="code-line">
                                     <p># this code will give different results</p>
-                                    <p>fruits = ["Apple", "Peach", "Pear"]</p>
-                                    <p>for fruit in fruits:</p>
-                                    <p>&nbsp; &nbsp; &nbsp; &nbsp; print(fruit)</p>
-                                    <p>&nbsp; &nbsp; &nbsp; &nbsp; print('Hello')</p>
+                                    <p>
+                                        <span class="code-pink">fruits</span> 
+                                        = 
+                                        <span class="code-light-blue">[</span>
+                                        "Apple", "Peach", "Pear"
+                                        <span class="code-light-blue">]</span>
+                                    </p>
+                                    <p>
+                                        <span class="code-light-purple">for</span> 
+                                        fruit 
+                                        <span class="code-light-purple">in</span> 
+                                        <span class="code-pink">fruits</span>:<br>
+                                        &nbsp; &nbsp; &nbsp; &nbsp; <span class="code-light-blue">print(<span class="code-white">fruit</span>)</span>
+                                     </p>
+                                    <p>&nbsp; &nbsp; &nbsp; &nbsp; <span class="code-light-blue">print(<span class="code-white">'Hello'</span>)</span></p>
                                     <br>
                                     <p># than tis code</p>
                                     <p>for fruit in fruits:</p>
@@ -202,17 +162,8 @@ Code block:</li>
                                 </ul>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="extra-info">
-                    <h4>More Info</h4>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
         </div>
+
     </div>
 
 
@@ -222,6 +173,6 @@ Code block:</li>
         <h1>FOOTER</h1>
     </footer>
     
-    <script src="./script.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Mine</title>
+   <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSSFiles/cards.css">
+    <link rel="stylesheet" href="../CSSFiles/codebox.css">
+    <link rel="stylesheet" href="../CSSFiles/mode.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/525fc14ecf.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1>Code Mine - Control Flow - Loops</h1>
+    </header>
+    <div class="menu-container">
+        <nav class="menu-nav">
+            <a href="../index.html">Dashboard</a>
+            <a href="#">Users</a>
+            <a href="#">Projects</a>
+        </nav>
+        <label class="mode-switch">
+            <input id="checkbox" type="checkbox">
+            <span id="slider" class="slider round">
+                <div id="mode-icon" class="mode-icon">
+                        <i class="fa-solid fa-sun"></i>
+                </div>
+            
+            </span>
+        </label>
+    
+    </div>
+
+    <main class="main-content">
+        
+        <div id="loops" class="card whole-card">
+            <div class="main-card-contents">
+                <h2>Loops</h2>
+                <p>Loops enable the repeated execution of a block of code.</p>
+                <ul>
+                    <li><span class="bold">for loop: </span>Iterates over a sequence (e.g., a list, tuple, string) or other iterable object, executing a block of code for each item in the sequence. </li>
+                    <li><span class="bold">while loop: </span>Repeats a block of code as long as a specified condition is true. </li>
+                </ul>
+            </div>
+        </div>
+
+        
+        <div id="for-loop" class="card whole-card">
+                <div class="main-card-contents">
+                    <h2>For Loop</h2>
+                    <p>A For loop is a control flow statement used to iterate over a sequence (like a list, tuple, string, or range) or other iterable objects.</p>
+                    <p>It executes a block of code once for each item in the sequence.</p>
+                    <h3>Key characteristics of Python for loops</h3>
+                    <ul>
+                        <li><span class="bold">Iteration over iterables: </span>Python's for loops are designed to iterate directly over the elements of an iterable</li>
+                        <li><span class="bold">Syntax: </span><span class="code-light-purple">for item in iterable:</span>, where item is a variable that takes on the value of each element in iterable during each iteration</li>
+                        <li><span class="bold">Code block: </span>The code to be executed repeatedly is defined by indentation following the for statement.</li>
+                    </ul>
+                </div>
+
+                <div class="syntax-with-example">
+                    <div class="syntax">
+
+                        <div class="code-box-container">
+                            <div class="syntax-code-box-title code-box-title">
+                                <h3>Syntax: for loop</h3>
+                            </div>
+                            <div class="code-box-contents">
+                                <div class="code-line">
+                                    <p>
+                                        <span class="code-comment-grey"># Iterating through a list</span>
+                                    </p>
+                                    <p>
+                                        <span class="code-pink">items</span> 
+                                        = 
+                                        <span class="code-light-blue">[</span>
+                                        "item1", "item2", "item3"
+                                        <span class="code-light-blue">]</span>
+                                    </p>
+                                    <p>
+                                        <span class="code-light-purple">for</span> 
+                                        item 
+                                        <span class="code-light-purple">in</span> 
+                                        <span class="code-pink">items_list</span>:<br>
+                                        &nbsp; &nbsp; &nbsp; &nbsp; <span class="code-light-blue">print(<span class="code-white">item</span>)</span>
+                                     </p>
+                                    <br>
+                                    <p>
+                                        <span class="code-comment-grey"> # Iterating through a string</span>
+                                    </p>
+                                    <p>
+                                        <span class="code-pink">word</span>
+                                        = "Python"
+                                    </p>
+                                    <p>
+                                        <span class="code-light-purple">for</span> 
+                                        char 
+                                        <span class="code-light-purple">in</span>
+                                        <span class="code-pink">word</span>:<br>
+                                        &nbsp; &nbsp; &nbsp; &nbsp; <span class="code-light-blue">print(<span class="code-white">char</span>)</span>
+                                    </p>
+                                        <p></p>
+                                    <br>
+                                    <p>
+                                        <span class="code-comment-grey"># Iterating through a range of numbers</span> 
+
+                                    </p>
+                                    <p>
+                                        <span class="code-light-purple">for</span> 
+                                        i 
+                                        <span class="code-light-purple">in</span>
+                                        <span class="code-light-blue">range(<span class="code-yellow-green">5</span>)</span>:<br>
+                                        &nbsp; &nbsp; &nbsp; &nbsp; <span class="code-light-blue">print(<span class="code-white">i</span>)</span>
+                                    </p>
+
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="code-info">
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="example">
+                        <div class="code-box-container">
+                            <div class="example-code-box-title code-box-title">
+                                <h3>Example: for loop</h3>
+                            </div>
+                            <div class="code-box-contents">
+                                <div class="code-line">
+                                </div>
+                            </div>
+                            <div class="code-info">
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="extra-info">
+                    <h4>More Info</h4>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+        </div>+
+        
+    </main>
+
+    <footer>
+        <h1>FOOTER</h1>
+    </footer>
+    
+    <script src="../script.js"></script>
+</body>
+</html

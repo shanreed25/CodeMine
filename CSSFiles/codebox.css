@@ -300,6 +300,9 @@
     font-weight: bolder;
 }
 
+.code-white{
+    color: #FFFFFF;
+}
 .code-orange-yellow{
     color: rgb(226, 149, 5);
 }
@@ -317,7 +320,7 @@
 }
 
 /* Code as Plain text */
-.yellow-green{
+.code-yellow-green{
     color: yellowgreen;
 }
 
