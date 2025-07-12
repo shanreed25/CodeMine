@@ -52,7 +52,7 @@
 
 
 /* SYNTAX AND EXAMPLE BOXES */
-.syntax-with-example{
+.syntax-with-example, .code-sections{
     flex-grow: 1; /* Allow main content to take up remaining space */
     padding: 20px;
     display: flex;
@@ -60,14 +60,9 @@
     gap: 20px; /* Add spacing between cards */
 }
 
-.syntax{
+.syntax, .example, .code-section-1, .code-section-2{
     width: calc(50% - 10px); /* One card on the row */
 }
-
-.example{
-    width: calc(50% - 10px); /* One card on the row */
-}
-
 
 .syntax-code-box-title, .example-code-box-title{
     background-color: #90bc56;
@@ -303,6 +298,11 @@
 .code-white{
     color: #FFFFFF;
 }
+
+.code-orange {
+    color: orange;
+}
+
 .code-orange-yellow{
     color: rgb(226, 149, 5);
 }
@@ -328,7 +328,7 @@
     color: yellow;
 }
 
-.code-review{
+.code-bright-green{
     color: rgb(31, 223, 31)
 }
 

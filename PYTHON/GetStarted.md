@@ -9,3 +9,5 @@ In the coming lessons, we'll be using the PyCharm Integrated Development Environ
 - https://www.jetbrains.com/edu-products/download/#section=pycharm-edu
 
 - C:\Program Files\JetBrains\PyCharm Community Edition 2025.1.2
+
+# https://thonny.org/

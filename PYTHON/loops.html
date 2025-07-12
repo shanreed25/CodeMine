@@ -62,8 +62,8 @@
                     </ul>
                 </div>
 
-                <div class="syntax-with-example">
-                    <div class="syntax">
+                <div class="code-sections">
+                    <div class="code-section-1">
 
                         <div class="code-box-container">
                             <div class="syntax-code-box-title code-box-title">
@@ -130,24 +130,6 @@
                         </div>
                     </div>
 
-                    <div class="example">
-                        <div class="code-box-container">
-                            <div class="example-code-box-title code-box-title">
-                                <h3>Example: for loop</h3>
-                            </div>
-                            <div class="code-box-contents">
-                                <div class="code-line">
-                                </div>
-                            </div>
-                            <div class="code-info">
-                                <ul>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="extra-info">
@@ -157,8 +139,93 @@
                         <li></li>
                     </ul>
                 </div>
-        </div>+
+        </div>
         
+
+        <div id="while-loop" class="card whole-card">
+                <div class="main-card-contents">
+                    <h2>While Loop</h2>
+                    <p>epeatedly executes a block of code as long as a specified condition remains true.</p>
+                    <p>The loop continues to iterate, checking the condition at the beginning of each iteration.</p>
+                    <p>If the condition evaluates to True, the code inside the loop's body is executed. </p>
+                    <p> If the condition evaluates to False, the loop terminates, and program control moves to the statements immediately following the loop. </p>
+                    
+                </div>
+
+                <div class="code-sections">
+                    <div class="code-section-1">
+
+                        <div class="code-box-container">
+                            <div class="syntax-code-box-title code-box-title">
+                                <h3>Syntax: while loop</h3>
+                            </div>
+                            <div class="code-box-contents">
+                                <div class="code-line">
+                                    <p>
+                                        <p>while condition:
+                                        <br>&nbsp; &nbsp; &nbsp; &nbsp;Code block to be executed repeatedly
+                                        <p> (Indented statements)</p>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="code-info">
+                                <ul>
+                                    <li><span class="bold">while keyword: </span>Initiates the while loop. </li>
+                                    <li><span class="bold">condition: </span> A boolean expression that is evaluated at the start of each iteration. The loop continues as long as this condition is True. </li>
+                                    <li><span class="bold">colon (:): </span>Marks the end of the while statement.</li>
+                                    <li><span class="bold">Indented code block: </span>The statements that are repeatedly executed as long as the condition is True.</li>
+                                    <li><span class="bold"></span> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="example">
+                        <div class="code-box-container">
+                            <div class="example-code-box-title code-box-title">
+                                <h3>Example: for loop</h3>
+                            </div>
+                            <div class="code-box-contents">
+                                <div class="code-line">
+                                    <p>
+                                        count = 0
+                                        while count < 5:
+                                            print(f"Count is: {count}")
+                                            count += 1
+                                        print("Loop finished.")
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="code-info">
+                                <ul>
+                                    <li><span class="bold">the loop continues as long as count is less than 5</li>
+                                    <li> Inside the loop, the current value of count is printed, and count is incremented by 1 in each iteration</li>
+                                    <li>Once count reaches 5, the condition count < 5 becomes False, and the loop terminates, executing the "Loop finished." statement.</li>
+                                    <li></li>
+                                    <li><span class="bold"></span> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="extra-info">
+                    <h4>Remember.....</h4>
+                    <ul>
+                        <li><span class="bold">Infinite loops: </span>If the condition never becomes False, the while loop will run indefinitely, 
+                            creating an infinite loop. This typically requires a break statement or an external interruption to stop execution.
+                        </li>
+                            <ul>
+                                <li><span class="bold">break: </span>Terminates the loop immediately, regardless of the condition.</li>
+                                <li><span class="bold">continue: </span>Skips the rest of the current iteration and proceeds to the next iteration (re-evaluating the condition).</li>
+                                <li><span class="bold">else(optional): </span>A block of code that is executed once after the while loop completes normally (i.e., the condition becomes False), but not if the loop is terminated by a break statement</li>
+                            </ul>
+                        <li><span class="bold"></span> </li>
+                    </ul>
+                </div>
+        </div>
+
+
     </main>
 
     <footer>
